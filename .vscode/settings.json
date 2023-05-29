@@ -1,0 +1,8 @@
+{
+	"css.lint.unknownAtRules": "ignore",
+	"scss.lint.unknownAtRules": "ignore",
+	"css.validate": false,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"css.customData": [".vscode/tailwindcss.json"],
+	"vue3snippets.enable-compile-vue-file-on-did-save-code": false
+}
