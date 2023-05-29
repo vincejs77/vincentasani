@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 * {
     box-sizing: border-box;
 }
@@ -10,4 +6,9 @@ html,
 body {
     @apply font-sans;
 }
+
+.v-box {
+    @apply h-64 border-2 border-gray-800 bg-gray-600 bg-opacity-20 p-6 md:p-8 rounded-md;
+}
+
 @import url(~/assets/styles/utils/transitions.scss);

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="v-app" class="dark v-app">
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
