@@ -6,8 +6,4 @@
   </div>
 </template>
 
-<script setup>
-onBeforeMount(() => {
-  const appMainDiv = ref();
-});
-</script>
+<script setup></script>

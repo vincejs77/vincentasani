@@ -1,0 +1,3 @@
+.router-link-active.router-link-exact-active > span {
+    @apply underline text-gray-800 font-bold dark:text-gray-50;
+}
