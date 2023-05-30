@@ -1,15 +1,19 @@
 * {
     box-sizing: border-box;
-    @apply duration-[0.03s] ease-in-out transition-all;
 }
 
 html,
 body {
-    @apply font-sans;
+    @apply font-sans duration-[0.01s] ease-in-out transition-colors;
+}
+
+a,
+button {
+    @apply duration-500 ease-in-out transition-colors;
 }
 
 .v-box {
-    @apply h-64 border-2 border-gray-800 bg-gray-600 bg-opacity-20 p-6 md:p-8 rounded-md;
+    @apply h-96 sm:h-80 border-2 border-gray-200 dark:border-gray-900 bg-gray-100 dark:bg-gray-600 bg-opacity-100 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
 }
 
 @import url(~/assets/styles/utils/transitions.scss);
