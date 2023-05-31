@@ -28,10 +28,10 @@ export default defineNuxtConfig({
 					property: "og:description",
 					content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications."
 				},
-				{ property: "og:url", content: "https://vincentasani.vercel.app/img/cover.jpg" },
+				{ property: "og:url", content: "https://vincentasani.vercel.app/img/cover.png" },
 				{
 					property: "og:image",
-					content: "https://vincentasani.vercel.app/img/cover.jpg"
+					content: "https://vincentasani.vercel.app/img/cover.png"
 				},
 				{ name: "twitter:title", content: "Hello ! it's Vincent Asani" },
 				{
@@ -40,7 +40,7 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:image",
-					content: "https://vincentasani.vercel.app/img/cover.jpg"
+					content: "https://vincentasani.vercel.app/img/cover.png"
 				},
 				{ name: "twitter:card", content: "summary_large_image" }
 			],
