@@ -13,8 +13,9 @@ export default defineNuxtConfig({
 	},
 	css: ["~/assets/styles/utils/fonts.scss", "~/assets/styles/main.scss"],
 	app: {
+		pageTransition: { name: "slide-down", mode: "out-in" },
 		head: {
-			title: "Institut français de Goma",
+			title: "Home - Vincent ASANI",
 			meta: [
 				// { "http-equiv": "Content-Security-Policy", content: "img-src 'selft' admin.institutfrancaisgoma.org :;" },
 				{ charset: "utf-16" },
@@ -45,15 +46,6 @@ export default defineNuxtConfig({
 			],
 
 			link: [
-				/* Commit
-				{
-					rel: "preload",
-					href: "~/assets/",
-					as: "font",
-					type: "font/woff2",
-					crossorigin: "anonymous"
-				},
-				*/
 				{
 					rel: "me",
 					href: "https://twitter.com/vincejs77"

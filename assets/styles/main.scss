@@ -13,7 +13,7 @@ button {
 }
 
 .v-box {
-    @apply h-96 sm:h-80 border-2 border-gray-200 dark:border-gray-900 bg-gray-100 dark:bg-gray-600 bg-opacity-100 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
+    @apply h-96 sm:h-80 border-2 border-gray-200 dark:border-gray-900 dark:border-opacity-70 bg-gray-100 dark:bg-gray-700 bg-opacity-100 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
 }
 
 .grid-pattern--dark {
@@ -49,4 +49,5 @@ button {
 }
 
 @import url(~/assets/styles/utils/transitions.scss);
+@import url(~/assets/styles/utils/animations.scss);
 @import url(~/assets/styles/utils/text.scss);

@@ -4,7 +4,7 @@
       <UContainer class="py-24 relative z-10">
         <p class="mb-4"></p>
         <h1
-          class="md:-mt-2 leading-[1.4] sm:leading-[1.3] text-4xl sm:text-6xl font-black dark:text-gray-200"
+          class="text-animation-3 md:-mt-2 leading-[1.4] sm:leading-[1.3] text-4xl sm:text-6xl font-black dark:text-gray-200"
         >
           Details make perfection
           <span class="text-gray-800 dark:text-gray-400"
@@ -23,7 +23,9 @@
           details.
         </div>
       </UContainer>
-      <div class="dark:block hidden grid-pattern grid-pattern--dark hero"></div>
+      <div
+        class="dark:block hidden opacity-70 grid-pattern grid-pattern--dark hero"
+      ></div>
       <div class="dark:hidden block grid-pattern grid-pattern--white hero"></div>
     </section>
     <section class="v-wrapper dark:text-gray-300 text-lg">
