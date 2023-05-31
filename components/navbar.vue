@@ -29,8 +29,18 @@
       <div
         class="flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300 font-medium"
       >
-        <NuxtLink to="/about"> <span>About</span> </NuxtLink>
-        <NuxtLink to="/articles"> <span>Articles</span> </NuxtLink>
+        <NuxtLink
+          to="/about"
+          class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
+        >
+          <span>About</span>
+        </NuxtLink>
+        <NuxtLink
+          to="/articles"
+          class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
+        >
+          <span>Articles</span>
+        </NuxtLink>
         <button
           @click="$toggleTheme()"
           class="text-gray-500 dark:text-gray-200 bg-gray-200 dark:bg-white dark:bg-opacity-10 p-2 rounded-md"
@@ -76,10 +86,8 @@
       </div>
     </UContainer>
 
-    <UContainer class="fixed bottom-8 left-0 right-0 mx-auto flex justify-end">
-      <div
-        class="cursor-pointer border-2 border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-80 backdrop-blur-md w-12 h-12 rounded-full flex justify-center items-center"
-      >
+    <UContainer class="fixed z-50 bottom-8 left-0 right-0 mx-auto flex justify-end">
+      <div class="v-button w-12 h-12 rounded-full flex justify-center items-center">
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"

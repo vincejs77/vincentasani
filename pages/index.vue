@@ -54,9 +54,7 @@
                 >
               </div>
               <div>
-                <NuxtLink to="/about">
-                  <span class="text-blue-500 font-semibold">Learn More</span>
-                </NuxtLink>
+                <UtilsSimpleBtn :link="'/about'" :text="'Learn more'" />
               </div>
             </div>
           </div>
@@ -66,14 +64,12 @@
             <div
               :key="tech"
               v-for="tech in myTechStack"
-              class="rounded-md mr-3 mt-3 text-gray-700 dark:text-gray-300 bg-gray-300 dark:bg-gray-800 bg-opacity-60 dark:bg-opacity-50 pl-3 pr-4 py-1 flex justify-start items-center space-x-2"
+              class="rounded-md mr-3 mt-3 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 bg-opacity-60 dark:bg-opacity-50 pl-3 pr-4 py-1 flex justify-start items-center space-x-2"
             >
               <img :src="tech.img" alt="JAVASCRIPT" class="w-6 rounded-md" />
               <span class="text-sm font-semibold"> {{ tech.name }}</span>
             </div>
-            <div
-              class="cursor-pointer rounded-md mr-3 mt-3 border-2 dark:border-gray-800 bg-gray-300 dark:bg-gray-800 bg-opacity-60 dark:bg-opacity-20 hover:bg-blue-500 hover:text-white hover:dark:bg-blue-700 pl-3 pr-4 py-1"
-            >
+            <div class="rounded-md mr-3 mt-3 v-button pl-3 pr-4 py-1">
               <NuxtLink
                 to="/about#tech-stack"
                 class="flex justify-start items-center space-x-2"

@@ -11,6 +11,10 @@
     animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
     animation-delay: 0.4s;
     -webkit-animation: grow-left cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.5s forwards;
+    -webkit-transform: scaleX(0);
+    -moz-transform: scaleX(0);
+    -ms-transform: scaleX(0);
+    -o-transform: scaleX(0);
 }
 
 .text-animation-3 {
