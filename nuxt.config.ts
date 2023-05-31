@@ -11,5 +11,79 @@ export default defineNuxtConfig({
 		classSuffix: "",
 		storageKey: "v-color-mode"
 	},
-	css: ["~/assets/styles/utils/fonts.scss", "~/assets/styles/main.scss"]
+	css: ["~/assets/styles/utils/fonts.scss", "~/assets/styles/main.scss"],
+	app: {
+		head: {
+			title: "Institut français de Goma",
+			meta: [
+				// { "http-equiv": "Content-Security-Policy", content: "img-src 'selft' admin.institutfrancaisgoma.org :;" },
+				{ charset: "utf-16" },
+				{ name: "viewport", content: "width=device-width, initial-scale=1" },
+				{ name: "description", content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications." },
+				{ name: "format-detection", content: "telephone=no" },
+				// Social
+				{ property: "og:title", content: "Hello ! it's Vincent Asani" },
+				{
+					property: "og:description",
+					content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications."
+				},
+				{ property: "og:url", content: "https://vincentasani.vercel.app/img/cover.jpg" },
+				{
+					property: "og:image",
+					content: "https://vincentasani.vercel.app/img/cover.jpg"
+				},
+				{ name: "twitter:title", content: "Hello ! it's Vincent Asani" },
+				{
+					name: "twitter:description",
+					content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications."
+				},
+				{
+					name: "twitter:image",
+					content: "https://vincentasani.vercel.app/img/cover.jpg"
+				},
+				{ name: "twitter:card", content: "summary_large_image" }
+			],
+
+			link: [
+				/* Commit
+				{
+					rel: "preload",
+					href: "~/assets/",
+					as: "font",
+					type: "font/woff2",
+					crossorigin: "anonymous"
+				},
+				*/
+				{
+					rel: "me",
+					href: "https://twitter.com/vincejs77"
+				},
+				{ rel: "icon", type: "image/x-icon", href: "/img/favicons/favicon.ico" },
+				{
+					rel: "apple-touch-icon",
+					sizes: "76x76",
+					href: "/img/favicons/apple-touch-icon.png"
+				},
+				{
+					rel: "icon",
+					type: "image/png",
+					sizes: "32x32",
+					href: "/img/favicons/favicon-32x32.png"
+				},
+				{
+					rel: "icon",
+					type: "image/png",
+					sizes: "16x16",
+					href: "/img/favicons/favicon-16x16.png"
+				},
+
+				{
+					rel: "mask-icon",
+					href: "/img/favicons/safari-pinned-tab.svg",
+					color: "#5bbad5"
+				}
+			],
+			noscript: [{ children: "Javascript est désactivé" }]
+		}
+	}
 });

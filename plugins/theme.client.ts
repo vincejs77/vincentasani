@@ -1,9 +1,6 @@
 import { useStorage } from "@vueuse/core";
 let themeStorage = useStorage("v-color-mode", "dark");
 
-if (themeStorage.value == undefined) {
-	themeStorage.value = "dark";
-}
 export default defineNuxtPlugin({
 	name: "theme",
 	enforce: "default",

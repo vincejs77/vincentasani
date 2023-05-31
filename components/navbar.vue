@@ -78,7 +78,7 @@
 
     <UContainer class="fixed bottom-8 left-0 right-0 mx-auto flex justify-end">
       <div
-        class="cursor-pointer bg-gray-800 bg-opacity-80 backdrop-blur-md w-12 h-12 rounded-full flex justify-center items-center"
+        class="cursor-pointer border-2 border-gray-200 dark:border-gray-800 bg-gray-100 dark:bg-gray-900 dark:bg-opacity-80 backdrop-blur-md w-12 h-12 rounded-full flex justify-center items-center"
       >
         <button>
           <svg

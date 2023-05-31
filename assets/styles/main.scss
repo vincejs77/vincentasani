@@ -9,11 +9,43 @@ body {
 
 a,
 button {
-    @apply duration-500 ease-in-out transition-colors;
+    @apply duration-100 ease-in-out transition-colors;
 }
 
 .v-box {
     @apply h-96 sm:h-80 border-2 border-gray-200 dark:border-gray-900 bg-gray-100 dark:bg-gray-600 bg-opacity-100 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
+}
+
+.grid-pattern--dark {
+    background-image: linear-gradient(270deg, #000, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(90deg, #000, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #000, hsla(0, 0%, 100%, 0)),
+        linear-gradient(0deg, #000 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-dark.svg);
+}
+
+.grid-pattern--white {
+    background-image: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0)),
+        linear-gradient(0deg, #fff 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-white.svg);
+}
+
+.grid-pattern.hero {
+    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+    background-size: auto, auto, auto, auto, 2rem;
+    position: absolute;
+    top: 3rem;
+    width: 100%;
+    max-width: 100rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid-pattern {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
 
 @import url(~/assets/styles/utils/transitions.scss);

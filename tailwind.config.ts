@@ -7,6 +7,10 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ["Satoshi", "Arial", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Open Sans", "Helvetica Neue", "sans-serif"]
+			},
+			colors: {
+				transparent: "transparent",
+				current: "currentColor"
 			}
 		}
 	},
