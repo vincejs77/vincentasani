@@ -1,9 +1,12 @@
 <template>
-  <div class="v-navbar-main dark:text-white">
-    <UContainer class="py-4 flex justify-between items-center">
-      <div>
-        <NuxtLink to="/" class="flex justify-start items-center space-x-4">
-          <!-- 
+  <div class="v-navbar-main">
+    <div
+      class="fixed top-0 left-0 right-0 z-[999] bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-60 backdrop-blur-md dark:text-white"
+    >
+      <UContainer class="py-4 flex justify-between items-center">
+        <div>
+          <NuxtLink to="/" class="flex justify-start items-center space-x-3">
+            <!-- 
 
            <svg
             class="text-yellow-400 hidden"
@@ -19,72 +22,73 @@
           </svg>
           -->
 
-          <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
+            <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
 
-          <h2 class="hidden text-lg sm:text-xl font-extrabold">
-            Vince<span class="text-gray-400 no-underline">.</span>
-          </h2>
-        </NuxtLink>
-      </div>
-      <div
-        class="flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300 font-medium"
-      >
-        <NuxtLink
-          to="/about"
-          class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
+            <h2 class="hidden text-lg sm:text-xl font-extrabold">
+              Vince<span class="text-gray-400 no-underline">.</span>
+            </h2>
+          </NuxtLink>
+        </div>
+        <div
+          class="flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300 font-medium"
         >
-          <span>About</span>
-        </NuxtLink>
-        <NuxtLink
-          to="/articles"
-          class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
-        >
-          <span>Articles</span>
-        </NuxtLink>
-        <button
-          @click="$toggleTheme()"
-          class="text-gray-500 dark:text-gray-200 bg-gray-200 dark:bg-white dark:bg-opacity-10 p-2 rounded-md"
-        >
-          <div class="w-5 h-5">
-            <ClientOnly>
-              <UTooltip text="Theme">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                  v-if="useColorMode().value !== 'dark'"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
-                  />
-                </svg>
+          <NuxtLink
+            to="/about"
+            class="hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 dark:text-gray-400"
+          >
+            <span>About</span>
+          </NuxtLink>
+          <NuxtLink
+            to="/articles"
+            class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
+          >
+            <span>Articles</span>
+          </NuxtLink>
+          <button
+            @click="$toggleTheme()"
+            class="text-gray-500 dark:text-gray-200 bg-gray-200 dark:bg-gray-300 dark:bg-opacity-10 p-2 rounded-md"
+          >
+            <div class="w-5 h-5">
+              <ClientOnly>
+                <UTooltip text="Theme">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                    v-if="useColorMode().value !== 'dark'"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+                    />
+                  </svg>
 
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  class="w-5 h-5"
-                  v-if="useColorMode().value == 'dark'"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
-                  />
-                </svg>
-              </UTooltip>
-            </ClientOnly>
-          </div>
-        </button>
-      </div>
-    </UContainer>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    class="w-5 h-5"
+                    v-if="useColorMode().value == 'dark'"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+                    />
+                  </svg>
+                </UTooltip>
+              </ClientOnly>
+            </div>
+          </button>
+        </div>
+      </UContainer>
+    </div>
 
     <UContainer class="fixed z-50 bottom-8 left-0 right-0 mx-auto flex justify-end">
       <div class="v-button w-12 h-12 rounded-full flex justify-center items-center">

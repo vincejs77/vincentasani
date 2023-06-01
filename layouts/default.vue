@@ -4,7 +4,7 @@
     class="v-default-layout h-full overflow-hidden bg-white dark:bg-black"
   >
     <Navbar />
-    <div class="v-default-layout--main min-h-screen">
+    <div class="pt-[68px] v-default-layout--main min-h-screen">
       <slot />
     </div>
     <Footer />

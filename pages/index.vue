@@ -37,7 +37,7 @@
               <span class="text-gray-500 dark:text-gray-500">it's Vincent Asani</span>
             </h2>
           </div>
-          <div class="absolute top-8 right-2">
+          <div class="absolute top-4 right-2 dark:opacity-20">
             <img src="/img/svg/104.svg" alt="" />
           </div>
           <div>
@@ -96,7 +96,7 @@
           <div>
             <h2 class="text-xl font-bold">My tech stack</h2>
             <p class="text-md text-gray-600 dark:text-gray-400 mt-4">
-              <span class="font-medium">Multifaceted</span> and also Javascript
+              <span class="font-medium">Multifaceted</span> and also JavaScript
               enthusiast. Very interested in Nuxt, Vue, Node with TypeScript.
             </p>
           </div>

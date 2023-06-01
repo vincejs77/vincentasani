@@ -1,6 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-	modules: ["@nuxthq/ui", "@nuxtjs/color-mode"],
 	colorMode: {
 		preference: "dark", // default value of $colorMode.preference
 		fallback: "light", // fallback value if not system preference found
@@ -77,5 +76,8 @@ export default defineNuxtConfig({
 			],
 			noscript: [{ children: "Javascript est désactivé" }]
 		}
-	}
+	},
+
+	modules: ["@nuxthq/ui", "@nuxtjs/color-mode"],
+	plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }]
 });
