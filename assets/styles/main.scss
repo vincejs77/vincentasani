@@ -13,7 +13,7 @@ button {
 }
 
 .v-box {
-    @apply h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-gray-900 dark:border-opacity-70 bg-gray-100 dark:bg-gray-700 bg-opacity-100 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
+    @apply backdrop-blur-md h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-gray-100 dark:bg-white bg-opacity-100 dark:bg-opacity-[0.04] p-6 md:p-8 rounded-md;
 }
 
 .v-button {

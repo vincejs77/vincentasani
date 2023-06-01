@@ -79,5 +79,8 @@ export default defineNuxtConfig({
 	},
 
 	modules: ["@nuxthq/ui", "@nuxtjs/color-mode"],
-	plugins: [{ src: "~/plugins/vercel.ts", mode: "client" }]
+	plugins: [
+		{ src: "~/plugins/vercel.ts", mode: "client" },
+		{ src: "@/plugins/aos", ssr: false, mode: "client" }
+	]
 });
