@@ -1,12 +1,12 @@
 <template>
   <div class="v-index">
-    <section class="v-wrapper relative dark:text-gray-300 text-lg">
-      <UContainer class="py-24 relative z-10">
+    <section class="v-wrapper relative">
+      <UContainer class="py-32 relative z-10">
         <p class="mb-4"></p>
         <h1
           data-aos="fade-up"
           data-aos-duration="5000"
-          class="md:-mt-2 leading-[1.4] sm:leading-[1.3] text-4xl sm:text-6xl font-black dark:text-gray-200"
+          class="text-gray-950 md:-mt-2 leading-[1.4] sm:leading-[1.2] text-4xl sm:text-6xl font-black dark:text-gray-200"
         >
           Details make perfection
           <span class="text-gray-800 dark:text-gray-400"
@@ -29,9 +29,7 @@
           details.
         </div>
       </UContainer>
-      <div
-        class="dark:block hidden opacity-60 grid-pattern grid-pattern--dark hero"
-      ></div>
+      <div class="dark:block hidden grid-pattern grid-pattern--dark hero"></div>
       <div class="dark:hidden block grid-pattern grid-pattern--white hero"></div>
     </section>
     <section class="v-wrapper dark:text-gray-300 text-lg">
@@ -101,7 +99,7 @@
                   </div>
                 </UtilsInfiniteVerticalScroll>
               </div>
-              <div class="rounded-md mr-3 mt-3 v-button pl-3 pr-4 py-1">
+              <div class="rounded-md mr-0 mt-3 v-button pl-3 pr-4 py-1">
                 <NuxtLink
                   to="/about#tech-stack"
                   class="flex justify-start items-center space-x-2"
@@ -129,7 +127,7 @@
         </div>
       </UContainer>
     </section>
-    <section class="hidden v-wrapper dark:text-gray-300 text-lg">
+    <section class="v-wrapper dark:text-gray-300 text-lg">
       <UContainer class="pt-0 pb-16 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div
           data-aos="fade-up"
@@ -150,7 +148,8 @@
               <div>
                 <h3 class="font-semibold"></h3>
                 <p class="text-md dark:text-gray-400">
-                  At Wito XR Studio. I am a AI & AR/VR curious.
+                  At Wito XR Studio. I am very interested in generative AI, VR/AR
+                  development in web.
                 </p>
               </div>
             </div>
@@ -175,19 +174,23 @@
       </UContainer>
     </section>
 
-    <section class="relative v-wrapper dark:text-gray-300 text-lg">
+    <section class="hidden relative v-wrapper dark:text-gray-300 text-lg">
       <UContainer
         class="relative z-20 pt-12 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
         <h1
           data-aos="fade-up"
           data-aos-duration="5000"
-          class="md:mt-2 leading-[1.4] sm:leading-[1.3] text-3xl sm:text-5xl font-black dark:text-gray-200"
+          class="md:mt-2 leading-[1.4] sm:leading-[1.3] text-2xl sm:text-3xl font-black dark:text-gray-200"
         >
           Awaken
-          <span class="text-gray-800 dark:text-gray-400">your curiosity!</span>
+          <span class="">your curiosity!</span>
         </h1>
-        <p>Dive into articles on AI, VR/AR, and cutting-edge web development concepts!</p>
+        <div class="-mt-4" data-aos="fade-up" data-aos-duration="5000">
+          <p>
+            Dive into articles on AI, VR/AR, and cutting-edge web development concepts!
+          </p>
+        </div>
       </UContainer>
       <div
         class="dark:block hidden opacity-60 grid-pattern grid-pattern--dark hero"

@@ -1,7 +1,7 @@
 <template>
   <div class="v-navbar-main">
     <div
-      class="fixed top-0 left-0 right-0 z-[999] bg-white dark:bg-black bg-opacity-40 dark:bg-opacity-60 backdrop-blur-md dark:text-white"
+      class="fixed top-0 left-0 right-0 z-[999] bg-white dark:bg-gray-950 bg-opacity-40 dark:bg-opacity-60 backdrop-blur-md dark:text-white"
     >
       <UContainer class="py-4 flex justify-between items-center">
         <div>

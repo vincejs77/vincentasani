@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none"><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-custom-link"/><link xmlns="" type="text/css" rel="stylesheet" id="dark-mode-general-link"/><style xmlns="" lang="en" type="text/css" id="dark-mode-custom-style"/><style xmlns="" lang="en" type="text/css" id="dark-mode-native-style"/><style xmlns="" lang="en" type="text/css" id="dark-mode-native-sheet"/>
 <g clip-path="url(#clip0_105_228)">
-<path d="M96 32L-32 32" stroke="#9ca3af" stroke-width="2"/>
-<path d="M32 96V-32" stroke="#9ca3af" stroke-width="2"/>
+<path d="M96 32L-32 32" stroke="#4b5563" stroke-width="2"/>
+<path d="M32 96V-32" stroke="#4b5563" stroke-width="2"/>
 </g>
 <defs>
 <clipPath id="clip0_105_228">

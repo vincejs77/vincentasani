@@ -4,7 +4,7 @@
     :to="link"
   >
     <p
-      class="mb-0 text-gray-800 dark:text-gray-300 group-hover:text-blue-600 dark:group-hover:text-blue-600"
+      class="font-semibold mb-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
     >
       {{ text }}
     </p>
@@ -12,10 +12,10 @@
       <component :is="svg" class="icon h-4 w-4 flex-shrink-0" aria-hidden="true" />
     </div>
     <div
-      class="absolute w-full transform -translate-x-0 group-hover:block hidden h-0.5 bg-blue-700 transition ease-in-out duration-500"
+      class="absolute w-full transform -translate-x-0 group-hover:block hidden h-0.5 bg-gradient-to-r from-blue-400 to-indigo-400 transition ease-in-out duration-500"
     ></div>
     <div
-      class="w-full transform -translate-x-0 group-hover:translate-x-full h-0.5 bg-gray-400 dark:bg-gray-400 transition ease-in-out duration-500"
+      class="w-full transform -translate-x-0 group-hover:translate-x-full h-0.5 bg-gray-300 dark:bg-gray-700 transition ease-in-out duration-500"
     ></div>
   </NuxtLink>
 </template>

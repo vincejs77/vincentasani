@@ -13,17 +13,17 @@ button {
 }
 
 .v-box {
-    @apply backdrop-blur-md h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-gray-100 dark:bg-white bg-opacity-100 dark:bg-opacity-[0.04] p-6 md:p-8 rounded-md;
+    @apply h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-gray-100 dark:bg-gray-900 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
 }
 
 .v-button {
-    @apply hover:text-white hover:bg-blue-600 dark:hover:bg-blue-600 transition-colors ease-in-out duration-300 cursor-pointer border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-50 bg-gray-100 dark:bg-opacity-20 dark:bg-gray-700 backdrop-blur-md;
+    @apply hover:text-white hover:bg-gradient-to-r from-blue-500 to-indigo-500 transition-colors dark:transition-colors ease-in-out duration-100 cursor-pointer border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-50 bg-gray-100 dark:bg-opacity-20 dark:bg-gray-700 backdrop-blur-md;
 }
 
 .grid-pattern--dark {
-    background-image: linear-gradient(270deg, #000, hsla(0, 0%, 100%, 0) 6%),
-        linear-gradient(90deg, #000, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #000, hsla(0, 0%, 100%, 0)),
-        linear-gradient(0deg, #000 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-dark.svg);
+    background-image: linear-gradient(270deg, #030712, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(90deg, #030712, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #030712, hsla(0, 0%, 100%, 0)),
+        linear-gradient(0deg, #030712 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-dark.svg);
 }
 
 .grid-pattern--white {
