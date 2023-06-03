@@ -12,11 +12,13 @@
 		"@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
 		"@types/aos": "^3.0.4",
 		"@types/node": "^18",
+		"gsap": "^3.11.3",
 		"nuxt": "^3.5.0",
-		"nuxt-storage": "^1.2.2",
-		"gsap": "^3.11.3"
+		"nuxt-storage": "^1.2.2"
 	},
 	"dependencies": {
+		"@nuxtjs/sanity": "^1.7.2",
+		"@sanity/client": "^6.1.2",
 		"@vercel/analytics": "^1.0.1",
 		"aos": "^3.0.0-beta.6",
 		"sass": "^1.62.1"

@@ -7,13 +7,23 @@ body {
     @apply font-sans duration-[0.01s] ease-in-out transition-colors;
 }
 
+body::after {
+    content: "";
+    opacity: 0.13;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url(/img/svg/mesh.svg);
+    @apply bg-cover bg-center w-full h-full;
+}
+
 a,
 button {
     @apply duration-100 ease-in-out transition-colors;
 }
 
 .v-box {
-    @apply h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-gray-100 dark:bg-gray-900 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
+    @apply h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-white dark:bg-gray-900 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
 }
 
 .v-button {
@@ -36,9 +46,9 @@ button {
     background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
     background-size: auto, auto, auto, auto, 2rem;
     position: absolute;
-    top: 3rem;
+    top: 0rem;
     width: 100%;
-    max-width: 100rem;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
 }

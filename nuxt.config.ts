@@ -78,7 +78,16 @@ export default defineNuxtConfig({
 		}
 	},
 
-	modules: ["@nuxthq/ui", "@nuxtjs/color-mode"],
+	modules: ["@nuxthq/ui", "@nuxtjs/color-mode", "@nuxtjs/sanity"],
+	runtimeConfig: {
+		sanity: {
+			token: process.env.NUXT_SANITY_TOKEN
+		}
+	},
+	sanity: {
+		projectId: "ims5v334",
+		dataset: "production"
+	},
 	plugins: [
 		{ src: "~/plugins/vercel.ts", mode: "client" },
 		{ src: "@/plugins/aos", ssr: false, mode: "client" }
