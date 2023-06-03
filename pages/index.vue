@@ -79,11 +79,13 @@
             >
               <div class="flex flex-wrap flex-col -m-3">
                 <div class="w-auto p-3">
-                  <img
-                    :src="item.imageUrl.url"
-                    alt=""
-                    class="w-full h-[200px] object-cover rounded-xl"
-                  />
+                  <NuxtLink :to="'/articles/' + item.slug.current">
+                    <img
+                      :src="item.imageUrl.url"
+                      alt=""
+                      class="w-full h-[200px] object-cover rounded-xl"
+                    />
+                  </NuxtLink>
                 </div>
                 <div class="flex-1 p-3">
                   <div class="flex flex-col justify-between h-full">
@@ -94,12 +96,15 @@
                         {{ item.categorie.title }} •
                         <span class="dark:text-gray-500">4 min read</span>
                       </p>
-                      <a class="group inline-block mb-4" href="#">
+                      <NuxtLink
+                        :to="'/articles/' + item.slug.current"
+                        class="group inline-block mb-4"
+                      >
                         <h3
                           class="font-heading text-xl text-gray-900 hover:text-gray-700 dark:text-gray-300 group-hover:underline font-bold"
                         >
                           {{ item.title }}
-                        </h3></a
+                        </h3></NuxtLink
                       >
                     </div>
                     <div class="flex-initial">
@@ -126,7 +131,11 @@
 </template>
 
 <script setup>
-const query = groq`*[_type == "article"]{_id,title,"imageUrl":image.asset->,categorie->}`;
+const query = groq`*[_type == "article"]{_id,title,slug,"imageUrl":image.asset->,categorie->,content}`;
 
-const { data: data_articles, refresh: refresh_articles } = useSanityQuery(query);
+const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
+  useSanityQuery(query),
+]);
+
+console.log(data_articles.value);
 </script>
