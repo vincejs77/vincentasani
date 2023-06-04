@@ -17,6 +17,8 @@
             class="w-full h-[250px] sm:h-[400px] object-cover rounded-xl"
           />
         </div>
+
+        <div>{{ data_articles[0].content }}</div>
       </UContainer>
     </div>
   </div>
