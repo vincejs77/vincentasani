@@ -16,7 +16,10 @@
             </div>
           </div>
           <div class="flex justify-center items-center space-x-4 font-medium">
-            <div class="flex justify-center items-center space-x-3">
+            <a
+              href="https://github.com/vincejs77"
+              class="flex justify-center items-center space-x-3"
+            >
               <span>
                 <svg
                   viewBox="0 0 24 24"
@@ -29,8 +32,11 @@
                 </svg>
               </span>
               <span class="text-gray-500 dark:text-gray-400">Github</span>
-            </div>
-            <div class="flex justify-center items-center space-x-3">
+            </a>
+            <a
+              href="https://twitter.com/vincejs77"
+              class="flex justify-center items-center space-x-3"
+            >
               <span
                 ><svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +48,14 @@
                   ></path></svg
               ></span>
               <span class="text-gray-500 dark:text-gray-400">Twitter</span>
-            </div>
+            </a>
             <div></div>
           </div>
         </div>
       </div>
 
       <div class="text-center mt-4">
-        <span class="text-gray-400 text-sm">
+        <span class="text-gray-400 text-xs">
           &copy; 2023 Vincent Asani. Made with ❤️ and ☕
         </span>
       </div>

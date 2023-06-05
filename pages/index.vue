@@ -136,7 +136,9 @@
                         class="mb-3 text-xs text-gray-500 dark:text-gray-300 font-semibold"
                       >
                         {{ item.categorie.title }} •
-                        <span class="dark:text-gray-500">4 min read</span>
+                        <span class="dark:text-gray-500">
+                          {{ readingTime(content) }} min read</span
+                        >
                       </p>
                       <NuxtLink
                         :to="'/articles/' + item.slug.current"
@@ -150,7 +152,9 @@
                       >
                     </div>
                     <div class="flex-initial">
-                      <p class="text-xs text-gray-500 font-bold">Jun 3, 2023</p>
+                      <p class="text-xs text-gray-500 font-bold">
+                        {{ convertDate__index(item._createdAt, "dmy", "en") }}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -173,8 +177,21 @@
 </template>
 
 <script setup>
-const query = groq`*[_type == "article"]{_id,title,slug,"imageUrl":image.asset->,categorie->,content}`;
+import { convertDate__index } from "~/src/js/convertdate";
+
+import { toHTML } from "@portabletext/to-html";
+
+const query = groq`*[_type == "article"]{_id,title,_createdAt,_updatedAt,slug,"imageUrl":image.asset->,categorie->,content}`;
 const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
 ]);
+
+function readingTime(text) {
+  // https://thereadtime.com/
+  const wpm = 183; // mots par minute
+  const words = text.trim().split(/\s+/).length;
+  return Math.ceil(words / wpm);
+}
+
+const content = toHTML(data_articles.value[0].content, { components: {} });
 </script>

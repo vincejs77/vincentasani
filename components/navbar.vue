@@ -24,7 +24,7 @@
 
             <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
 
-            <h2 class="hidden text-md sm:text-lg sm:text-xl font-extrabold">
+            <h2 class="hidden text-md text-md sm:text-xl font-extrabold">
               Vince<span class="text-gray-400 no-underline">.</span>
             </h2>
           </NuxtLink>
