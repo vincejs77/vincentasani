@@ -4,15 +4,16 @@
 
 html,
 body {
-    @apply font-sans duration-[0.01s] ease-in-out transition-colors;
+    @apply font-sans duration-[0.01s] ease-in-out transition-colors relative z-20;
 }
 
 body::after {
     content: "";
-    opacity: 0.11;
+    opacity: 0.15;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 0;
     background-image: url(/img/svg/mesh.svg);
     @apply bg-cover bg-center w-full h-full;
 }

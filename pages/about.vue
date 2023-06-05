@@ -5,7 +5,7 @@
         <h1 class="text-6xl font-bold">About me</h1>
       </UContainer>
     </div>
-    <section class="v-wrapper dark:text-gray-300 text-lg">
+    <section class="v-wrapper dark:text-gray-300 text-md sm:text-lg">
       <UContainer class="pt-8 pb-8 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         <div
           data-aos="fade-up"
@@ -38,7 +38,7 @@
           </div>
 
           <div>
-            <p class="text-md text-gray-600 dark:text-gray-400 mt-0 mb-4">
+            <p class="text-md sm:text-lg text-gray-600 dark:text-gray-400 mt-0 mb-4">
               <span class="font-medium">Multifaceted</span> and also JavaScript
               enthusiast. Very interested in Nuxt, Vue, Node with TypeScript.
             </p>

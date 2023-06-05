@@ -1,3 +1,27 @@
 .router-link-active.router-link-exact-active > span {
     @apply underline text-gray-800 font-bold dark:text-gray-50;
 }
+.v-content {
+    @apply mt-12 text-left text-gray-700 dark:text-gray-300;
+    h1 {
+        @apply font-black text-gray-900 dark:text-gray-200;
+    }
+    h2 {
+        @apply text-2xl sm:text-3xl font-extrabold my-4 text-gray-900 dark:text-gray-200;
+    }
+}
+
+.circle-text {
+    svg {
+        fill: currentColor;
+        height: auto;
+        max-width: 66vmin;
+        transform-origin: center;
+        width: 100%;
+        letter-spacing: 2.2px;
+        @apply font-black dark:text-gray-400 text-gray-500;
+    }
+    svg textPath {
+        font-size: 12px !important;
+    }
+}

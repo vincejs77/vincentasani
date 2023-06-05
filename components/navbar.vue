@@ -24,23 +24,23 @@
 
             <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
 
-            <h2 class="hidden text-lg sm:text-xl font-extrabold">
+            <h2 class="hidden text-md sm:text-lg sm:text-xl font-extrabold">
               Vince<span class="text-gray-400 no-underline">.</span>
             </h2>
           </NuxtLink>
         </div>
         <div
-          class="flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300 font-medium"
+          class="font-medium flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300"
         >
           <NuxtLink
             to="/about"
-            class="hover:text-gray-900 text-gray-600 dark:hover:text-gray-50 dark:text-gray-400"
+            class="hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
             <span>About</span>
           </NuxtLink>
           <NuxtLink
             to="/articles"
-            class="hover:text-gray-900 text-gray-500 dark:hover:text-gray-50 dark:text-gray-400"
+            class="hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
             <span>Articles</span>
           </NuxtLink>

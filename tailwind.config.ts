@@ -11,6 +11,9 @@ module.exports = {
 			colors: {
 				transparent: "transparent",
 				current: "currentColor"
+			},
+			animation: {
+				"spin-slow": "spin 8s linear infinite"
 			}
 		}
 	},

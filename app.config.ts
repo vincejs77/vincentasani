@@ -1,7 +1,7 @@
 export default defineAppConfig({
 	ui: {
 		container: {
-			constrained: "max-w-5xl"
+			constrained: "max-w-4xl"
 		},
 		theme: {
 			extend: {

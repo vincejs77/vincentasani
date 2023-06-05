@@ -78,7 +78,17 @@ export default defineNuxtConfig({
 		}
 	},
 
-	modules: ["@nuxthq/ui", "@nuxtjs/color-mode", "@nuxtjs/sanity"],
+	modules: [
+		"@nuxthq/ui",
+		"@nuxtjs/color-mode",
+		"@nuxtjs/sanity",
+		[
+			"@pinia/nuxt",
+			{
+				autoImports: ["defineStore", "acceptHMRUpdate"]
+			}
+		]
+	],
 	runtimeConfig: {
 		sanity: {
 			token: process.env.NUXT_SANITY_TOKEN

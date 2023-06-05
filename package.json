@@ -18,9 +18,12 @@
 	},
 	"dependencies": {
 		"@nuxtjs/sanity": "^1.7.2",
+		"@portabletext/to-html": "^2.0.0",
 		"@sanity/client": "^6.1.2",
 		"@vercel/analytics": "^1.0.1",
 		"aos": "^3.0.0-beta.6",
-		"sass": "^1.62.1"
+		"sass": "^1.62.1",
+		"pinia": "^2.0.28",
+		"@pinia/nuxt": "^0.4.6"
 	}
 }
