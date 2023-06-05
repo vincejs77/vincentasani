@@ -5,7 +5,7 @@
         <div class="max-w-xl mx-auto">
           <div class="mb-4">
             <span
-              class="font-semibold text-md sm:text-lg text-gray-500 dark:text-gray-400"
+              class="font-semibold text-md text-gray-500 dark:text-gray-400"
             >
               {{ data_articles[0].categorie.title }}
             </span>

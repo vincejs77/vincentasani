@@ -87,7 +87,7 @@
       <div class="dark:hidden block grid-pattern grid-pattern--white hero"></div>
     </section>
 
-    <section class="relative v-wrapper dark:text-gray-300 text-md sm:text-lg">
+    <section class="relative v-wrapper dark:text-gray-300 text-md">
       <UContainer
         class="relative z-20 pt-32 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
@@ -103,14 +103,14 @@
           >
         </h1>
         <div class="-mt-4 max-w-sm" data-aos="fade-up" data-aos-duration="5000">
-          <p class="text-md sm:text-lg text-gray-700 dark:text-gray-400">
+          <p class="text-md text-gray-700 dark:text-gray-400">
             Dive into articles on AI, VR/AR, and cutting-edge web development concepts!
           </p>
         </div>
       </UContainer>
     </section>
 
-    <section class="relative v-wrapper dark:text-gray-300 text-md sm:text-lg">
+    <section class="relative v-wrapper dark:text-gray-300 text-md">
       <UContainer
         class="relative z-20 pt-0 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
@@ -165,7 +165,7 @@
         <div class="flex flex-wrap md:justify-center -m-2">
           <div class="w-full md:w-auto p-2">
             <a
-              class="block w-full px-12 py-3.5 text-md sm:text-lg text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
+              class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
               href="#"
               >Read more articles</a
             >
