@@ -5,7 +5,7 @@
     >
       <UContainer class="py-4 flex justify-between items-center">
         <div>
-          <NuxtLink to="/" class="flex justify-start items-center space-x-3">
+          <NuxtLink to="/" class="relative flex justify-start items-center space-x-3">
             <!-- 
 
            <svg
@@ -27,6 +27,16 @@
             <h2 class="hidden text-md text-md sm:text-xl font-extrabold">
               Vince<span class="text-gray-400 no-underline">.</span>
             </h2>
+            <span class="absolute left-6 sm:left-6">
+              <ClientOnly>
+                <div v-show="useGlobalStore().$state.isLoadingPage">
+                  <Vue3Lottie
+                    animationLink="/img/lotties/loader.json"
+                    class="w-16 h-16 sm:w-16 sm:h-16"
+                  />
+                </div>
+              </ClientOnly>
+            </span>
           </NuxtLink>
         </div>
         <div
@@ -114,5 +124,6 @@
 </template>
 
 <script setup>
+import { useGlobalStore } from "~/store/global";
 const { $toggleTheme } = useNuxtApp();
 </script>

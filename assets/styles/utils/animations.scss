@@ -56,3 +56,42 @@
         -o-transform: scaleX(1);
     }
 }
+
+.v-underline-animation {
+    width: calc(100%);
+    background-image: linear-gradient(transparent calc(100% - 2px), #7ab1e8cf 10px);
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    transition: background-size 1s;
+    -webkit-transition: background-size 1s;
+    -moz-transition: background-size 1s;
+    -ms-transition: background-size 1s;
+    -o-transition: background-size 1s;
+}
+
+.v-card:hover .v-underline-animation,
+.v-underline-animation:hover {
+    background-size: 100% 100%;
+}
+
+.nuxt-loading-indicator {
+    background: #ffb7ae;
+    @apply bg-gradient-to-r from-blue-400 to-indigo-400;
+    -webkit-animation: 2s linear infinite rainbow, 0.5s ease-out enter;
+    animation: 2s linear infinite rainbow, 0.5s ease-out enter;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    -webkit-transform-origin: left;
+    transform-origin: left;
+    background-size: 500%;
+    z-index: 999999;
+    position: fixed;
+    display: block;
+    width: 100%;
+    opacity: 1;
+    left: 0;
+    top: 0;
+    -moz-transition: opacity 0.2s ease-in-out;
+    -ms-transition: opacity 0.2s ease-in-out;
+    -o-transition: opacity 0.2s ease-in-out;
+}

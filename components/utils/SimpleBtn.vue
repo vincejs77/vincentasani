@@ -4,7 +4,7 @@
     :to="link"
   >
     <p
-      class="font-semibold mb-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+      class="text-base font-semibold mb-0 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
     >
       {{ text }}
     </p>

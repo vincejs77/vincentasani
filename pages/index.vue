@@ -2,11 +2,11 @@
   <div class="v-index">
     <section class="v-wrapper relative">
       <UContainer class="py-32 relative z-10">
-        <p class="mb-8 uppercase font-semibold">👋 Hello</p>
+        <p class="mb-8 text-sm uppercase font-semibold">👋 Hello</p>
         <h1
           data-aos="fade-up"
           data-aos-duration="5000"
-          class="text-gray-950 md:-mt-2 leading-[1.4] sm:leading-[1.2] text-4xl sm:text-6xl font-black dark:text-gray-200"
+          class="text-gray-950 md:-mt-2 leading-[1.4] sm:leading-[1.2] text-3xl sm:text-6xl font-black dark:text-gray-200"
         >
           I'm
           <span class="text-gray-800 dark:text-gray-400">Vincent Asani</span>
@@ -58,7 +58,7 @@
                   />
                 </defs>
                 <text font-size="17">
-                  <textPath xlink:href="#circle">SCROLL DOWN TO SEE MORE</textPath>
+                  <textPath xlink:href="#circle">• SCROLL DOWN • TO SEE • MORE</textPath>
                 </text>
               </svg>
             </div>
@@ -112,16 +112,27 @@
 
     <section class="relative v-wrapper dark:text-gray-300 text-md">
       <UContainer
+        data-aos="fade-up"
+        data-aos-duration="5000"
         class="relative z-20 pt-0 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
         <div class="flex flex-wrap -m-4 mb-12">
-          <div class="w-full md:w-1/2 p-4" :key="item" v-for="item in data_articles">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            class="group v-card w-full md:w-1/2 p-4"
+            :key="item"
+            v-for="item in data_articles"
+          >
             <div
-              class="p-8 h-full border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900 rounded-xl"
+              class="p-4 sm:p-8 h-full border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900 rounded-xl"
             >
               <div class="flex flex-wrap flex-col -m-3">
                 <div class="w-auto p-3">
-                  <NuxtLink :to="'/articles/' + item.slug.current">
+                  <NuxtLink
+                    class="h-[200px] w-full bg-gray-900 overflow-hidden"
+                    :to="'/articles/' + item.slug.current"
+                  >
                     <img
                       :src="item.imageUrl.url"
                       alt=""
@@ -142,12 +153,14 @@
                       </p>
                       <NuxtLink
                         :to="'/articles/' + item.slug.current"
-                        class="group inline-block mb-4"
+                        class="--no-underline group inline-block mb-4"
                       >
                         <h3
-                          class="font-heading text-xl text-gray-900 hover:text-gray-700 dark:text-gray-300 group-hover:underline font-bold"
+                          class="font-heading text-xl text-gray-900 hover:text-gray-700 dark:text-gray-300 font-bold"
                         >
-                          {{ item.title }}
+                          <span class="v-underline-animation">
+                            {{ item.title }}
+                          </span>
                         </h3></NuxtLink
                       >
                     </div>
@@ -164,10 +177,10 @@
         </div>
         <div class="flex flex-wrap md:justify-center -m-2">
           <div class="w-full md:w-auto p-2">
-            <a
+            <NuxtLink
               class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
-              href="#"
-              >Read more articles</a
+              to="articles"
+              >Read more articles</NuxtLink
             >
           </div>
         </div>

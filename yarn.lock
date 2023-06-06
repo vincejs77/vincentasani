@@ -3421,6 +3421,11 @@ log-symbols@^4.1.0:
     chalk "^4.1.0"
     is-unicode-supported "^0.1.0"
 
+lottie-web@5.11.0:
+  version "5.11.0"
+  resolved "https://registry.yarnpkg.com/lottie-web/-/lottie-web-5.11.0.tgz#04bb9fd6cdfbb10e586985dd666de6c727619d95"
+  integrity sha512-9vSt0AtdOH98GKDXwD5LPfFg9Pcmxt5+1BllAbudKM5iqPxpJnJUfuGaP45OyudDrESCOBgsjnntVUTygBNlzw==
+
 lru-cache@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npmjs.org/lru-cache/-/lru-cache-5.1.1.tgz"
@@ -5515,6 +5520,14 @@ vue-router@^4.2.0:
   integrity sha512-nW28EeifEp8Abc5AfmAShy5ZKGsGzjcnZ3L1yc2DYUo+MqbBClrRP9yda3dIekM4I50/KnEwo1wkBLf7kHH5Cw==
   dependencies:
     "@vue/devtools-api" "^6.5.0"
+
+vue3-lottie@^2.7.0:
+  version "2.7.0"
+  resolved "https://registry.yarnpkg.com/vue3-lottie/-/vue3-lottie-2.7.0.tgz#b9f591bb1990eca762a6195f5d49259dac57f7e2"
+  integrity sha512-6vblrGFQxRP1bqd5Lfg+/g/kDH7OL5dQMxU9xYORSsTC7NfHXOjebhYrIYOlRodtA5/zfWMkG+3+sIR7wjaIXw==
+  dependencies:
+    lodash-es "^4.17.21"
+    lottie-web "5.11.0"
 
 vue@^3.3.2:
   version "3.3.4"

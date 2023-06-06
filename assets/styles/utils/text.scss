@@ -22,6 +22,11 @@
         @apply font-black dark:text-gray-400 text-gray-500;
     }
     svg textPath {
-        font-size: 12px !important;
+        font-size: 10px !important;
     }
+}
+
+.--no-underline,
+.--no-underline:hover {
+    text-decoration: none !important;
 }
