@@ -146,7 +146,11 @@
                       <p
                         class="mb-3 text-xs text-gray-500 dark:text-gray-300 font-semibold"
                       >
-                        {{ item.categorie.title }} •
+                        <span
+                          class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+                          >{{ item.categorie.title }}</span
+                        >
+                        <span class="mx-2">•</span>
                         <span class="dark:text-gray-500">
                           {{ readingTime(content) }} min read</span
                         >
@@ -179,7 +183,7 @@
           <div class="w-full md:w-auto p-2">
             <NuxtLink
               class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
-              to="articles"
+              to="/articles"
               >Read more articles</NuxtLink
             >
           </div>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Trash Document</title>
+	</head>
+	<body>
+		<div class="-mt-2 flex justify-between w-full">
+			<div class="w-full flex justify-start flex-nowrap overflow-hidden">
+				<UtilsInfiniteVerticalScroll>
+					<div :key="tech" v-for="tech in myTechStack" class="cb-tagreel-item">
+						<div class="rounded-md mr-3 mt-3 text-gray-700 dark:text-gray-300 bg-gray-200 dark:bg-gray-800 bg-opacity-60 dark:bg-opacity-20 pl-0 pr-0 py-1 flex justify-center items-center space-x-2">
+							<div class="w-8">
+								<img :src="tech.img" :alt="tech.name" class="w-7 rounded-md" />
+							</div>
+						</div>
+					</div>
+				</UtilsInfiniteVerticalScroll>
+			</div>
+			<div class="rounded-md mr-0 mt-3 v-button pl-3 pr-4 py-1">
+				<NuxtLink to="/about#tech-stack" class="flex justify-start items-center space-x-2">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+						<path stroke-linecap="round" stroke-linejoin="round" d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+					</svg>
+
+					<span class="text-sm font-medium whitespace-nowrap"> View all</span>
+				</NuxtLink>
+			</div>
+		</div>
+	</body>
+</html>

@@ -24,7 +24,7 @@ button {
 }
 
 .v-box {
-    @apply h-96 sm:h-80 border-2 border-gray-200 border-opacity-90 dark:border-white dark:border-opacity-[0.02] bg-white dark:bg-gray-900 dark:bg-opacity-20 p-6 md:p-8 rounded-md;
+    @apply shadow-md dark:shadow-gray-950 shadow-gray-100 h-96 sm:h-80 border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900  p-6 md:p-8 rounded-md;
 }
 
 .v-button {

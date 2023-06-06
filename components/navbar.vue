@@ -44,13 +44,13 @@
         >
           <NuxtLink
             to="/about"
-            class="hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
+            class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
             <span>About</span>
           </NuxtLink>
           <NuxtLink
             to="/articles"
-            class="hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
+            class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
             <span>Articles</span>
           </NuxtLink>
