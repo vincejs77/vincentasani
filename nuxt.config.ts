@@ -82,6 +82,7 @@ export default defineNuxtConfig({
 		"@nuxthq/ui",
 		"@nuxtjs/color-mode",
 		"@nuxtjs/sanity",
+		"@nuxt/content",
 		[
 			"@pinia/nuxt",
 			{
@@ -89,6 +90,16 @@ export default defineNuxtConfig({
 			}
 		]
 	],
+	content: {
+		highlight: {
+			theme: {
+				default: "github-light",
+				dark: "github-dark",
+				sepia: "monokai"
+			},
+			preload: ["js", "css", "html"]
+		}
+	},
 	runtimeConfig: {
 		sanity: {
 			token: process.env.NUXT_SANITY_TOKEN

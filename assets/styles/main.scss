@@ -24,7 +24,7 @@ button {
 }
 
 .v-box {
-    @apply shadow-md dark:shadow-gray-950 shadow-gray-100 h-96 sm:h-80 border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900  p-6 md:p-8 rounded-md;
+    @apply shadow-md dark:shadow-gray-900 shadow-gray-100 border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900   rounded-md;
 }
 
 .v-button {
@@ -61,6 +61,13 @@ button {
     right: 0;
     bottom: 0;
     z-index: 1;
+}
+
+.scrolling-wrapper {
+    -webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 @import url(~/assets/styles/utils/transitions.scss);

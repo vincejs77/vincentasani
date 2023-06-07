@@ -19,7 +19,7 @@
             class="mt-8 text-gray-500 dark:text-gray-400"
           >
             <span class="mr-10 relative text-gray-700 dark:text-gray-300 font-semibold"
-              >Software ingineer
+              >Software engineer
               <div
                 class="w-4 h-1 bg-gray-500 absolute -right-6 top-1/2 -translate-y-1/2"
               ></div>

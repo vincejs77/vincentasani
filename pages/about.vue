@@ -14,10 +14,21 @@
             My greatest satisfaction is to bring a
             <span class="gradient-text">positive idea </span> to life.
           </h1>
+
+          <div class="text-sm mt-8 v-box p-4 md:p-6 scrolling-wrapper overflow-x-auto">
+            <ContentRenderer :value="data_codes">
+              <!-- <h1>{{ data_codes.title }}</h1> -->
+              <ContentRendererMarkdown :value="data_codes" />
+            </ContentRenderer>
+          </div>
+
+          <div class="mt-12 relative w-full">
+            <UtilsImageCarousel />
+          </div>
         </div>
       </UContainer>
     </div>
-    <section class="v-wrapper dark:text-gray-300 text-md">
+    <section class="hidden v-wrapper dark:text-gray-300 text-md">
       <UContainer class="pt-0 pb-8 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8">
         <div
           data-aos="fade-up"
@@ -53,4 +64,8 @@ const myTechStack = [
     img: "/img/tech_stack/js.svg",
   },
 ];
+
+const { data: data_codes } = await useAsyncData("page-data", () =>
+  queryContent("code_blocks", "about_intro").findOne()
+);
 </script>
