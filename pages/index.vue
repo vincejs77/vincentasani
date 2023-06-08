@@ -2,13 +2,13 @@
   <div class="v-index">
     <section class="v-wrapper relative">
       <UContainer class="py-32 relative z-10">
-        <p class="mb-8 text-sm uppercase font-semibold">👋 Hello</p>
+        <p class="mb-8 text-sm uppercase font-semibold">👋 BONJOUR</p>
         <h1
           data-aos="fade-up"
           data-aos-duration="5000"
           class="text-gray-950 md:-mt-2 leading-[1.4] sm:leading-[1.2] text-3xl sm:text-6xl font-black dark:text-gray-200"
         >
-          I'm
+          C'est
           <span class="text-gray-800 dark:text-gray-400">Vincent Asani</span>
         </h1>
 
@@ -19,24 +19,24 @@
             class="mt-8 text-gray-500 dark:text-gray-400"
           >
             <span class="mr-10 relative text-gray-700 dark:text-gray-300 font-semibold"
-              >Software engineer
+              >Ingénieur logiciel
               <div
                 class="w-4 h-1 bg-gray-500 absolute -right-6 top-1/2 -translate-y-1/2"
               ></div>
             </span>
-            based in Goma, DRC building creative websites and custom web software. Also
-            interested in generative AI and AR/VR development on web.
+            basé à Goma, en RDC, pationné du développement web. Également intéressé par
+            les API d'IA génératives et le développement AR/VR sur le web.
           </div>
 
           <div class="flex justify-between items-center space-x-2 mt-8">
             <div class="flex justify-start items-center space-x-2">
               <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
               <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
-                >Available to work</span
+                >Disponible pour travailler</span
               >
             </div>
             <div>
-              <UtilsSimpleBtn :link="'/about'" :text="'About me'" />
+              <UtilsSimpleBtn :link="'/about'" :text="'À propos de moi'" />
             </div>
           </div>
         </div>
@@ -96,15 +96,16 @@
           data-aos-duration="5000"
           class="md:mt-2 leading-[1.4] sm:leading-[1.3] text-2xl sm:text-3xl font-black dark:text-gray-200"
         >
-          Awaken
+          Éveillez
           <span
             class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
-            >your curiosity!</span
+            >votre curiosité !</span
           >
         </h1>
         <div class="-mt-4 max-w-sm" data-aos="fade-up" data-aos-duration="5000">
           <p class="text-md text-gray-700 dark:text-gray-400">
-            Dive into articles on AI, VR/AR, and cutting-edge web development concepts!
+            Plongez dans des articles sur l'IA, la VR/AR et les concepts de développement
+            Web de pointe !
           </p>
         </div>
       </UContainer>

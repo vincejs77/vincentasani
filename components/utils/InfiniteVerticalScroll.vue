@@ -17,10 +17,8 @@ import gsap from "gsap";
 defineProps({
   length: Number,
 });
-const runInfiniteScroll = () => {
-  const rows = document.querySelectorAll(".cb-tagreel-row");
-
-  rows.forEach(function (e, i) {
+const runInfiniteScroll = async (_rows) => {
+  await _rows.forEach(function (e, i) {
     let row_width = e.getBoundingClientRect().width;
     let row_item_width = e.children[0].getBoundingClientRect().width;
     let initial_offset = ((2 * row_item_width) / row_width) * 100 * -1;
@@ -47,6 +45,10 @@ const runInfiniteScroll = () => {
 
 onBeforeMount(() => {
   runInfiniteScroll();
+  setTimeout(() => {
+    const rows = document.querySelectorAll(".cb-tagreel-row");
+    runInfiniteScroll(rows);
+  }, 1000);
 });
 </script>
 <style>

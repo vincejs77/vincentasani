@@ -3,12 +3,28 @@
     <div class="parent">
       <div class="child scrolling-wrapper overflow-x-auto sm:w-[1220px] w-full">
         <div
-          class="flex h-[300px] scrolling-wrapper overflow-y-hidden justify-sart space-x-4 w-full overflow-x-scroll cursor-grab"
+          class="flex h-[300px] scrolling-wrapper overflow-y-hidden justify-sart space-x-4 sm:space-x-6 w-full overflow-x-scroll cursor-grab"
         >
-          <img src="/img/me/2.jpg" class="rounded-xl min-w-[280px] object-cover" alt="" />
-          <img src="/img/me/3.jpg" class="rounded-xl min-w-[280px] object-cover" alt="" />
-          <img src="/img/me/4.jpg" class="rounded-xl min-w-[280px] object-cover" alt="" />
-          <img src="/img/me/1.jpg" class="rounded-xl min-w-[280px] object-cover" alt="" />
+          <img
+            src="/img/me/2.jpg"
+            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            alt=""
+          />
+          <img
+            src="/img/me/3.jpg"
+            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            alt=""
+          />
+          <img
+            src="/img/me/4.jpg"
+            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            alt=""
+          />
+          <img
+            src="/img/me/1.jpg"
+            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            alt=""
+          />
         </div>
       </div>
     </div>
