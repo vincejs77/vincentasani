@@ -14,15 +14,13 @@
             My greatest satisfaction is to bring a
             <span class="gradient-text">positive idea </span> to life.
           </h1>
-
+          <!-- 
           <div class="text-sm mt-8 v-box p-4 md:p-4 scrolling-wrapper overflow-x-auto">
-            <ClientOnly>
-              <ContentRenderer :value="data_codes">
-                <!-- <h1>{{ data_codes.title }}</h1> -->
-                <ContentRendererMarkdown :value="data_codes" />
-              </ContentRenderer>
-            </ClientOnly>
-          </div>
+            <ContentRenderer :value="data_codes">
+              <h1>{{ data_codes.title }}</h1>
+              <ContentRendererMarkdown :value="data_codes" />
+            </ContentRenderer>
+          </div> -->
 
           <div class="mt-12 relative w-full">
             <UtilsImageCarousel />
@@ -158,7 +156,7 @@ const myTechStack = [
   },
 ];
 
-const { data: data_codes } = await useAsyncData("page-data", () =>
-  queryContent("code_blocks", "about_intro").findOne()
-);
+// const { data: data_codes } = await useAsyncData("page-data", () =>
+//   queryContent("code_blocks", "about_intro").findOne()
+// );
 </script>

@@ -7,9 +7,9 @@
             class="overflow-hidden border-b-2 border-b-gray-100 dark:border-b-gray-900 mb-12"
           >
             <span class="dark:text-gray-300"
-              >Let's connect.
+              >Connectons-nous.
               <span class="text-gray-500 dark:text-gray-400 font-medium"
-                >Click here ...</span
+                >Cliquez ici ...</span
               >
             </span>
             <div class="text-[24px] sm:text-4xl font-bold mt-4 mb-12">

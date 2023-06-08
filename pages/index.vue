@@ -32,8 +32,8 @@
             <div class="flex justify-start items-center space-x-2">
               <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
               <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
-                >Disponible pour travailler</span
-              >
+                >Disponible <span class="hidden sm:block">pour travailler</span>
+              </span>
             </div>
             <div>
               <UtilsSimpleBtn :link="'/about'" :text="'À propos de moi'" />
@@ -153,7 +153,7 @@
                         >
                         <span class="mx-2">•</span>
                         <span class="dark:text-gray-500">
-                          {{ readingTime(content) }} min read</span
+                          {{ readingTime(content) }} min de lecture</span
                         >
                       </p>
                       <NuxtLink
@@ -171,7 +171,7 @@
                     </div>
                     <div class="flex-initial">
                       <p class="text-xs text-gray-500 font-bold">
-                        {{ convertDate__index(item._createdAt, "dmy", "en") }}
+                        {{ convertDate__index(item._createdAt, "dmy", "fr") }}
                       </p>
                     </div>
                   </div>
@@ -185,7 +185,7 @@
             <NuxtLink
               class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
               to="/articles"
-              >Read more articles</NuxtLink
+              >Lire plus d'articles</NuxtLink
             >
           </div>
         </div>

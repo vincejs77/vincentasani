@@ -46,7 +46,7 @@
             to="/about"
             class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
-            <span>About</span>
+            <span>À propos</span>
           </NuxtLink>
           <NuxtLink
             to="/articles"
