@@ -24,8 +24,6 @@
 		"@sanity/client": "^6.1.2",
 		"@vercel/analytics": "^1.0.1",
 		"aos": "^3.0.0-beta.6",
-		"cheerio": "^1.0.0-rc.12",
-		"highlight.js": "^11.8.0",
 		"pinia": "^2.0.28",
 		"sass": "^1.62.1",
 		"vue3-lottie": "^2.7.0"
