@@ -6,13 +6,13 @@
           <div
             class="mb-4 text-gray-500 dark:text-gray-300 text-sm uppercase font-medium"
           >
-            <span>✌️ About me</span>
+            <span>✌️ À PROPOS DE MOI</span>
           </div>
           <h1
             class="text-gray-800 dark:text-gray-200 leading-[1.5] sm:leading-[1.3] text-3xl sm:text-5xl font-black"
           >
-            My greatest satisfaction is to bring a
-            <span class="gradient-text">positive idea </span> to life.
+            Ma plus grande satisfaction est de donner vie à une
+            <span class="gradient-text">idée positive</span>.
           </h1>
 
           <div class="text-sm mt-8 v-box p-4 md:p-4 scrolling-wrapper overflow-x-auto">
@@ -26,25 +26,25 @@
             <UtilsImageCarousel />
           </div>
 
-          <div class="mt-12 flex justify-between">
+          <div class="mt-12 sm:flex sm:justify-between">
             <div
               class="text-gray-600 dark:text-gray-400 max-w-[585px] space-y-4 text-lg font-medium"
             >
               <p class="text-gray-800 dark:text-gray-300">
-                The incredible ability of technology to improve our daily lives has driven
-                me to become a Software Engineer.
+                L'incroyable capacité de la technologie à améliorer notre quotidien m'a
+                poussé à devenir ingénieur logiciel.
               </p>
               <p class="text-base">
-                My goal is to create exceptional experiences for users and contribute to a
-                more inclusive and accessible digital world. I am passionate about the
-                latest technological advancements and enjoy integrating them innovatively
-                into my projects.
+                Mon objectif est de créer des expériences exceptionnelles pour les
+                utilisateurs et de contribuer à un monde numérique plus inclusif et
+                accessible. Je suis passionné par les dernières avancées technologiques et
+                j'aime les intégrer de manière innovante dans mes projets.
               </p>
             </div>
-            <div class="w-[200px] pl-6">
-              <h3 class="text-md font-bold">Let's connect</h3>
+            <div class="w-[200px] mt-8 sm:mt-0 sm:pl-6">
+              <!-- <h3 class="text-sm font-bold">Connectons-nous</h3> -->
               <div
-                class="mt-4 space-y-4 text-sm font-medium text-gray-600 dark:text-gray-400"
+                class="flex sm:justify-start sm:flex-col space-x-6 sm:space-x-0 mt-2 sm:space-y-4 text-sm font-medium text-gray-600 dark:text-gray-400"
               >
                 <div>
                   <a href="http://" target="_blank" rel="noopener noreferrer">
@@ -66,11 +66,14 @@
             </div>
           </div>
           <div class="max-w-[585px] mt-12">
-            <h2 class="text-xl font-bold">🧰 My tech stack</h2>
+            <h2 class="text-xl font-bold">🧰 Ma pile technologique</h2>
             <p class="text-md text-gray-600 dark:text-gray-400 mt-4 mb-8">
-              <span class="font-medium">Multifaceted</span> and Javascript enthusiast. I
-              specialize in Nuxt, Vue, Node with TypeScript. Also interested in
-              generatives AI APIs and AR/VR development on web.
+              <span class="font-medium text-gray-700 dark:text-gray-200"
+                >Touche-à-tout</span
+              >
+              et pationné de JavaScript. Je me spécialise dans Nuxt, Vue, Node avec
+              TypeScript. Je suis également intéressé par les API d'IA génératives et le
+              développement AR/VR sur le web.
             </p>
             <div class="-mt-2 flex justify-between w-full">
               <div class="w-full flex justify-start flex-nowrap overflow-hidden">
@@ -96,7 +99,7 @@
                   <span
                     class="text-sm font-medium whitespace-nowrap group-hover:text-white"
                   >
-                    My GitHub</span
+                    Mon GitHub</span
                   >
                 </a>
               </div>
@@ -104,7 +107,7 @@
           </div>
 
           <div class="max-w-[585px] mt-12">
-            <h2 class="text-xl font-bold">⏰ Currenlty</h2>
+            <h2 class="text-xl font-bold">⏰ Actuellement</h2>
           </div>
         </div>
       </UContainer>

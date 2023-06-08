@@ -31,7 +31,8 @@
           <div class="flex justify-between items-center space-x-2 mt-8">
             <div class="flex justify-start items-center space-x-2">
               <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
-              <span class="text-sm font-medium text-gray-700 dark:text-gray-200"
+              <span
+                class="flex justify-start text-sm font-medium text-gray-700 dark:text-gray-200"
                 >Disponible <span class="hidden sm:block">pour travailler</span>
               </span>
             </div>
