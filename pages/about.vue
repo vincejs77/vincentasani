@@ -16,10 +16,12 @@
           </h1>
 
           <div class="text-sm mt-8 v-box p-4 md:p-4 scrolling-wrapper overflow-x-auto">
-            <ContentRenderer :value="data_codes">
-              <!-- <h1>{{ data_codes.title }}</h1> -->
-              <ContentRendererMarkdown :value="data_codes" />
-            </ContentRenderer>
+            <ClientOnly>
+              <ContentRenderer :value="data_codes">
+                <!-- <h1>{{ data_codes.title }}</h1> -->
+                <ContentRendererMarkdown :value="data_codes" />
+              </ContentRenderer>
+            </ClientOnly>
           </div>
 
           <div class="mt-12 relative w-full">
