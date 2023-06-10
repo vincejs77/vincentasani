@@ -44,7 +44,7 @@
             </div>
             <div class="flex-initial">
               <p class="text-xs text-gray-500 font-bold">
-                {{ convertDate__index(_createdAt, "dmy", "en") }}
+                {{ convertDate__index(date, "dmy", "en") }}
               </p>
             </div>
           </div>
@@ -61,6 +61,7 @@ import { toHTML } from "@portabletext/to-html";
 defineProps({
   title: String,
   _createdAt: String,
+  date: String,
   content: Object,
   slug: {
     type: Object,

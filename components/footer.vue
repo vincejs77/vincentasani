@@ -8,9 +8,7 @@
           >
             <span class="dark:text-gray-300"
               >Let's connect !
-              <span class="text-gray-500 dark:text-gray-400 font-medium"
-                >Click here...</span
-              >
+              <span class="text-gray-500 dark:text-gray-400 font-medium"></span>
             </span>
             <div class="text-[24px] sm:text-4xl font-bold mt-4 mb-12">
               <a

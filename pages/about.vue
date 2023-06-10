@@ -85,6 +85,7 @@
               <span class="font-medium">A-Frame</span> and
               <span class="font-medium">ThreeJS</span>.
             </p>
+
             <div class="-mt-2 flex justify-between w-full">
               <div class="w-full flex justify-start flex-nowrap overflow-hidden">
                 <UtilsInfiniteVerticalScroll>
@@ -115,6 +116,21 @@
                   >
                 </a>
               </div>
+            </div>
+            <div class="mt-8">
+              <p class="text-sm text-gray-600 dark:text-gray-400">
+                This website is made with Nuxt3, GSAP, AOS, Nuxt-content & Sanity, NodeJs.
+                TailwindCSS, OpenGraph and LottieFiles.
+
+                <span class="gradient-text font-medium">
+                  <a
+                    href="https://github.com/vincejs77/vincentasani"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><span class="v-underline-animation">Visit the github repo.</span>
+                  </a>
+                </span>
+              </p>
             </div>
           </div>
 

@@ -135,7 +135,7 @@
 </template>
 
 <script setup>
-const query = groq`*[_type == "article"]{_id,title,_createdAt,_updatedAt,slug,"imageUrl":image.asset->,categorie->,content}`;
+const query = groq`*[_type == "article"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
 const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
 ]);

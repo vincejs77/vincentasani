@@ -1,5 +1,5 @@
 <template>
-  <div class="v-index dark:text-white">
+  <div class="v-index relative z-20 dark:text-white">
     <div class="v-wrapper">
       <UContainer class="py-16 text-center">
         <div class="max-w-xl mx-auto">
@@ -21,6 +21,14 @@
           <h1 class="text-3xl sm:text-4xl font-black leading-[1.2]">
             {{ data_articles[0].title }}
           </h1>
+          <div class="mt-4 text-sm">
+            <p>
+              <span class="dark:text-gray-200 font-medium">Plublished :</span>
+              <span class="ml-1 text-gray-600 dark:text-gray-400">
+                {{ convertDate__index(data_articles[0].date, "dmy", "en") }}
+              </span>
+            </p>
+          </div>
         </div>
         <div class="mt-16">
           <img
@@ -32,18 +40,35 @@
 
         <div class="max-w-xl mx-auto">
           <div v-html="content" class="v-content"></div>
+          <div class="mt-12 text-xs">
+            <p>
+              Updated at :
+              <span class="">
+                {{ convertDate__index(data_articles[0]._updatedAt, "dmy", "en") }}
+              </span>
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap md:justify-center -m-2">
+            <div class="w-full md:w-auto p-2">
+              <NuxtLink
+                class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
+                to="/articles"
+                >Read more articles!</NuxtLink
+              >
+            </div>
+          </div>
         </div>
       </UContainer>
     </div>
   </div>
 </template>
 <script setup>
+import { convertDate__index } from "~/src/js/convertdate";
 import { toHTML } from "@portabletext/to-html";
-const { $fetchArticles } = useNuxtApp();
 
 const route = useRoute();
 
-const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,slug,"imageUrl":image.asset->,categorie->,content}`;
+const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
 
 const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
