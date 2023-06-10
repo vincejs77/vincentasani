@@ -30,7 +30,7 @@ const runInfiniteScroll = async (_rows) => {
       xPercent: `${initial_offset}`,
     });
 
-    let duration = 5 * (i + 1);
+    let duration = 8 * (i + 1);
 
     var tl = gsap.timeline();
 

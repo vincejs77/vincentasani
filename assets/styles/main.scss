@@ -28,7 +28,7 @@ button {
 }
 
 .v-button {
-    @apply hover:text-white dark:hover:text-white hover:bg-gradient-to-r from-blue-500 to-indigo-500 transition-colors dark:transition-colors ease-in-out duration-100 cursor-pointer border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-50 bg-gray-100 dark:bg-opacity-20 dark:bg-gray-700 backdrop-blur-md;
+    @apply hover:text-white dark:hover:text-white hover:bg-gradient-to-r from-blue-500 to-indigo-500 transition-colors dark:transition-colors ease-in-out duration-100 cursor-pointer border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-50 bg-gray-50 dark:bg-opacity-20 dark:bg-gray-700 backdrop-blur-md;
 }
 
 .grid-pattern--dark {

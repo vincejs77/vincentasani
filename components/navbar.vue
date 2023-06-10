@@ -46,13 +46,13 @@
             to="/about"
             class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
-            <span>À propos</span>
+            <span class="v-underline-animation"> About </span>
           </NuxtLink>
           <NuxtLink
             to="/articles"
             class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
           >
-            <span>Articles</span>
+            <span class="v-underline-animation"> Articles </span>
           </NuxtLink>
           <button
             @click="$toggleTheme()"
