@@ -74,10 +74,10 @@ export default defineNuxtConfig({
 					color: "#5bbad5"
 				}
 			],
+			script: [{ src: "https://polyfill.io/v3/polyfill.min.js" }],
 			noscript: [{ children: "Javascript est désactivé" }]
 		}
 	},
-
 	modules: [
 		"@nuxthq/ui",
 		"@nuxtjs/color-mode",
@@ -90,6 +90,7 @@ export default defineNuxtConfig({
 			}
 		]
 	],
+	build: { transpile: ["aos", "vue3-lottie", "gsap", "@nuxthq/ui"] },
 	content: {
 		highlight: {
 			theme: {
