@@ -39,7 +39,7 @@
         <div
           class="absolute left-4 lg:left-auto lg:right-6 -bottom-[50px] lg:top-1/2 lg:-translate-y-1/2 flex justify-center items-center"
         >
-          <div class="relative">
+          <div class="relative w-[110px] sm:w-[120px]">
             <div class="circle-text animate-spin-slow text-sm relative">
               <svg viewBox="0 0 100 100" width="100" height="100">
                 <defs>
