@@ -1,5 +1,15 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+	// typescript: {
+	// 	tsConfig: {
+	// 		compilerOptions: {
+	// 			lib: ["es2020", "esnext"],
+	// 			module: "commonjs",
+	// 			target: "es2020"
+	// 		}
+	// 	}
+	// },
+	// ssr: false,
 	colorMode: {
 		preference: "dark", // default value of $colorMode.preference
 		fallback: "light", // fallback value if not system preference found
