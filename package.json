@@ -30,5 +30,8 @@
 		"pinia": "^2.0.28",
 		"sass": "^1.62.1",
 		"vue3-lottie": "^2.7.0"
-	}
+	},
+	"browserslist": [
+		">0.3%, defaults, supports es6-module, maintained node versions"
+	]
 }
