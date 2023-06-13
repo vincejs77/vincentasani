@@ -12,8 +12,6 @@
             <div class="flex justify-between md:flex-row flex-col md:space-x-10">
               <div class="md:w-1/2">
                 <h2
-                  data-aos="fade-up"
-                  data-aos-duration="5000"
                   class="md:mt-2 leading-[1.4] sm:leading-[1.3] text-3xl sm:text-5xl font-black dark:text-gray-200"
                 >
                   My articles
@@ -32,8 +30,6 @@
     </section>
     <section class="relative v-wrapper dark:text-gray-300 text-md">
       <UContainer
-        data-aos="fade-up"
-        data-aos-duration="5000"
         class="relative z-20 pt-0 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
         <div class="flex flex-wrap -m-4 mb-0">

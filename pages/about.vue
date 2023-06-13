@@ -125,7 +125,7 @@
                 <span class="gradient-text font-medium">
                   <a
                     href="https://github.com/vincejs77/vincentasani"
-                    target="_blank"
+                    zz="_blank"
                     rel="noopener noreferrer"
                     ><span class="v-underline-animation">Visit the github repo.</span>
                   </a>
@@ -227,11 +227,7 @@
     </div>
     <section class="hidden v-wrapper dark:text-gray-300 text-md">
       <UContainer class="pt-0 pb-8 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8">
-        <div
-          data-aos="fade-up"
-          data-aos-duration="4000"
-          class="relative v-box flex flex-col justify-between"
-        ></div>
+        <div class="relative v-box flex flex-col justify-between"></div>
       </UContainer>
     </section>
   </div>

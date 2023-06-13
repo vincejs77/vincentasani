@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="fade-up" data-aos-duration="4000">
+  <div>
     <div class="parent">
       <div class="child scrolling-wrapper overflow-x-auto sm:w-[1220px] w-full">
         <div

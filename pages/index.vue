@@ -4,8 +4,6 @@
       <UContainer class="py-32 relative z-10">
         <p class="mb-8 text-sm uppercase font-semibold">👋 Hello</p>
         <h1
-          data-aos="fade-up"
-          data-aos-duration="5000"
           class="text-gray-950 md:-mt-2 leading-[1.4] sm:leading-[1.2] text-3xl sm:text-5xl font-black dark:text-gray-200"
         >
           It's
@@ -13,11 +11,7 @@
         </h1>
 
         <div class="max-w-[500px]">
-          <div
-            data-aos="fade-up"
-            data-aos-duration="4000"
-            class="mt-8 text-gray-500 dark:text-gray-400"
-          >
+          <div class="mt-8 text-gray-500 dark:text-gray-400">
             <span class="mr-10 relative text-gray-700 dark:text-gray-300 font-semibold"
               >Software Engineer
               <div
@@ -93,8 +87,6 @@
         class="relative z-20 pt-32 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
         <h2
-          data-aos="fade-up"
-          data-aos-duration="5000"
           class="md:mt-2 leading-[1.4] sm:leading-[1.3] text-2xl sm:text-4xl font-black dark:text-gray-200"
         >
           Awaken
@@ -103,7 +95,7 @@
             >your curiosity </span
           >!
         </h2>
-        <div class="-mt-4 max-w-sm" data-aos="fade-up" data-aos-duration="5000">
+        <div class="-mt-4 max-w-sm">
           <p class="text-md text-gray-700 dark:text-gray-400">
             Dive into articles on AI, VR/AR, and cutting-edge web development concepts!
           </p>
@@ -113,8 +105,6 @@
 
     <section class="relative v-wrapper dark:text-gray-300 text-md">
       <UContainer
-        data-aos="fade-up"
-        data-aos-duration="5000"
         class="relative z-20 pt-0 pb-16 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8"
       >
         <div class="flex flex-wrap -m-4 mb-12">
