@@ -15,7 +15,8 @@
 		"@types/node": "^18",
 		"gsap": "^3.11.3",
 		"nuxt": "^3.5.0",
-		"nuxt-storage": "^1.2.2"
+		"nuxt-storage": "^1.2.2",
+		"terser": "^5.18.0"
 	},
 	"dependencies": {
 		"@nuxtjs/sanity": "^1.7.2",
@@ -24,6 +25,7 @@
 		"@sanity/client": "^6.1.2",
 		"@tailwindcss/container-queries": "^0.1.1",
 		"@vercel/analytics": "^1.0.1",
+		"@vitejs/plugin-legacy": "^4.0.4",
 		"aos": "^3.0.0-beta.6",
 		"pinia": "^2.0.28",
 		"sass": "^1.62.1",

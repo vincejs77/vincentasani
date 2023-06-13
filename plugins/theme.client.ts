@@ -3,7 +3,7 @@ let themeStorage = useStorage("v-color-mode", "dark");
 
 export default defineNuxtPlugin({
 	name: "theme",
-	enforce: "default",
+	enforce: "pre",
 	async setup(nuxtApp) {
 		const toggleTheme = async () => {
 			if (themeStorage.value == "dark") {

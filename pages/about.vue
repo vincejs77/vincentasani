@@ -125,7 +125,7 @@
                 <span class="gradient-text font-medium">
                   <a
                     href="https://github.com/vincejs77/vincentasani"
-                    zz="_blank"
+                    target="_blank"
                     rel="noopener noreferrer"
                     ><span class="v-underline-animation">Visit the github repo.</span>
                   </a>
