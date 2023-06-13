@@ -90,7 +90,8 @@ export default defineNuxtConfig({
 			}
 		]
 	],
-	build: { transpile: ["aos", "vue3-lottie", "gsap", "@nuxthq/ui"] },
+
+	// build: { transpile: ["aos", "vue3-lottie", "gsap", "@nuxthq/ui"] },
 	content: {
 		highlight: {
 			theme: {
