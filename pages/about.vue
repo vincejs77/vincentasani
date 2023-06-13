@@ -77,11 +77,11 @@
             <h2 class="text-xl font-bold">🧰 My tech stack</h2>
             <p class="text-md text-gray-600 dark:text-gray-400 mt-8 mb-8">
               <span class="font-medium text-gray-700 dark:text-gray-200">Versatile</span>
-              and JavaScript enthusiast. I specialize in
+              and JavaScript enthusiast specializing in
               <span class="font-medium">Nuxt</span>, <span class="font-medium">Vue</span>,
               <span class="font-medium">Node</span> with
-              <span class="font-medium">TypeScript</span>. I'm also deeply interested in
-              generative AI APIs and web-based VR development with
+              <span class="font-medium">TypeScript</span>. Deeply interested in generative
+              AI APIs and web-based VR development using
               <span class="font-medium">A-Frame</span> and
               <span class="font-medium">ThreeJS</span>.
             </p>
