@@ -102,8 +102,6 @@ const myPortableTextComponents = {
 
   marks: {
     link: ({ children, value }) => {
-      // ⚠️ `value.href` IS NOT "SAFE" BY DEFAULT ⚠️
-      // ⚠️ Make sure you sanitize/validate the href! ⚠️
       const href = value.href || "";
 
       if (uriLooksSafe(href)) {
@@ -111,7 +109,6 @@ const myPortableTextComponents = {
         return html`<a href="${href}" rel="${rel}">${children}</a>`;
       }
 
-      // If the URI appears unsafe, render the children (eg, text) without the link
       return children;
     },
   },
