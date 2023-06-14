@@ -119,8 +119,8 @@
             </div>
             <div class="mt-8">
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                This website is made with Nuxt3, GSAP, AOS, Nuxt-content & Sanity, NodeJs.
-                TailwindCSS, OpenGraph and LottieFiles.
+                This website is made with Nuxt3, Nuxt-content & Sanity, NodeJs,
+                TailwindCSS, GSAP and LottieFiles.
 
                 <span class="gradient-text font-medium">
                   <a

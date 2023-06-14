@@ -7,7 +7,19 @@
         @apply font-black text-gray-900 dark:text-gray-200;
     }
     h2 {
-        @apply text-2xl sm:text-3xl font-extrabold my-4 text-gray-900 dark:text-gray-200;
+        @apply text-2xl sm:text-3xl font-extrabold my-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400;
+    }
+
+    a {
+        @apply relative underline text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400;
+    }
+    a::after {
+        content: "";
+        @apply absolute  w-full h-[1px] bg-gray-300 dark:bg-gray-700 left-0 -bottom-0;
+    }
+
+    blockquote {
+        @apply text-lg dark:text-gray-400 border-l-2 dark:border-l-blue-400 border-l-blue-400 my-8 p-4  border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-10 bg-white dark:bg-gray-900 rounded-md;
     }
 }
 

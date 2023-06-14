@@ -64,11 +64,19 @@
 </template>
 <script setup>
 import { convertDate__index } from "~/src/js/convertdate";
-import { toHTML } from "@portabletext/to-html";
+import htm from "htm";
+import vhtml from "vhtml";
+import { toHTML, uriLooksSafe } from "@portabletext/to-html";
 
 const route = useRoute();
 
-const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
+const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content[]{
+    ...,
+    _type == "image" => {
+      ...,
+      "imageUrl":asset->
+    }
+  }}`;
 
 const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
@@ -81,5 +89,36 @@ function readingTime(text) {
   return Math.ceil(words / wpm);
 }
 
-const content = toHTML(data_articles.value[0].content, { components: {} });
+const html = htm.bind(vhtml);
+
+const myPortableTextComponents = {
+  types: {
+    image: ({ value }) => html`<img src="${value.imageUrl.url}" />`,
+    callToAction: ({ value, isInline }) =>
+      isInline
+        ? html`<a href="${value.url}">${value.text}</a>`
+        : html`<div class="callToAction">${value.text}</div>`,
+  },
+
+  marks: {
+    link: ({ children, value }) => {
+      // ⚠️ `value.href` IS NOT "SAFE" BY DEFAULT ⚠️
+      // ⚠️ Make sure you sanitize/validate the href! ⚠️
+      const href = value.href || "";
+
+      if (uriLooksSafe(href)) {
+        const rel = href.startsWith("/") ? undefined : "noreferrer noopener";
+        return html`<a href="${href}" rel="${rel}">${children}</a>`;
+      }
+
+      // If the URI appears unsafe, render the children (eg, text) without the link
+      return children;
+    },
+  },
+};
+const content = toHTML(data_articles.value[0].content, {
+  components: myPortableTextComponents,
+});
+
+console.log(data_articles.value[0].content);
 </script>
