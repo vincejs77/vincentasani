@@ -117,5 +117,40 @@ const content = toHTML(data_articles.value[0].content, {
   components: myPortableTextComponents,
 });
 
-console.log(data_articles.value[0].content);
+const title = `${data_articles.value[0].title} | My articles`;
+useHead({
+  title,
+  meta: [
+    { property: "og:title", content: title },
+    { property: "og:type", content: "article" },
+    { property: "og:locale", content: "en" },
+    { property: "og:site_name", content: "Vincent ASANI" },
+    { property: "og:image:alt", content: title },
+    {
+      property: "og:description",
+      content: "My articles | Vincent ASANI",
+    },
+    {
+      property: "og:url",
+      content: data_articles.value[0].imageUrl.url,
+    },
+    {
+      property: "og:image",
+      content: data_articles.value[0].imageUrl.url,
+    },
+    { name: "twitter:title", content: title },
+    { name: "twitter:site", content: "@vincejs77" },
+    { name: "twitter:image:alt", content: title },
+    { name: "twitter:creator", content: "@vincejs77" },
+    {
+      name: "twitter:description",
+      content: "My articles | Vincent ASANI",
+    },
+    {
+      name: "twitter:image",
+      content: data_articles.value[0].imageUrl.url,
+    },
+    { name: "twitter:card", content: "summary_large_image" },
+  ],
+});
 </script>
