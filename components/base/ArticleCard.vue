@@ -26,7 +26,7 @@
                 >
                 <span class="mx-2">•</span>
                 <span class="dark:text-gray-500">
-                  {{ readingTime(toHTML(content, { components: {} })) }} min red</span
+                  {{ readingTime(toHTML(content, { components: {} })) }} min read</span
                 >
               </p>
               <NuxtLink

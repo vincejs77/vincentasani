@@ -132,7 +132,7 @@ useHead({
     },
     {
       property: "og:url",
-      content: data_articles.value[0].imageUrl.url,
+      content: "https://vincentasani.me",
     },
     {
       property: "og:image",
