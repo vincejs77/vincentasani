@@ -40,6 +40,8 @@
                 latest technological advancements and enjoy integrating them in innovative
                 ways into my projects.
               </p>
+
+              <p>I have an expertise in business development as well.</p>
             </div>
             <div class="w-[200px] mt-8 sm:mt-0 sm:pl-6">
               <!-- <h3 class="text-sm font-bold">Connectons-nous</h3> -->

@@ -13,13 +13,13 @@
         <div class="max-w-[500px]">
           <div class="mt-8 text-gray-500 dark:text-gray-400">
             <span class="mr-10 relative text-gray-700 dark:text-gray-300 font-semibold"
-              >Software Engineer
+              >Versatile software engineer
               <div
                 class="w-4 h-1 bg-gray-500 absolute -right-6 top-1/2 -translate-y-1/2"
               ></div>
             </span>
-            Based in Goma, DRC, building modern websites and custom web applications.
-            Deeply interested in generative AI APIs and web-based AR/VR development.
+            Based in Goma, DRC, with in-depth expertise in the fields of technology,
+            innovation, and business development.
           </div>
 
           <div class="flex justify-between items-center space-x-2 mt-8">
