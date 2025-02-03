@@ -37,6 +37,10 @@
     blockquote {
         @apply text-lg dark:text-gray-400 border-l-2 dark:border-l-blue-400 border-l-blue-400 my-8 p-4  border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-10 bg-white dark:bg-gray-900 rounded-md;
     }
+
+    ol {
+        @apply list-decimal space-y-2 ml-4;
+    }
 }
 
 .circle-text {
