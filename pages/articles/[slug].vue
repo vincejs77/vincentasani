@@ -30,6 +30,19 @@
                 {{ convertDate__index(data_articles[0].date, "dmy", "fr") }}
               </span>
             </p>
+            <p class="mt-2">
+              <span class="font-medium dark:text-gray-200">Par :</span>
+              <span class="ml-1 text-gray-600 dark:text-gray-400">
+                Vincent Asani - CTO
+                <a
+                  href="http://www.witoxr.studio"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="text-blue-300 underline"
+                  >Wito XR Studio</a
+                >
+              </span>
+            </p>
           </div>
         </div>
         <div class="mt-16">
