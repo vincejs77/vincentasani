@@ -76,15 +76,14 @@
             </div>
           </div>
           <div class="mt-12 max-w-[585px]">
-            <h2 class="text-xl font-bold">🧰 My tech stack</h2>
+            <h2 class="text-xl font-bold">🧰 Ma pile technologique</h2>
             <p class="text-md mb-8 mt-8 text-gray-600 dark:text-gray-400">
               <span class="font-medium text-gray-700 dark:text-gray-200">Polyvalent</span>
               et passionné de JavaScript, spécialisé dans
               <span class="font-medium">Nuxt</span>, <span class="font-medium">Vue</span>,
-              <span class="font-medium">Node</span> with
-              <span class="font-medium">TypeScript</span>. Deeply interested in generative
-              Profondément intéressé par les API d'IA génératives et le développement de
-              réalité virtuelle basé sur le Web à l'aide d
+              <span class="font-medium">Node</span> avec
+              <span class="font-medium">TypeScript</span>. Profondément intéressé par les
+              API d'IA génératives et le développement VR basé sur le Web à l'aide d'
               <span class="font-medium">A-Frame</span> et
               <span class="font-medium">ThreeJS</span>.
             </p>
@@ -152,7 +151,7 @@
                 <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
                 <span
                   class="flex justify-start text-sm font-medium text-gray-700 dark:text-gray-200"
-                  >Disponible <span class="-hidden ml-1 sm:block"> pour travailler</span>
+                  >Disponible <span class="ml-1 -hidden sm:block"> pour travailler</span>
                 </span>
               </div>
             </div>
