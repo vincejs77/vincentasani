@@ -1,28 +1,28 @@
 <template>
   <div>
     <div class="parent">
-      <div class="child scrolling-wrapper overflow-x-auto sm:w-[1220px] w-full">
+      <div class="child scrolling-wrapper w-full overflow-x-auto sm:w-[1220px]">
         <div
-          class="flex h-[300px] scrolling-wrapper overflow-y-hidden justify-sart space-x-4 sm:space-x-6 w-full overflow-x-scroll cursor-grab"
+          class="scrolling-wrapper justify-sart flex h-[300px] w-full cursor-grab space-x-4 overflow-y-hidden overflow-x-scroll sm:space-x-6"
         >
           <img
-            src="/img/me/2.jpg"
-            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            src="/img/me/7.jpeg"
+            class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
           />
           <img
             src="/img/me/3.jpg"
-            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
           />
           <img
-            src="/img/me/4.jpg"
-            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            src="/img/me/6.jpeg"
+            class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
           />
           <img
-            src="/img/me/1.jpg"
-            class="rounded-xl min-w-[220px] sm:min-w-[280px] object-cover"
+            src="/img/me/5.jpeg"
+            class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
           />
         </div>

@@ -1,52 +1,52 @@
 <template>
-  <div class="v-index dark:text-white relative z-20">
+  <div class="v-index relative z-20 dark:text-white">
     <div class="v-wrapper relative">
-      <UContainer class="py-28 relative z-10">
+      <UContainer class="relative z-10 py-28">
         <div class="max-w-full">
           <div
-            class="mb-4 text-gray-500 dark:text-gray-300 text-sm uppercase font-medium"
+            class="mb-4 text-sm font-medium uppercase text-gray-500 dark:text-gray-300"
           >
-            <span>✌️ About me</span>
+            <span>✌️ À propos de moi</span>
           </div>
           <h1
-            class="text-gray-800 dark:text-gray-200 leading-[1.5] sm:leading-[1.3] text-3xl sm:text-5xl font-black"
+            class="text-3xl font-black leading-[1.5] text-gray-800 dark:text-gray-200 sm:text-5xl sm:leading-[1.3]"
           >
-            My greatest satisfaction is bringing a
-            <span class="gradient-text"> positive idea </span> to life.
+            Ma plus grande satisfaction est de donner vie à une
+            <span class="gradient-text"> idée positive</span>.
           </h1>
 
-          <div class="text-sm mt-8 v-box p-4 md:p-4 scrolling-wrapper overflow-x-auto">
+          <div class="v-box scrolling-wrapper mt-8 overflow-x-auto p-4 text-sm md:p-4">
             <ContentRenderer :value="data_codes">
               <!-- <h1>{{ data_codes.title }}</h1> -->
               <ContentRendererMarkdown :value="data_codes" />
             </ContentRenderer>
           </div>
 
-          <div class="mt-12 relative w-full">
+          <div class="relative mt-12 w-full">
             <UtilsImageCarousel />
           </div>
 
           <div class="mt-12 sm:flex sm:justify-between">
             <div
-              class="text-gray-600 dark:text-gray-400 max-w-[585px] space-y-4 text-lg font-medium"
+              class="max-w-[585px] space-y-4 text-lg font-medium text-gray-600 dark:text-gray-400"
             >
               <p class="text-gray-800 dark:text-gray-300">
-                The incredible ability of technology to enhance our daily lives has
-                motivated me to become a software engineer.
+                L’incroyable capacité de la technologie à améliorer notre vie quotidienne
+                m’a motivé à devenir ingénieur logiciel.
               </p>
               <p class="text-base">
-                My goal is to create exceptional experiences for users and contribute to a
-                more inclusive and accessible digital world. I am passionate about the
-                latest technological advancements and enjoy integrating them in innovative
-                ways into my projects.
+                Mon objectif est de créer des expériences exceptionnelles pour les
+                utilisateurs et de contribuer à un monde numérique plus inclusif et
+                accessible. Je suis passionné par les dernières avancées technologiques et
+                j'aime les intégrer de manière innovante dans mes projets.
               </p>
 
-              <p>I have an expertise in business development as well.</p>
+              <p>J'ai également une expertise en développement des affaires.</p>
             </div>
-            <div class="w-[200px] mt-8 sm:mt-0 sm:pl-6">
+            <div class="mt-8 w-[200px] sm:mt-0 sm:pl-6">
               <!-- <h3 class="text-sm font-bold">Connectons-nous</h3> -->
               <div
-                class="flex sm:justify-start sm:flex-col space-x-6 sm:space-x-0 mt-2 sm:space-y-4 text-sm font-medium text-gray-600 dark:text-gray-400"
+                class="mt-2 flex space-x-6 text-sm font-medium text-gray-600 dark:text-gray-400 sm:flex-col sm:justify-start sm:space-x-0 sm:space-y-4"
               >
                 <div>
                   <a
@@ -75,25 +75,26 @@
               </div>
             </div>
           </div>
-          <div class="max-w-[585px] mt-12">
+          <div class="mt-12 max-w-[585px]">
             <h2 class="text-xl font-bold">🧰 My tech stack</h2>
-            <p class="text-md text-gray-600 dark:text-gray-400 mt-8 mb-8">
-              <span class="font-medium text-gray-700 dark:text-gray-200">Versatile</span>
-              and JavaScript enthusiast specializing in
+            <p class="text-md mb-8 mt-8 text-gray-600 dark:text-gray-400">
+              <span class="font-medium text-gray-700 dark:text-gray-200">Polyvalent</span>
+              et passionné de JavaScript, spécialisé dans
               <span class="font-medium">Nuxt</span>, <span class="font-medium">Vue</span>,
               <span class="font-medium">Node</span> with
               <span class="font-medium">TypeScript</span>. Deeply interested in generative
-              AI APIs and web-based VR development using
-              <span class="font-medium">A-Frame</span> and
+              Profondément intéressé par les API d'IA génératives et le développement de
+              réalité virtuelle basé sur le Web à l'aide d
+              <span class="font-medium">A-Frame</span> et
               <span class="font-medium">ThreeJS</span>.
             </p>
 
-            <div class="-mt-2 flex justify-between w-full">
-              <div class="w-full flex justify-start flex-nowrap overflow-hidden">
+            <div class="-mt-2 flex w-full justify-between">
+              <div class="flex w-full flex-nowrap justify-start overflow-hidden">
                 <UtilsInfiniteVerticalScroll>
                   <div :key="tech" v-for="tech in myTechStack" class="cb-tagreel-item">
                     <div
-                      class="rounded-md mr-3 mt-3 text-gray-700 dark:text-gray-300 v-box pl-0 pr-0 py-1 flex justify-center items-center space-x-2"
+                      class="v-box mr-3 mt-3 flex items-center justify-center space-x-2 rounded-md py-1 pl-0 pr-0 text-gray-700 dark:text-gray-300"
                     >
                       <div class="w-8">
                         <img :src="tech.img" :alt="tech.name" class="w-7 rounded-md" />
@@ -103,16 +104,16 @@
                 </UtilsInfiniteVerticalScroll>
               </div>
               <div
-                class="group rounded-md mr-0 mt-3 v-button bg-gray-900 pl-3 pr-4 py-1.5"
+                class="v-button group mr-0 mt-3 rounded-md bg-gray-900 py-1.5 pl-3 pr-4"
               >
                 <a
                   href="https://github.com/vincejs77"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="flex justify-start items-center space-x-2"
+                  class="flex items-center justify-start space-x-2"
                 >
                   <span
-                    class="text-sm font-medium whitespace-nowrap group-hover:text-white"
+                    class="whitespace-nowrap text-sm font-medium group-hover:text-white"
                   >
                     My GitHub</span
                   >
@@ -121,53 +122,53 @@
             </div>
             <div class="mt-8">
               <p class="text-sm text-gray-600 dark:text-gray-400">
-                This website is made with Nuxt3, Nuxt-content & Sanity, NodeJs,
-                TailwindCSS, GSAP and LottieFiles.
+                Ce site web a été créé avec Nuxt3, Nuxt-content & Sanity, NodeJs,
+                TailwindCSS, GSAP et LottieFiles
 
                 <span class="gradient-text font-medium">
                   <a
                     href="https://github.com/vincejs77/vincentasani"
                     target="_blank"
                     rel="noopener noreferrer"
-                    ><span class="v-underline-animation">Visit the github repo.</span>
+                    ><span class="v-underline-animation">Visitez le dépôt github.</span>
                   </a>
                 </span>
               </p>
             </div>
           </div>
 
-          <div class="max-w-[585px] mt-10">
+          <div class="mt-10 max-w-[585px]">
             <div>
-              <h2 class="text-xl font-bold">⏰ Currently</h2>
-              <p class="text-md text-gray-600 dark:text-gray-400 mt-8 mb-8">
-                I work and learn every day ... I like simplicity and I'm not perfect but
-                still real.
+              <h2 class="text-xl font-bold">⏰ Actuellement</h2>
+              <p class="text-md mb-8 mt-8 text-gray-600 dark:text-gray-400">
+                Je travaille et j'apprends tous les jours... J'aime la simplicité et je ne
+                suis pas parfait mais toujours vrai.
                 <span class="font-medium"
-                  >Whatever the size of a project, I work with my brain and my
-                  heart.</span
+                  >Quelle que soit la taille d'un projet, je travaille avec mon cerveau et
+                  mon cœur.</span
                 >
               </p>
-              <div class="flex justify-start items-center space-x-2">
+              <div class="flex items-center justify-start space-x-2">
                 <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
                 <span
                   class="flex justify-start text-sm font-medium text-gray-700 dark:text-gray-200"
-                  >Available <span class="-hidden sm:block ml-1"> to work</span>
+                  >Disponible <span class="-hidden ml-1 sm:block"> pour travailler</span>
                 </span>
               </div>
             </div>
             <div class="mt-10">
               <div
-                class="sm:space-y-0 space-y-6 space-x-0 sm:space-x-10 flex justify-start sm:flex-row flex-col sm:items-center"
+                class="flex flex-col justify-start space-x-0 space-y-6 sm:flex-row sm:items-center sm:space-x-10 sm:space-y-0"
               >
-                <div class="flex justify-start items-center space-x-4">
-                  <div class="v-box p-3 rounded-xl dark:text-gray-400">
+                <div class="flex items-center justify-start space-x-4">
+                  <div class="v-box rounded-xl p-3 dark:text-gray-400">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="2"
                       stroke="currentColor"
-                      class="w-4 h-4"
+                      class="h-4 w-4"
                     >
                       <path
                         stroke-linecap="round"
@@ -182,20 +183,20 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-gray-700 dark:text-gray-200 font-bold">Live in</h3>
+                    <h3 class="font-bold text-gray-700 dark:text-gray-200">Je vis à</h3>
                     <p class="text-gray-500 dark:text-gray-400">Goma - DRC</p>
                   </div>
                 </div>
 
-                <div class="flex justify-start items-center space-x-4">
-                  <div class="v-box p-3 rounded-xl">
+                <div class="flex items-center justify-start space-x-4">
+                  <div class="v-box rounded-xl p-3">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke-width="2"
                       stroke="currentColor"
-                      class="w-4 h-4 dark:text-gray-400"
+                      class="h-4 w-4 dark:text-gray-400"
                     >
                       <path
                         stroke-linecap="round"
@@ -205,11 +206,11 @@
                     </svg>
                   </div>
                   <div>
-                    <h3 class="text-gray-700 dark:text-gray-200 font-bold">
-                      CTO & Creative Director
+                    <h3 class="font-bold text-gray-700 dark:text-gray-200">
+                      Directeur Technique
                     </h3>
                     <p class="text-gray-500 dark:text-gray-400">
-                      at
+                      chez
                       <span class="gradient-text font-medium">
                         <a
                           href="http://www.witoxr.studio/"
@@ -227,9 +228,9 @@
         </div>
       </UContainer>
     </div>
-    <section class="hidden v-wrapper dark:text-gray-300 text-md">
-      <UContainer class="pt-0 pb-8 grid grid-cols-1 md:grid-cols-1 gap-6 md:gap-8">
-        <div class="relative v-box flex flex-col justify-between"></div>
+    <section class="v-wrapper text-md hidden dark:text-gray-300">
+      <UContainer class="grid grid-cols-1 gap-6 pb-8 pt-0 md:grid-cols-1 md:gap-8">
+        <div class="v-box relative flex flex-col justify-between"></div>
       </UContainer>
     </section>
   </div>

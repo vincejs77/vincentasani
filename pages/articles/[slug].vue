@@ -2,30 +2,32 @@
   <div class="v-index relative z-20 dark:text-white">
     <div class="v-wrapper">
       <UContainer class="py-16 text-center">
-        <div class="max-w-xl mx-auto">
+        <div class="mx-auto max-w-xl">
           <div class="mb-4">
-            <div class="mb-3 text-xs text-gray-500 dark:text-gray-300 font-semibold">
+            <div class="mb-3 text-xs font-semibold text-gray-500 dark:text-gray-300">
               <span
-                class="bg-white dark:bg-gray-900 py-1 px-3 border border-gray-200 dark:border-gray-700 rounded-xl"
+                class="rounded-xl border border-gray-200 bg-white px-3 py-1 dark:border-gray-700 dark:bg-gray-900"
               >
                 <span
-                  class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
+                  class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
                 >
                   {{ data_articles[0].categorie.title }}
                 </span>
               </span>
               <span class="mx-2">•</span>
-              <span class="dark:text-gray-500"> {{ readingTime(content) }} min read</span>
+              <span class="dark:text-gray-500">
+                {{ readingTime(content) }} min de lecture</span
+              >
             </div>
           </div>
-          <h1 class="text-3xl sm:text-4xl font-black leading-[1.2]">
+          <h1 class="text-3xl font-black leading-[1.2] sm:text-4xl">
             {{ data_articles[0].title }}
           </h1>
           <div class="mt-4 text-sm">
             <p>
-              <span class="dark:text-gray-200 font-medium">Plublished :</span>
+              <span class="font-medium dark:text-gray-200">Publié le :</span>
               <span class="ml-1 text-gray-600 dark:text-gray-400">
-                {{ convertDate__index(data_articles[0].date, "dmy", "en") }}
+                {{ convertDate__index(data_articles[0].date, "dmy", "fr") }}
               </span>
             </p>
           </div>
@@ -34,26 +36,26 @@
           <img
             :src="data_articles[0].imageUrl.url"
             alt=""
-            class="w-full h-[250px] sm:h-[300px] object-cover rounded-xl"
+            class="h-[250px] w-full rounded-xl object-cover sm:h-[300px]"
           />
         </div>
 
-        <div class="max-w-xl mx-auto">
+        <div class="mx-auto max-w-xl">
           <div v-html="content" class="v-content"></div>
           <div class="mt-12 text-xs">
             <p>
-              Updated at :
+              Mise à jour le :
               <span class="">
-                {{ convertDate__index(data_articles[0]._updatedAt, "dmy", "en") }}
+                {{ convertDate__index(data_articles[0]._updatedAt, "dmy", "fr") }}
               </span>
             </p>
           </div>
-          <div class="mt-8 flex flex-wrap md:justify-center -m-2">
-            <div class="w-full md:w-auto p-2">
+          <div class="-m-2 mt-8 flex flex-wrap md:justify-center">
+            <div class="w-full p-2 md:w-auto">
               <NuxtLink
-                class="block w-full px-12 py-3.5 text-md text-center text-white font-bold bg-gray-900 hover:bg-gray-800 focus:ring-4 focus:ring-gray-600 rounded-full"
+                class="text-md block w-full rounded-full bg-gray-900 px-12 py-3.5 text-center font-bold text-white hover:bg-gray-800 focus:ring-4 focus:ring-gray-600"
                 to="/articles"
-                >Read more articles!</NuxtLink
+                >Lire plus d'articles !</NuxtLink
               >
             </div>
           </div>

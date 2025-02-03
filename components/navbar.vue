@@ -1,15 +1,15 @@
 <template>
   <div class="v-navbar-main">
     <div
-      class="fixed top-0 left-0 right-0 z-[999] bg-white dark:bg-gray-950 bg-opacity-40 dark:bg-opacity-60 backdrop-blur-md dark:text-white"
+      class="fixed left-0 right-0 top-0 z-[999] bg-white bg-opacity-40 backdrop-blur-md dark:bg-gray-950 dark:bg-opacity-60 dark:text-white"
     >
-      <UContainer class="py-4 flex justify-between items-center">
+      <UContainer class="flex items-center justify-between py-4">
         <div>
-          <NuxtLink to="/" class="relative flex justify-start items-center space-x-3">
+          <NuxtLink to="/" class="relative flex items-center justify-start space-x-3">
             <!-- 
 
            <svg
-            class="text-yellow-400 hidden"
+            class="hidden text-yellow-400"
             width="26"
             height="26"
             fill="none"
@@ -24,7 +24,7 @@
 
             <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
 
-            <h2 class="hidden text-md text-md sm:text-xl font-extrabold">
+            <h2 class="text-md hidden font-extrabold sm:text-xl">
               Vince<span class="text-gray-400 no-underline">.</span>
             </h2>
             <span class="absolute left-6 sm:left-6">
@@ -32,7 +32,7 @@
                 <div v-show="useGlobalStore().$state.isLoadingPage">
                   <Vue3Lottie
                     animationLink="/img/lotties/loader.json"
-                    class="w-16 h-16 sm:w-16 sm:h-16"
+                    class="h-16 w-16 sm:h-16 sm:w-16"
                   />
                 </div>
               </ClientOnly>
@@ -40,25 +40,25 @@
           </NuxtLink>
         </div>
         <div
-          class="font-medium flex items-center whitespace-nowrap space-x-4 text-gray-600 dark:text-gray-300"
+          class="flex items-center space-x-4 whitespace-nowrap font-medium text-gray-600 dark:text-gray-300"
         >
           <NuxtLink
             to="/about"
-            class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
+            class="text-md text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
           >
-            <span class="v-underline-animation"> About </span>
+            <span class="v-underline-animation"> À propos </span>
           </NuxtLink>
           <NuxtLink
             to="/articles"
-            class="text-md hover:text-gray-900 text-gray-700 dark:hover:text-gray-50 dark:text-gray-400"
+            class="text-md text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
           >
             <span class="v-underline-animation"> Articles </span>
           </NuxtLink>
           <button
             @click="$toggleTheme()"
-            class="text-gray-500 dark:text-gray-200 bg-gray-200 dark:bg-gray-300 dark:bg-opacity-10 p-2 rounded-md"
+            class="rounded-md bg-gray-200 p-2 text-gray-500 dark:bg-gray-300 dark:bg-opacity-10 dark:text-gray-200"
           >
-            <div class="w-5 h-5">
+            <div class="h-5 w-5">
               <ClientOnly>
                 <UTooltip text="Theme">
                   <svg
@@ -67,7 +67,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="2"
                     stroke="currentColor"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     v-if="useColorMode().value !== 'dark'"
                   >
                     <path
@@ -83,7 +83,7 @@
                     viewBox="0 0 24 24"
                     stroke-width="2"
                     stroke="currentColor"
-                    class="w-5 h-5"
+                    class="h-5 w-5"
                     v-if="useColorMode().value == 'dark'"
                   >
                     <path
@@ -100,8 +100,8 @@
       </UContainer>
     </div>
 
-    <UContainer class="fixed z-50 bottom-8 left-0 right-0 mx-auto flex justify-end">
-      <div class="v-button w-12 h-12 rounded-full flex justify-center items-center">
+    <UContainer class="fixed bottom-8 left-0 right-0 z-50 mx-auto flex justify-end">
+      <div class="v-button flex h-12 w-12 items-center justify-center rounded-full">
         <button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="h-6 w-6"
           >
             <path
               stroke-linecap="round"
