@@ -22,7 +22,7 @@
           </svg>
           -->
 
-            <img src="/img/logo/me.jpeg" alt="" class="w-8 rounded-lg" />
+            <img src="/img/logo/me.svg" alt="" class="-rounded-lg w-10" />
 
             <h2 class="text-md hidden font-extrabold sm:text-xl">
               Vince<span class="text-gray-400 no-underline">.</span>
