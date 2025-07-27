@@ -15,7 +15,7 @@
             <span class="relative font-semibold text-gray-700 dark:text-gray-300"
               >Ingénieur logiciel polyvalent —
             </span>
-            Basé à Goma, en RDC, avec une expertise approfondie dans les domaines de la
+            Basé à Kinshasa, avec une expertise approfondie dans les domaines de la
             technologie, de l'innovation et du développement d'entreprise.
           </div>
 
