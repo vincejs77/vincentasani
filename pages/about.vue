@@ -183,7 +183,7 @@
                   </div>
                   <div>
                     <h3 class="font-bold text-gray-700 dark:text-gray-200">Je vis à</h3>
-                    <p class="text-gray-500 dark:text-gray-400">Goma - DRC</p>
+                    <p class="text-gray-500 dark:text-gray-400">Kinshasa - DRC</p>
                   </div>
                 </div>
 
@@ -206,16 +206,16 @@
                   </div>
                   <div>
                     <h3 class="font-bold text-gray-700 dark:text-gray-200">
-                      Directeur Technique
+                      Responsable informatique
                     </h3>
                     <p class="text-gray-500 dark:text-gray-400">
-                      chez
+                      À l'
                       <span class="gradient-text font-medium">
                         <a
-                          href="http://www.witoxr.studio/"
+                          href="https://www.institutfrancais-kinshasa.org/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          ><span class="v-underline-animation">Wito XR Studio</span>
+                          ><span class="v-underline-animation">Institut français de Kinshasa</span>
                         </a>
                       </span>
                     </p>
