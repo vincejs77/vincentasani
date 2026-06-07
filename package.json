@@ -1,6 +1,7 @@
 {
 	"name": "nuxt-app",
 	"private": true,
+	"type": "module",
 	"scripts": {
 		"build": "nuxt build",
 		"dev": "nuxt dev",
@@ -9,32 +10,33 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
-		"@nuxt/content": "^2.6.0",
-		"@nuxt/types": "2.13.2",
-		"@nuxthq/ui": "npm:@nuxthq/ui-edge@latest",
+		"@nuxt/content": "^3.7.0",
 		"@types/aos": "^3.0.4",
-		"@types/node": "^18",
+		"@types/node": "^22",
 		"gsap": "^3.11.3",
 		"nuxt": "^4.4.7",
-		"nuxt-storage": "^1.2.2",
-		"terser": "^5.18.0"
+		"sass": "^1.85.0",
+		"typescript": "^5.8.0"
 	},
 	"dependencies": {
-		"@nuxtjs/sanity": "^1.7.2",
-		"@pinia/nuxt": "^0.4.6",
+		"@nuxt/ui": "^4.0.0",
+		"@nuxtjs/sanity": "^1.13.0",
+		"@pinia/nuxt": "^0.11.0",
 		"@portabletext/to-html": "^2.0.0",
-		"@sanity/client": "^6.1.2",
-		"@tailwindcss/container-queries": "^0.1.1",
-		"@vercel/analytics": "^1.0.1",
-		"@vitejs/plugin-legacy": "^4.0.4",
+		"@sanity/client": "^6.29.0",
+		"@vercel/analytics": "^2.0.0",
 		"aos": "^3.0.0-beta.6",
 		"htm": "^3.1.1",
-		"pinia": "^2.0.28",
-		"sass": "^1.62.1",
+		"pinia": "^3.0.0",
 		"vhtml": "^2.2.0",
-		"vue3-lottie": "^2.7.0"
+		"vue3-lottie": "^3.3.0"
 	},
 	"engines": {
-		"node": "20.x"
+		"node": ">=20.x"
+	},
+	"overrides": {
+		"@vercel/analytics": {
+			"vue-router": "^5.0.0"
+		}
 	}
 }

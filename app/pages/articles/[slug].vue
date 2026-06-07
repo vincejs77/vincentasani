@@ -71,7 +71,7 @@
   </div>
 </template>
 <script setup>
-import { convertDate__index } from "~/src/js/convertdate";
+import { convertDate__index } from "~/utils/convertdate";
 import htm from "htm";
 import vhtml from "vhtml";
 import { toHTML, uriLooksSafe } from "@portabletext/to-html";

@@ -16,10 +16,7 @@
           </h1>
 
           <div class="v-box scrolling-wrapper mt-8 overflow-x-auto p-4 text-sm md:p-4">
-            <ContentRenderer :value="data_codes">
-              <!-- <h1>{{ data_codes.title }}</h1> -->
-              <ContentRendererMarkdown :value="data_codes" />
-            </ContentRenderer>
+            <ContentRenderer v-if="data_codes" :value="data_codes" />
           </div>
 
           <div class="relative mt-12 w-full">
@@ -271,6 +268,6 @@ const myTechStack = [
 ];
 
 const { data: data_codes } = await useAsyncData("page-data", () =>
-  queryContent("code_blocks", "about_intro").findOne()
+	queryCollection("code_blocks").path("/code_blocks/about_intro").first()
 );
 </script>

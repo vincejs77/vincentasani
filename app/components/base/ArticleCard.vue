@@ -55,7 +55,7 @@
 </template>
 
 <script setup>
-import { convertDate__index } from "~/src/js/convertdate";
+import { convertDate__index } from "~/utils/convertdate";
 import { toHTML } from "@portabletext/to-html";
 
 defineProps({

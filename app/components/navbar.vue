@@ -124,6 +124,5 @@
 </template>
 
 <script setup>
-import { useGlobalStore } from "~/store/global";
 const { $toggleTheme } = useNuxtApp();
 </script>
