@@ -1,0 +1,20 @@
+{
+  "task": "generate_video",
+  "model": "veo-3",
+  "language": "fr",
+  "duration": "30s",
+  "style": "énergique, moderne",
+  "voice_over": true,
+  "inputs": {
+    "script": "Découvrez notre nouvelle appli conçue pour les jeunes entrepreneurs africains.",
+    "ambiance": "positif",
+    "visuels": ["téléphone", "espace de coworking", "ville africaine"]
+  }
+}
+
+
+
+
+
+
+

@@ -84,7 +84,6 @@ export default defineNuxtConfig({
 					color: "#5bbad5"
 				}
 			],
-			script: [{ src: "https://polyfill.io/v3/polyfill.min.js" }],
 			noscript: [{ children: "Javascript est désactivé" }]
 		}
 	},
