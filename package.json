@@ -15,7 +15,7 @@
 		"@types/aos": "^3.0.4",
 		"@types/node": "^18",
 		"gsap": "^3.11.3",
-		"nuxt": "^3.5.0",
+		"nuxt": "^4.4.7",
 		"nuxt-storage": "^1.2.2",
 		"terser": "^5.18.0"
 	},
@@ -33,5 +33,8 @@
 		"sass": "^1.62.1",
 		"vhtml": "^2.2.0",
 		"vue3-lottie": "^2.7.0"
+	},
+	"engines": {
+		"node": "20.x"
 	}
 }
