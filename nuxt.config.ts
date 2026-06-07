@@ -64,16 +64,11 @@ export default defineNuxtConfig({
 			noscript: [{ children: "Javascript est désactivé" }]
 		}
 	},
-	modules: ["@nuxt/ui", "@nuxtjs/sanity", "@nuxt/content", "@pinia/nuxt", "@vercel/analytics"],
+	modules: ["@nuxt/ui", "@nuxtjs/sanity", "@nuxt/content", "@pinia/nuxt", "@vercel/analytics/nuxt"],
 	colorMode: {
 		preference: "dark",
 		fallback: "light",
 		storageKey: "v-color-mode"
-	},
-	ui: {
-		container: {
-			base: "max-w-4xl"
-		}
 	},
 	runtimeConfig: {
 		sanity: {
@@ -82,6 +77,28 @@ export default defineNuxtConfig({
 	},
 	sanity: {
 		projectId: "ims5v334",
-		dataset: "production"
+		dataset: "production",
+		apiVersion: "2024-01-01"
+	},
+	nitro: {
+		preset: "vercel"
+	},
+	content: {
+		experimental: {
+			sqliteConnector: "native"
+		}
+	},
+	vite: {
+		optimizeDeps: {
+			include: [
+				"@nuxtjs/sanity > @sanity/visual-editing > react",
+				"@nuxtjs/sanity > @sanity/visual-editing > react/jsx-runtime",
+				"@nuxtjs/sanity > @sanity/visual-editing > react-dom",
+				"@nuxtjs/sanity > @sanity/visual-editing > react-dom/client",
+				"@nuxtjs/sanity > @sanity/visual-editing > react-compiler-runtime",
+				"@nuxtjs/sanity > @sanity/visual-editing > react-is",
+				"@sanity/client"
+			]
+		}
 	}
 });

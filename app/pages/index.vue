@@ -124,7 +124,8 @@
 
 <script setup>
 const query = groq`*[_type == "article"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
-const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
+const [{ data: sanityArticles, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
 ]);
+const data_articles = computed(() => sanityArticles.value?.data ?? sanityArticles.value ?? []);
 </script>

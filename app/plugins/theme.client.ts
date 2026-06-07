@@ -1,24 +1,13 @@
-import { useStorage } from "@vueuse/core";
-let themeStorage = useStorage("v-color-mode", "dark");
+export default defineNuxtPlugin(() => {
+	const colorMode = useColorMode();
 
-export default defineNuxtPlugin({
-	name: "theme",
-	enforce: "pre",
-	async setup(nuxtApp) {
-		const toggleTheme = async () => {
-			if (themeStorage.value == "dark") {
-				themeStorage.value = "light";
-				useColorMode().preference = themeStorage.value;
-			} else {
-				themeStorage.value = "dark";
-				useColorMode().preference = themeStorage.value;
-			}
-		};
+	const toggleTheme = () => {
+		colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+	};
 
-		return {
-			provide: {
-				toggleTheme
-			}
-		};
-	}
+	return {
+		provide: {
+			toggleTheme
+		}
+	};
 });

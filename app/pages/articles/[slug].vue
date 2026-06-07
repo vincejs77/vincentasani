@@ -86,9 +86,10 @@ const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]
     }
   }}`;
 
-const [{ data: data_articles, refresh: refresh_articles }] = await Promise.all([
+const [{ data: sanityArticle, refresh: refresh_articles }] = await Promise.all([
   useSanityQuery(query),
 ]);
+const data_articles = computed(() => sanityArticle.value?.data ?? sanityArticle.value ?? []);
 
 function readingTime(text) {
   // https://thereadtime.com/

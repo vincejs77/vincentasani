@@ -15,7 +15,7 @@
             <span class="gradient-text"> idée positive</span>.
           </h1>
 
-          <div class="v-box scrolling-wrapper mt-8 overflow-x-auto p-4 text-sm md:p-4">
+          <div class="v-box scrolling-wrapper mt-8 overflow-x-auto text-sm">
             <ContentRenderer v-if="data_codes" :value="data_codes" />
           </div>
 
