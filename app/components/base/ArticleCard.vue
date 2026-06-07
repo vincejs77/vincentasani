@@ -26,7 +26,7 @@
                 >
                 <span class="mx-2">•</span>
                 <span class="dark:text-gray-500">
-                  {{ readingTime(toHTML(content, { components: {} })) }} min read</span
+                  {{ readingTime(toHTML(content, { onMissingComponent: false })) }} min read</span
                 >
               </p>
               <NuxtLink

@@ -2,35 +2,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    @apply font-sans duration-[0.01s] ease-in-out transition-colors relative z-20;
-}
-
-body::after {
-    content: "";
-    opacity: 0.15;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
-    background-image: url(/img/svg/mesh.svg);
-    @apply bg-cover bg-center w-full h-full;
-}
-
-a,
-button {
-    @apply duration-100 ease-in-out transition-colors;
-}
-
-.v-box {
-    @apply shadow-md dark:shadow-gray-900 shadow-gray-100 border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900   rounded-md;
-}
-
-.v-button {
-    @apply hover:text-white dark:hover:text-white hover:bg-gradient-to-r from-blue-500 to-indigo-500 transition-colors dark:transition-colors ease-in-out duration-100 cursor-pointer border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-50 bg-gray-50 dark:bg-opacity-20 dark:bg-gray-700 backdrop-blur-md;
-}
-
 .grid-pattern--dark {
     background-image: linear-gradient(270deg, #030712, hsla(0, 0%, 100%, 0) 6%),
         linear-gradient(90deg, #030712, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #030712, hsla(0, 0%, 100%, 0)),
@@ -72,4 +43,3 @@ button {
 
 @import url(~/assets/styles/utils/transitions.scss);
 @import url(~/assets/styles/utils/animations.scss);
-@import url(~/assets/styles/utils/text.scss);

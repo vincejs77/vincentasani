@@ -7,3 +7,163 @@
 	--font-sans: "Satoshi", Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	--animate-spin-slow: spin 8s linear infinite;
 }
+
+html,
+body {
+	@apply font-sans duration-[0.01s] ease-in-out transition-colors relative z-20;
+}
+
+body::after {
+	content: "";
+	opacity: 0.15;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	pointer-events: none;
+	background-image: url(/img/svg/mesh.svg);
+	@apply bg-cover bg-center w-full h-full;
+}
+
+a,
+button {
+	@apply duration-100 ease-in-out transition-colors;
+}
+
+.v-box {
+	@apply shadow-md dark:shadow-gray-900 shadow-gray-100 border-2 border-gray-100 dark:border-gray-800/30 bg-white dark:bg-gray-900 rounded-md;
+}
+
+.v-button {
+	@apply hover:text-white dark:hover:text-white hover:bg-linear-to-r from-blue-500 to-indigo-500 transition-colors dark:transition-colors ease-in-out duration-100 cursor-pointer border-2 border-gray-200 dark:border-gray-800/50 bg-gray-50 dark:bg-gray-700/20 backdrop-blur-md;
+}
+
+.router-link-active.router-link-exact-active > span {
+	@apply text-gray-800 font-bold dark:text-gray-50;
+}
+
+.v-content {
+	@apply mt-12 text-left text-gray-700 dark:text-gray-300;
+
+	h1 {
+		@apply text-3xl sm:text-4xl mb-8 font-black text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400;
+	}
+
+	h2 {
+		@apply text-3xl sm:text-4xl font-extrabold my-10 text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400;
+	}
+
+	h3 {
+		@apply mt-6 text-xl sm:text-2xl font-bold;
+	}
+
+	p {
+		@apply mt-6 mb-0;
+	}
+
+	p:first-child,
+	h3 > p {
+		margin-top: 0px !important;
+	}
+
+	a {
+		@apply relative underline text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400;
+	}
+
+	a::after {
+		content: "";
+		@apply absolute w-full h-[1px] bg-gray-300 dark:bg-gray-700 left-0 -bottom-0;
+	}
+
+	img {
+		@apply mb-8 rounded-md;
+	}
+
+	blockquote {
+		@apply text-lg dark:text-gray-400 border-l-2 dark:border-l-blue-400 border-l-blue-400 my-8 p-4 border-2 border-gray-100 dark:border-gray-800/10 bg-white dark:bg-gray-900 rounded-md;
+	}
+
+	ol {
+		@apply list-decimal space-y-2 ml-5;
+	}
+
+	ul {
+		@apply list-disc space-y-2 ml-5 mt-4;
+	}
+}
+
+.circle-text {
+	svg {
+		fill: currentColor;
+		height: auto;
+		max-width: 66vmin;
+		transform-origin: center;
+		width: 100%;
+		letter-spacing: 2.2px;
+		@apply font-black dark:text-gray-400 text-gray-500;
+	}
+	svg textPath {
+		font-size: 10px !important;
+	}
+}
+
+.--no-underline,
+.--no-underline:hover {
+	text-decoration: none !important;
+}
+
+.gradient-text {
+	@apply text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-indigo-400;
+}
+
+.code-joke {
+	@apply w-full rotate-[-1.5deg] transition-transform duration-300 hover:rotate-0;
+}
+
+.code-joke__header {
+	@apply flex items-center gap-3 rounded-t-lg border-2 border-b-0 border-gray-200 bg-gray-100 px-4 py-2.5 dark:border-gray-700 dark:bg-gray-800/80;
+}
+
+.code-joke__dots {
+	@apply flex shrink-0 items-center gap-1.5;
+}
+
+.code-joke__dot {
+	@apply block h-2.5 w-2.5 rounded-full;
+}
+
+.code-joke__dot--red {
+	@apply bg-red-400;
+}
+
+.code-joke__dot--yellow {
+	@apply bg-yellow-400;
+}
+
+.code-joke__dot--green {
+	@apply bg-green-400;
+}
+
+.code-joke__title {
+	@apply truncate text-xs font-medium text-gray-500 dark:text-gray-400;
+}
+
+.code-joke__body {
+	@apply w-full rounded-b-lg border-2 border-gray-200 bg-gray-950 p-0 dark:border-gray-700;
+
+	> * {
+		@apply w-full;
+	}
+
+	pre {
+		@apply m-0 w-full min-w-full overflow-x-auto rounded-none border-0 bg-transparent p-4 font-mono text-[13px] leading-relaxed;
+	}
+
+	code {
+		@apply block w-full text-emerald-300;
+	}
+}
+
+.code-joke__caption {
+	@apply mt-2 text-xs italic text-gray-400 dark:text-gray-500;
+}

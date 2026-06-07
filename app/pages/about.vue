@@ -15,8 +15,21 @@
             <span class="gradient-text"> idée positive</span>.
           </h1>
 
-          <div class="v-box scrolling-wrapper mt-8 overflow-x-auto text-sm">
-            <ContentRenderer v-if="data_codes" :value="data_codes" />
+          <div class="code-joke mt-8 w-full">
+            <div class="code-joke__header">
+              <span class="code-joke__dots" aria-hidden="true">
+                <span class="code-joke__dot code-joke__dot--red" />
+                <span class="code-joke__dot code-joke__dot--yellow" />
+                <span class="code-joke__dot code-joke__dot--green" />
+              </span>
+              <span class="code-joke__title">captain_sparrow.js — mode démo 🏴‍☠️</span>
+            </div>
+            <div class="code-joke__body scrolling-wrapper overflow-x-auto text-sm">
+              <ContentRenderer v-if="data_codes" :value="data_codes" />
+            </div>
+            <p class="code-joke__caption">
+              * Compile uniquement dans ma bio. Ne pas copier sans l’accord du perroquet.
+            </p>
           </div>
 
           <div class="relative mt-12 w-full">

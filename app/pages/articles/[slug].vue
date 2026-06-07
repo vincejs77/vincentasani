@@ -109,6 +109,10 @@ const myPortableTextComponents = {
         : html`<div class="callToAction">${value.text}</div>`,
   },
 
+  block: {
+    blockComment: ({ children }) => html`<p>${children}</p>`,
+  },
+
   marks: {
     link: ({ children, value }) => {
       const href = value.href || "";

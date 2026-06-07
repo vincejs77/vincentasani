@@ -1,9 +1,17 @@
-```js{1,3-5}[hello.js]
-import { onBeforeRead } from '😀'
+```js{1,4-7}[captain_sparrow.js]
+// ⚓ Code certifié bio. 0 bug garanti* (*conditions irréalistes)
+
+import { onBeforeRead } from '🏴‍☠️'
+
+const dev = {
+  nom: 'Vincent "Sparrow" Asani',
+  cafe: Infinity,
+  sommeil: null,
+}
 
 onBeforeRead(() => {
-  console.log('It\'s Captain Sparrow')
+  console.log('Pourquoi le rhum a disparu ?! Ah non… c\'est du café.')
 })
 
-// Ha ha ! It's a joke
+// PS : onBeforeRead n'existe pas. Comme mon free time le vendredi soir.
 ```
