@@ -17,11 +17,12 @@
                 href="mailto:hello@vincentasani.me"
                 class="relative mx-auto max-w-[290px] bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent sm:max-w-[440px]"
               >
-                <span class="absolute -left-6 -top-4 w-4 sm:-left-14 sm:-top-6">
+                <span class="absolute -left-6 -top-4 h-16 w-16 sm:-left-14 sm:-top-6 sm:h-24 sm:w-28">
                   <ClientOnly>
                     <Vue3Lottie
                       animationLink="/img/lotties/email.json"
-                      class="h-16 w-16 sm:h-24 sm:w-28"
+                      width="100%"
+                      height="100%"
                     />
                   </ClientOnly>
                 </span>

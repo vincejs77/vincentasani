@@ -27,7 +27,19 @@ body::after {
 
 a,
 button {
-	@apply duration-100 ease-in-out transition-colors;
+	@apply duration-100 ease-in-out transition-colors outline-none focus:outline-none focus-visible:outline-none focus:ring-0 focus-visible:ring-0;
+}
+
+button:focus,
+button:focus-visible,
+a:focus,
+a:focus-visible,
+[role="button"]:focus,
+[role="button"]:focus-visible {
+	outline: none !important;
+	box-shadow: none !important;
+	--tw-ring-shadow: 0 0 #0000 !important;
+	--tw-ring-offset-shadow: 0 0 #0000 !important;
 }
 
 .v-box {
@@ -117,11 +129,11 @@ button {
 }
 
 .code-joke {
-	@apply w-full rotate-[-1.5deg] transition-transform duration-300 hover:rotate-0;
+	@apply w-full rotate-[-1.5deg] shadow-gray-200 transition-transform duration-300 hover:rotate-0 dark:shadow-gray-900/40;
 }
 
 .code-joke__header {
-	@apply flex items-center gap-3 rounded-t-lg border-2 border-b-0 border-gray-200 bg-gray-100 px-4 py-2.5 dark:border-gray-700 dark:bg-gray-800/80;
+	@apply flex items-center gap-3 rounded-t-lg border-2 border-b-0 border-gray-200 bg-white px-4 py-2.5 dark:border-gray-700 dark:bg-gray-800;
 }
 
 .code-joke__dots {
@@ -145,25 +157,43 @@ button {
 }
 
 .code-joke__title {
-	@apply truncate text-xs font-medium text-gray-500 dark:text-gray-400;
+	@apply truncate text-xs font-medium text-gray-600 dark:text-gray-400;
 }
 
 .code-joke__body {
-	@apply w-full rounded-b-lg border-2 border-gray-200 bg-gray-950 p-0 dark:border-gray-700;
+	@apply w-full rounded-b-lg border-2 border-gray-200 bg-white p-0 dark:border-gray-700 dark:bg-gray-900;
 
 	> * {
 		@apply w-full;
 	}
 
+	.group {
+		@apply my-0;
+	}
+
+	/* Masque le header ProsePre dupliqué (filename + icône) */
+	.group > .flex.items-center {
+		@apply hidden;
+	}
+
+	/* Masque le bouton copy — on garde notre propre chrome terminal */
+	.group > button {
+		@apply hidden;
+	}
+
 	pre {
-		@apply m-0 w-full min-w-full overflow-x-auto rounded-none border-0 bg-transparent p-4 font-mono text-[13px] leading-relaxed;
+		@apply m-0 w-full min-w-full overflow-x-auto rounded-none border-0 bg-gray-50 px-4 py-4 font-mono text-[13px] leading-relaxed dark:bg-gray-950;
 	}
 
 	code {
-		@apply block w-full text-emerald-300;
+		@apply block w-full bg-transparent;
+	}
+
+	.line.highlight {
+		@apply bg-blue-500/10 dark:bg-blue-400/10;
 	}
 }
 
 .code-joke__caption {
-	@apply mt-2 text-xs italic text-gray-400 dark:text-gray-500;
+	@apply mt-2 text-xs italic text-gray-500 dark:text-gray-400;
 }

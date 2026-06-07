@@ -222,10 +222,10 @@
                       À l'
                       <span class="gradient-text font-medium">
                         <a
-                          href="https://www.institutfrancais-kinshasa.org/"
+                          href="https://www.ifrdc.org"
                           target="_blank"
                           rel="noopener noreferrer"
-                          ><span class="v-underline-animation">Institut français de Kinshasa</span>
+                          ><span class="v-underline-animation">Institut français de RDC - Kinshasa</span>
                         </a>
                       </span>
                     </p>

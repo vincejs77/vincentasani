@@ -1,8 +1,8 @@
 <template>
 	<UApp>
 		<div id="v-app" class="v-app">
-			<div class="fixed left-0 right-0 top-0 z-[9999] h-1 bg-gray-200">
-				<NuxtLoadingIndicator color="false" :height="h" />
+			<div class="fixed left-0 right-0 top-0 z-[9999] h-1 bg-gray-900">
+				<NuxtLoadingIndicator :color="false" :height="h" />
 			</div>
 			<NuxtLayout>
 				<NuxtPage />

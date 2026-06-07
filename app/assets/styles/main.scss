@@ -3,19 +3,27 @@
 }
 
 .grid-pattern--dark {
-    background-image: linear-gradient(270deg, #030712, hsla(0, 0%, 100%, 0) 6%),
-        linear-gradient(90deg, #030712, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #030712, hsla(0, 0%, 100%, 0)),
-        linear-gradient(0deg, #030712 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-dark.svg);
+    background-image:
+        linear-gradient(270deg, #030712, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(90deg, #030712, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(180deg, #030712, hsla(0, 0%, 100%, 0)), linear-gradient(0deg, #030712 1%, hsla(0, 0%, 100%, 0)),
+        url(/img/svg/patern-plus-dark.svg);
 }
 
 .grid-pattern--white {
-    background-image: linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0) 6%),
-        linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0) 6%), linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0)),
-        linear-gradient(0deg, #fff 1%, hsla(0, 0%, 100%, 0)), url(/img/svg/patern-plus-white.svg);
+    background-image:
+        linear-gradient(270deg, #fff, hsla(0, 0%, 100%, 0) 6%), linear-gradient(90deg, #fff, hsla(0, 0%, 100%, 0) 6%),
+        linear-gradient(180deg, #fff, hsla(0, 0%, 100%, 0)), linear-gradient(0deg, #fff 1%, hsla(0, 0%, 100%, 0)),
+        url(/img/svg/patern-plus-white.svg);
 }
 
 .grid-pattern.hero {
-    background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+    background-position:
+        0 0,
+        0 0,
+        0 0,
+        0 0,
+        0 0;
     background-size: auto, auto, auto, auto, 2rem;
     position: absolute;
     top: 0rem;
@@ -38,6 +46,17 @@
     -webkit-overflow-scrolling: touch;
     &::-webkit-scrollbar {
         display: none;
+    }
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+
+    &:focus,
+    &:focus-visible {
+        outline: none;
+        box-shadow: none;
     }
 }
 

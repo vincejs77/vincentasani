@@ -111,7 +111,7 @@
         <div class="-m-2 flex flex-wrap md:justify-center">
           <div class="w-full p-2 md:w-auto">
             <NuxtLink
-              class="text-md block w-full rounded-full bg-gray-900 px-12 py-3.5 text-center font-bold text-white hover:bg-gray-800 focus:ring-4 focus:ring-gray-600"
+              class="text-md block w-full rounded-full bg-gray-900 px-12 py-3.5 text-center font-bold text-white hover:bg-gray-800"
               to="/articles"
               >Lire plus d'articles !</NuxtLink
             >

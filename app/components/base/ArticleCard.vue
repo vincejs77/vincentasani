@@ -1,7 +1,7 @@
 <template>
   <div class="group v-card w-full md:w-1/2 p-4">
     <div
-      class="p-4 sm:p-8 h-full border-2 border-gray-100 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900 rounded-xl"
+      class="p-4 sm:p-8 h-full border-2 border-gray-200 dark:border-gray-800 dark:border-opacity-30 bg-white dark:bg-gray-900 rounded-xl"
     >
       <div class="flex flex-wrap flex-col -m-3">
         <div class="w-auto p-3">
@@ -34,7 +34,7 @@
                 class="--no-underline group inline-block mb-4"
               >
                 <h3
-                  class="font-heading text-xl text-gray-900 hover:text-gray-700 dark:text-gray-300 font-bold"
+                  class="font-heading text-xl text-gray-900 dark:text-gray-300 font-bold"
                 >
                   <span class="v-underline-animation">
                     {{ title }}
