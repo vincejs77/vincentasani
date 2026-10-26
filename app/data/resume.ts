@@ -271,7 +271,7 @@ export const RESUME = {
 				en: "Bachelor's degree in Computer Science (5-year program)"
 			},
 			location: "Bukavu",
-			href: "https://www.ucbukavu.ac.cd",
+			href: "https://ucbukavu.ac.cd/",
 			start: "2016",
 			end: "2021"
 		}
