@@ -1,131 +1,234 @@
 <template>
-  <div class="v-index">
-    <section class="v-wrapper relative">
-      <UContainer class="relative z-10 py-32">
-        <p class="mb-8 text-sm font-semibold uppercase">👋 Bonjour</p>
-        <h1
-          class="text-3xl font-black leading-[1.4] text-gray-950 dark:text-gray-200 sm:text-5xl sm:leading-[1.2] md:-mt-2"
-        >
-          C'est
-          <span class="text-gray-800 dark:text-gray-400">Vincent Asani</span>
-        </h1>
+	<main class="relative flex min-h-dvh flex-col gap-14">
+		<section id="hero">
+			<div class="mx-auto w-full max-w-2xl space-y-8">
+				<div class="flex flex-col justify-between gap-2 gap-y-6 md:flex-row">
+					<div class="order-2 flex flex-col gap-2 md:order-1">
+						<MagicBlurFade :delay="BLUR_FADE_DELAY" :y-offset="8" blur="8px">
+							<h1 class="text-3xl font-semibold tracking-tighter text-highlighted sm:text-4xl lg:text-5xl">
+								{{ ui.greeting }} <span class="whitespace-nowrap">{{ DATA.firstName }} 👋</span>
+							</h1>
+						</MagicBlurFade>
+						<MagicBlurFade :delay="BLUR_FADE_DELAY * 2" :y-offset="8" blur="8px">
+							<p class="max-w-[600px] text-muted md:text-lg lg:text-xl">{{ DATA.description }}</p>
+						</MagicBlurFade>
+						<MagicBlurFade :delay="BLUR_FADE_DELAY * 3">
+							<div class="mt-2 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted">
+								<span class="inline-flex items-center gap-1.5">
+									<UIcon name="i-lucide-map-pin" class="size-4" />
+									{{ DATA.location }}
+								</span>
+								<span class="inline-flex items-center gap-1.5">
+									<span class="relative flex size-2">
+										<span class="absolute inline-flex size-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+										<span class="relative inline-flex size-2 rounded-full bg-emerald-500" />
+									</span>
+									{{ ui.available }}
+								</span>
+							</div>
+						</MagicBlurFade>
+					</div>
+					<MagicBlurFade :delay="BLUR_FADE_DELAY" class="order-1 md:order-2">
+						<span
+							class="relative flex size-24 shrink-0 overflow-hidden rounded-full border border-default shadow-lg ring-4 ring-(--ui-bg-muted) md:size-32"
+						>
+							<img :src="DATA.avatarUrl" :alt="DATA.name" class="size-full object-cover" />
+						</span>
+					</MagicBlurFade>
+				</div>
+			</div>
+		</section>
 
-        <div class="max-w-[500px]">
-          <div class="mt-8 text-gray-500 dark:text-gray-400">
-            <span class="relative font-semibold text-gray-700 dark:text-gray-300"
-              >Ingénieur logiciel polyvalent —
-            </span>
-            Basé à Kinshasa, avec une expertise approfondie dans les domaines de la
-            technologie, de l'innovation et du développement d'entreprise.
-          </div>
+		<section id="about">
+			<div class="flex min-h-0 flex-col gap-y-4">
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 3">
+					<h2 class="text-xl font-bold text-highlighted">{{ ui.about }}</h2>
+				</MagicBlurFade>
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 4">
+					<!-- Contenu statique issu de app/data/resume.ts -->
+					<p class="prose-links leading-relaxed text-pretty text-muted" v-html="DATA.summary" />
+				</MagicBlurFade>
+			</div>
+		</section>
 
-          <div class="mt-8 flex items-center justify-between space-x-2">
-            <div class="flex items-center justify-start space-x-2">
-              <img src="/img/svg/available.svg" alt="Available to work" class="w-8" />
-              <span
-                class="flex justify-start text-sm font-medium text-gray-700 dark:text-gray-200"
-                >Disponible <span class="ml-1 -hidden sm:block"></span>
-              </span>
-            </div>
-            <div>
-              <UtilsSimpleBtn :link="'/about'" :text="'À propos de moi'" />
-            </div>
-          </div>
-        </div>
+		<section id="work">
+			<div class="flex min-h-0 flex-col gap-y-6">
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 5">
+					<h2 class="text-xl font-bold text-highlighted">{{ ui.work }}</h2>
+				</MagicBlurFade>
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 6">
+					<div class="grid w-full grid-cols-1 gap-6">
+						<PortfolioResumeCard v-for="work in DATA.work" :key="work.logoUrl ?? work.company" v-bind="work" />
+					</div>
+				</MagicBlurFade>
+			</div>
+		</section>
 
-        <div
-          class="absolute -bottom-[50px] left-4 flex items-center justify-center lg:left-auto lg:right-6 lg:top-1/2 lg:-translate-y-1/2"
-        >
-          <div class="relative w-[110px] sm:w-[120px]">
-            <div class="circle-text relative animate-spin-slow text-sm">
-              <svg viewBox="0 0 100 100" width="100" height="100">
-                <defs>
-                  <path
-                    id="circle"
-                    d="
-        M 50, 50
-        m -37, 0
-        a 37,37 0 1,1 74,0
-        a 37,37 0 1,1 -74,0"
-                  />
-                </defs>
-                <text font-size="17">
-                  <textPath xlink:href="#circle">• SCROLL DOWN • TO SEE • MORE</textPath>
-                </text>
-              </svg>
-            </div>
-            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-              <div class="animate-bounce">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-6 w-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 17.25L12 21m0 0l-3.75-3.75M12 21V3"
-                  />
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-      </UContainer>
-      <div class="grid-pattern grid-pattern--dark hero hidden dark:block"></div>
-      <div class="grid-pattern grid-pattern--white hero block dark:hidden"></div>
-    </section>
+		<section id="education">
+			<div class="flex min-h-0 flex-col gap-y-6">
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 7" in-view>
+					<h2 class="text-xl font-bold text-highlighted">{{ ui.education }}</h2>
+				</MagicBlurFade>
+				<div class="flex flex-col gap-8">
+					<MagicBlurFade
+						v-for="(education, id) in DATA.education"
+						:key="education.company"
+						:delay="BLUR_FADE_DELAY * 8 + id * 0.05"
+						in-view
+					>
+						<PortfolioResumeCard v-bind="education" />
+					</MagicBlurFade>
+				</div>
+			</div>
+		</section>
 
-    <section class="v-wrapper text-md relative dark:text-gray-300">
-      <UContainer
-        class="relative z-20 grid grid-cols-1 gap-6 pb-16 pt-32 md:grid-cols-1 md:gap-8"
-      >
-        <h2
-          class="text-2xl font-black leading-[1.4] dark:text-gray-200 sm:text-4xl sm:leading-[1.3] md:mt-2"
-        >
-          Éveillez
-          <span
-            class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
-            >votre curiosité </span
-          >!
-        </h2>
-        <div class="-mt-4 max-w-sm">
-          <p class="text-md text-gray-700 dark:text-gray-400">
-            Plongez dans des articles sur l'IA, la VR/AR et les concepts de développement
-            Web de pointe !
-          </p>
-        </div>
-      </UContainer>
-    </section>
+		<section id="skills">
+			<div class="flex min-h-0 flex-col gap-y-4">
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 9" in-view>
+					<h2 class="text-xl font-bold text-highlighted">{{ ui.skills }}</h2>
+				</MagicBlurFade>
+				<div class="flex flex-wrap gap-2">
+					<MagicBlurFade
+						v-for="(skill, id) in DATA.skills"
+						:key="skill.icon"
+						:delay="BLUR_FADE_DELAY * 10 + id * 0.05"
+						in-view
+					>
+						<div
+							class="flex h-8 w-fit items-center gap-2 rounded-xl border border-default bg-default px-4 ring-2 ring-(--ui-border)/20"
+						>
+							<UIcon :name="skill.icon" class="size-4" />
+							<span class="text-sm font-medium text-highlighted">{{ skill.name }}</span>
+						</div>
+					</MagicBlurFade>
+				</div>
+			</div>
+		</section>
 
-    <section class="v-wrapper text-md relative dark:text-gray-300">
-      <UContainer
-        class="relative z-20 grid grid-cols-1 gap-6 pb-16 pt-0 md:grid-cols-1 md:gap-8"
-      >
-        <div class="-m-4 mb-12 flex flex-wrap">
-          <BaseArticleCard :key="item" v-for="item in data_articles" v-bind="item" />
-        </div>
-        <div class="-m-2 flex flex-wrap md:justify-center">
-          <div class="w-full p-2 md:w-auto">
-            <NuxtLink
-              class="text-md block w-full rounded-full bg-gray-900 px-12 py-3.5 text-center font-bold text-white hover:bg-gray-800"
-              to="/articles"
-              >Lire plus d'articles !</NuxtLink
-            >
-          </div>
-        </div>
-      </UContainer>
-    </section>
-  </div>
+		<section id="languages">
+			<div class="flex min-h-0 flex-col gap-y-4">
+				<MagicBlurFade :delay="BLUR_FADE_DELAY * 11" in-view>
+					<h2 class="text-xl font-bold text-highlighted">{{ ui.languages }}</h2>
+				</MagicBlurFade>
+				<div class="grid grid-cols-1 gap-3 sm:grid-cols-3">
+					<MagicBlurFade
+						v-for="(language, id) in DATA.languages"
+						:key="id"
+						:delay="BLUR_FADE_DELAY * 12 + id * 0.05"
+						in-view
+					>
+						<div class="flex h-full flex-col gap-0.5 rounded-xl border border-default px-4 py-3">
+							<span class="text-sm font-semibold text-highlighted">{{ language.name }}</span>
+							<span class="text-xs text-muted">{{ language.level }}</span>
+						</div>
+					</MagicBlurFade>
+				</div>
+			</div>
+		</section>
+
+		<section id="projects">
+			<MagicBlurFade :delay="BLUR_FADE_DELAY * 13" in-view>
+				<div class="flex min-h-0 flex-col gap-y-8">
+					<PortfolioSectionHeader :label="ui.projects.label" :title="ui.projects.title">
+						{{ ui.projects.text }}
+					</PortfolioSectionHeader>
+					<div
+						class="mx-auto grid w-full max-w-[800px] auto-rows-fr grid-cols-1 gap-3"
+						:class="{ 'sm:grid-cols-2': DATA.projects.length > 1 }"
+					>
+						<MagicBlurFade
+							v-for="(project, id) in DATA.projects"
+							:key="id"
+							:delay="BLUR_FADE_DELAY * 14 + id * 0.05"
+							class="h-full"
+							in-view
+						>
+							<PortfolioProjectCard v-bind="project" />
+						</MagicBlurFade>
+					</div>
+				</div>
+			</MagicBlurFade>
+		</section>
+
+		<section id="events">
+			<MagicBlurFade :delay="BLUR_FADE_DELAY * 15" in-view>
+				<div class="flex min-h-0 w-full flex-col gap-y-8">
+					<PortfolioSectionHeader :label="ui.events.label" :title="ui.events.title">
+						{{ ui.events.text }}
+					</PortfolioSectionHeader>
+					<ol class="flex w-full flex-col p-4">
+						<li
+							v-for="(event, id) in DATA.events"
+							:key="id"
+							class="relative flex w-full items-start gap-10"
+							:class="id < DATA.events.length - 1 ? 'pb-8' : ''"
+						>
+							<div class="relative flex shrink-0 items-start justify-center self-stretch">
+								<div
+									v-if="id < DATA.events.length - 1"
+									class="absolute top-0 left-1/2 h-[calc(100%+2rem)] w-px -translate-x-1/2 bg-border"
+								/>
+								<span
+									class="relative z-10 flex size-10 items-center justify-center rounded-full border border-default bg-default text-highlighted shadow ring-2 ring-default"
+								>
+									<UIcon :name="event.icon" class="size-5" />
+								</span>
+							</div>
+							<div class="flex min-w-0 flex-1 flex-col justify-start gap-2">
+								<time class="text-xs text-muted">{{ event.dates }}</time>
+								<h3 class="leading-none font-semibold text-highlighted">{{ event.title }}</h3>
+								<p class="text-sm text-muted">{{ event.location }}</p>
+								<p class="text-sm leading-relaxed break-words text-muted">{{ event.description }}</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</MagicBlurFade>
+		</section>
+
+		<section id="contact">
+			<MagicBlurFade :delay="BLUR_FADE_DELAY * 16" in-view>
+				<div class="relative rounded-xl border border-default p-10">
+					<div
+						class="absolute -top-4 left-1/2 z-10 -translate-x-1/2 rounded-xl border border-default bg-inverted px-4 py-1"
+					>
+						<span class="text-sm font-medium text-inverted">{{ ui.contact.label }}</span>
+					</div>
+					<div class="absolute inset-0 h-1/2 overflow-hidden rounded-xl text-highlighted">
+						<MagicFlickeringGrid class="[mask-image:linear-gradient(to_bottom,black,transparent)]" />
+					</div>
+					<div class="relative flex flex-col items-center gap-4 text-center">
+						<h2 class="text-3xl font-bold tracking-tighter text-highlighted sm:text-5xl">{{ ui.contact.title }}</h2>
+						<p class="mx-auto max-w-lg text-balance text-muted">
+							{{ ui.contact.before }}
+							<a :href="`mailto:${DATA.contact.email}`" :class="linkClass">{{ DATA.contact.email }}</a>
+							{{ ui.contact.or }}
+							<a :href="linkedin" target="_blank" rel="noopener noreferrer" :class="linkClass">LinkedIn</a
+							>{{ ui.contact.after }}
+						</p>
+						<a
+							:href="encodeURI(DATA.cvUrl)"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="mt-2 inline-flex items-center gap-2 rounded-xl border border-default bg-default px-4 py-2 text-sm font-medium text-highlighted transition-colors hover:bg-muted"
+						>
+							<UIcon name="i-lucide-file-down" class="size-4" />
+							{{ ui.contact.cv }}
+						</a>
+					</div>
+				</div>
+			</MagicBlurFade>
+		</section>
+	</main>
 </template>
 
-<script setup>
-const query = groq`*[_type == "article"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
-const [{ data: sanityArticles, refresh: refresh_articles }] = await Promise.all([
-  useSanityQuery(query),
-]);
-const data_articles = computed(() => sanityArticles.value?.data ?? sanityArticles.value ?? []);
+<script setup lang="ts">
+const { resume: DATA, ui } = useLang();
+
+const BLUR_FADE_DELAY = 0.04;
+
+const linkClass = "text-blue-500 underline-offset-4 hover:underline";
+const linkedin = computed(() => DATA.value.contact.social.find((s) => s.name === "LinkedIn")?.url);
+
+useHead({ title: () => `${DATA.value.name} — ${ui.value.role}` });
 </script>

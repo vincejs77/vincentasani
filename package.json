@@ -10,6 +10,9 @@
 		"postinstall": "nuxt prepare"
 	},
 	"devDependencies": {
+		"@iconify-json/logos": "^1.2.17",
+		"@iconify-json/lucide": "^1.2.147",
+		"@iconify-json/simple-icons": "^1.2.100",
 		"@nuxt/content": "^3.7.0",
 		"@types/aos": "^3.0.4",
 		"@types/node": "^22",

@@ -4,25 +4,38 @@
 @source "../../../content/**/*";
 
 @theme {
-	--font-sans: "Satoshi", Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	--font-sans: "Geist", "Satoshi", Arial, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	--animate-spin-slow: spin 8s linear infinite;
+}
+
+/* Palette neutre inspirée de shadcn/ui (portfolio Magic UI) */
+:root {
+	--ui-text: var(--ui-color-neutral-950);
+	--ui-text-highlighted: var(--ui-color-neutral-950);
+	--ui-bg-muted: var(--ui-color-neutral-100);
+}
+
+.dark {
+	--ui-bg: var(--ui-color-neutral-950);
+	--ui-bg-muted: var(--ui-color-neutral-800);
+	--ui-bg-elevated: var(--ui-color-neutral-900);
+	--ui-text: var(--ui-color-neutral-50);
+	--ui-text-highlighted: #fff;
+	--ui-border: var(--ui-color-neutral-800);
+	--ui-border-muted: var(--ui-color-neutral-800);
 }
 
 html,
 body {
-	@apply font-sans duration-[0.01s] ease-in-out transition-colors relative z-20;
+	@apply font-sans antialiased bg-default duration-[0.01s] ease-in-out transition-colors relative z-20;
 }
 
-body::after {
-	content: "";
-	opacity: 0.15;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	pointer-events: none;
-	background-image: url(/img/svg/mesh.svg);
-	@apply bg-cover bg-center w-full h-full;
+html {
+	scroll-behavior: smooth;
+}
+
+.prose-links a {
+	@apply font-medium text-highlighted underline decoration-(--ui-border-accented) underline-offset-4 hover:decoration-current;
 }
 
 a,
@@ -197,3 +210,6 @@ a:focus-visible,
 .code-joke__caption {
 	@apply mt-2 text-xs italic text-gray-500 dark:text-gray-400;
 }
+
+
+/* 02021A Disp^l 424242 */

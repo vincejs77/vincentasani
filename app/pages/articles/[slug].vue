@@ -68,6 +68,26 @@
         </div>
       </UContainer>
     </div>
+
+    <section
+      v-if="otherArticles.length"
+      class="v-wrapper text-md relative dark:text-gray-300"
+    >
+      <UContainer class="relative z-20 pb-16 pt-">
+        <h2
+          class="mb-8 text-2xl font-black leading-[1.4] dark:text-gray-200 sm:text-3xl"
+        >
+          Lire aussi
+        </h2>
+        <div class="-m-4 flex flex-wrap">
+          <BaseArticleCard
+            v-for="item in otherArticles"
+            :key="item._id"
+            v-bind="item"
+          />
+        </div>
+      </UContainer>
+    </section>
   </div>
 </template>
 <script setup>
@@ -86,10 +106,27 @@ const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]
     }
   }}`;
 
-const [{ data: sanityArticle, refresh: refresh_articles }] = await Promise.all([
-  useSanityQuery(query),
-]);
+const otherArticlesQuery = groq`*[_type == "article" && slug.current != "${route.params.slug}"] | order(date desc) [0...3] {
+  _id,
+  title,
+  _updatedAt,
+  date,
+  slug,
+  "imageUrl": image.asset->,
+  categorie->,
+  content
+}`;
+
+const [{ data: sanityArticle, refresh: refresh_articles }, { data: sanityOtherArticles }] =
+  await Promise.all([useSanityQuery(query), useSanityQuery(otherArticlesQuery)]);
+
 const data_articles = computed(() => sanityArticle.value?.data ?? sanityArticle.value ?? []);
+
+function getOtherArticles() {
+  return sanityOtherArticles.value?.data ?? sanityOtherArticles.value ?? [];
+}
+
+const otherArticles = computed(() => getOtherArticles());
 
 function readingTime(text) {
   // https://thereadtime.com/

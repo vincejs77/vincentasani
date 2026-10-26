@@ -5,16 +5,16 @@ export default defineNuxtConfig({
 	app: {
 		pageTransition: { name: "slide-down", mode: "out-in" },
 		head: {
-			title: "Home - Vincent ASANI",
+			title: "Vincent Asani — Ingénieur logiciel",
 			meta: [
 				{ charset: "utf-16" },
 				{ name: "viewport", content: "width=device-width, initial-scale=1" },
-				{ name: "description", content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications." },
+				{ name: "description", content: "Ingénieur logiciel et chef de projet basé à Kinshasa, RDC. Je conçois des produits numériques utiles et j'accompagne la transformation digitale des organisations." },
 				{ name: "format-detection", content: "telephone=no" },
 				{ property: "og:title", content: "Hello ! it's Vincent Asani" },
 				{
 					property: "og:description",
-					content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications."
+					content: "Ingénieur logiciel et chef de projet basé à Kinshasa, RDC. Je conçois des produits numériques utiles et j'accompagne la transformation digitale des organisations."
 				},
 				{ property: "og:url", content: "https://vincentasani.vercel.app/img/cover.png" },
 				{
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 				{ name: "twitter:title", content: "Hello ! it's Vincent Asani" },
 				{
 					name: "twitter:description",
-					content: "I am a software engineer based in Goma, DRC, creating quality web sites and applications."
+					content: "Ingénieur logiciel et chef de projet basé à Kinshasa, RDC. Je conçois des produits numériques utiles et j'accompagne la transformation digitale des organisations."
 				},
 				{
 					name: "twitter:image",
@@ -66,9 +66,10 @@ export default defineNuxtConfig({
 	},
 	modules: ["@nuxt/ui", "@nuxtjs/sanity", "@nuxt/content", "@pinia/nuxt", "@vercel/analytics/nuxt"],
 	colorMode: {
+		// Dark par défaut pour tout visiteur ; la clé a été renommée pour ignorer les anciens choix « light »/« system » enregistrés
 		preference: "dark",
-		fallback: "light",
-		storageKey: "v-color-mode"
+		fallback: "dark",
+		storageKey: "v-theme"
 	},
 	runtimeConfig: {
 		sanity: {
@@ -86,6 +87,17 @@ export default defineNuxtConfig({
 	content: {
 		experimental: {
 			sqliteConnector: "native"
+		}
+	},
+	fonts: {
+		families: [
+			// Satoshi est déjà chargée via fonts.scss — évite la double résolution
+			{ name: "Satoshi", provider: "none" },
+			{ name: "Geist", provider: "google", weights: [400, 500, 600, 700] }
+		],
+		experimental: {
+			// Empêche fontaine de fetcher main.css comme fichier de police
+			disableLocalFallbacks: true
 		}
 	},
 	vite: {

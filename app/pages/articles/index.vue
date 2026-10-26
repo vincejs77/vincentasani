@@ -1,7 +1,7 @@
 <template>
   <div class="v-index dark:text-white">
     <section class="v-wrapper">
-      <UContainer class="py-16">
+      <UContainer class="pt-16">
         <div class="flex justify-between">
           <div>
             <div
@@ -30,20 +30,105 @@
     </section>
     <section class="v-wrapper text-md relative dark:text-gray-300">
       <UContainer
-        class="relative z-20 grid grid-cols-1 gap-6 pb-16 pt-0 md:grid-cols-1 md:gap-8"
+        class="relative z-20 grid grid-cols-1 gap-6 pb-16 pt-8 md:grid-cols-1 md:gap-8"
       >
-        <div class="-m-4 mb-0 flex flex-wrap">
-          <BaseArticleCard :key="item" v-for="item in _data_articles" v-bind="item" />
+        <div v-if="categories.length" class="mb-2 flex flex-wrap gap-2">
+          <button
+            type="button"
+            class="rounded-lg border px-4 py-2 text-xs font-semibold transition-colors"
+            :class="
+              selectedCategory === null
+                ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
+                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-gray-600'
+            "
+            @click="setCategoryFilter(null)"
+          >
+            Tous
+          </button>
+          <button
+            v-for="category in categories"
+            :key="category._id"
+            type="button"
+            class="rounded-lg border px-4 py-2 text-xs font-semibold transition-colors"
+            :class="
+              selectedCategory === category._id
+                ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
+                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-gray-600'
+            "
+            @click="setCategoryFilter(category._id)"
+          >
+            <span
+              v-if="selectedCategory !== category._id"
+              class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
+            >
+              {{ category.title }}
+            </span>
+            <span v-else>{{ category.title }}</span>
+          </button>
         </div>
+
+        <div v-if="filteredArticles.length" class="-m-4 mb-0 flex flex-wrap">
+          <BaseArticleCard
+            v-for="item in filteredArticles"
+            :key="item._id"
+            v-bind="item"
+          />
+        </div>
+
+        <p v-else class="py-8 text-center text-gray-500 dark:text-gray-400">
+          Aucun article dans cette catégorie.
+        </p>
       </UContainer>
     </section>
   </div>
 </template>
 
 <script setup>
-const query = groq`*[_type == "article"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content}`;
-const [{ data: sanityArticles, refresh: refresh_articles }] = await Promise.all([
-  useSanityQuery(query),
-]);
-const _data_articles = computed(() => sanityArticles.value?.data ?? sanityArticles.value ?? []);
+const query = groq`*[_type == "article"] | order(date desc) {
+  _id,
+  title,
+  _updatedAt,
+  date,
+  slug,
+  "imageUrl": image.asset->,
+  categorie->,
+  content
+}`;
+
+const [{ data: sanityArticles }] = await Promise.all([useSanityQuery(query)]);
+
+const _data_articles = computed(
+  () => sanityArticles.value?.data ?? sanityArticles.value ?? [],
+);
+
+const selectedCategory = ref(null);
+
+const categories = computed(() => {
+  const map = new Map();
+
+  for (const article of _data_articles.value) {
+    const category = article.categorie;
+    if (category?._id) {
+      map.set(category._id, category);
+    }
+  }
+
+  return Array.from(map.values());
+});
+
+function filterArticles(articles, categoryId) {
+  if (!categoryId) {
+    return articles;
+  }
+
+  return articles.filter((article) => article.categorie?._id === categoryId);
+}
+
+const filteredArticles = computed(() =>
+  filterArticles(_data_articles.value, selectedCategory.value),
+);
+
+function setCategoryFilter(categoryId) {
+  selectedCategory.value = categoryId;
+}
 </script>
