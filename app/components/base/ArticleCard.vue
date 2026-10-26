@@ -1,8 +1,6 @@
 <template>
   <div class="group v-card w-full md:w-1/2 p-4">
-    <div
-      class="p-4 sm:p-6 h-full border border-default bg-default rounded-xl transition-all duration-200 hover:ring-2 hover:ring-(--ui-bg-muted)"
-    >
+    <div class="h-full">
       <div class="flex flex-wrap flex-col -m-3">
         <div class="w-auto p-3">
           <NuxtLink
@@ -12,7 +10,7 @@
             <img
               :src="imageUrl.url"
               alt=""
-              class="w-full h-[200px] object-cover rounded-xl"
+              class="w-full h-[200px] object-cover rounded-xl transition-opacity duration-200 group-hover:opacity-80"
             />
           </NuxtLink>
         </div>

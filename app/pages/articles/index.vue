@@ -34,11 +34,11 @@
         <div v-if="categories.length" class="mb-2 flex flex-wrap gap-2">
           <button
             type="button"
-            class="rounded-lg border px-4 py-2 text-xs font-semibold transition-colors"
+            class="rounded-full px-4 py-2 text-xs font-semibold transition-colors"
             :class="
               selectedCategory === null
-                ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
-                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-gray-600'
+                ? 'bg-inverted text-inverted'
+                : 'bg-elevated text-muted hover:text-highlighted'
             "
             @click="setCategoryFilter(null)"
           >
@@ -48,11 +48,11 @@
             v-for="category in categories"
             :key="category._id"
             type="button"
-            class="rounded-lg border px-4 py-2 text-xs font-semibold transition-colors"
+            class="rounded-full px-4 py-2 text-xs font-semibold transition-colors"
             :class="
               selectedCategory === category._id
-                ? 'border-gray-900 bg-gray-900 text-white dark:border-white dark:bg-white dark:text-gray-900'
-                : 'border-gray-200 bg-white text-gray-600 hover:border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:hover:border-gray-600'
+                ? 'bg-inverted text-inverted'
+                : 'bg-elevated text-muted hover:text-highlighted'
             "
             @click="setCategoryFilter(category._id)"
           >
