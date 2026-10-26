@@ -7,20 +7,19 @@
             <div
               class="mb-4 text-sm font-medium uppercase text-gray-500 dark:text-gray-300"
             >
-              <span>📝 Articles</span>
+              <span>{{ ui.articles.label }}</span>
             </div>
             <div class="flex flex-col justify-between md:flex-row md:space-x-10">
               <div class="md:w-1/2">
                 <h2
                   class="text-3xl font-black leading-[1.4] dark:text-gray-200 sm:text-5xl sm:leading-[1.3] md:mt-2"
                 >
-                  Mes articles
+                  {{ ui.articles.title }}
                 </h2>
               </div>
               <div class="md:w-1/2">
                 <p class="text-md mt-4 text-gray-700 dark:text-gray-400">
-                  Plongez dans des articles sur l'IA, la VR/AR et les concepts de
-                  développement Web de pointe !
+                  {{ ui.articles.intro }}
                 </p>
               </div>
             </div>
@@ -43,7 +42,7 @@
             "
             @click="setCategoryFilter(null)"
           >
-            Tous
+            {{ ui.articles.all }}
           </button>
           <button
             v-for="category in categories"
@@ -57,13 +56,7 @@
             "
             @click="setCategoryFilter(category._id)"
           >
-            <span
-              v-if="selectedCategory !== category._id"
-              class="bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent"
-            >
-              {{ category.title }}
-            </span>
-            <span v-else>{{ category.title }}</span>
+            {{ categoryLabel(category.title) }}
           </button>
         </div>
 
@@ -72,11 +65,12 @@
             v-for="item in filteredArticles"
             :key="item._id"
             v-bind="item"
+            :title="titleOf(item)"
           />
         </div>
 
         <p v-else class="py-8 text-center text-gray-500 dark:text-gray-400">
-          Aucun article dans cette catégorie.
+          {{ ui.articles.empty }}
         </p>
       </UContainer>
     </section>
@@ -84,6 +78,10 @@
 </template>
 
 <script setup>
+const { ui } = useLang();
+const { titleOf } = useArticleTitles();
+const categoryLabel = (title) => ui.value.articles.categories[title] ?? title;
+
 const query = groq`*[_type == "article"] | order(date desc) {
   _id,
   title,

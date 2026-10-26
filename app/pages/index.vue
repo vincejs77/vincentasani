@@ -1,7 +1,7 @@
 <template>
-	<main class="relative flex min-h-dvh flex-col gap-14">
-		<section id="hero">
-			<div class="mx-auto w-full max-w-2xl space-y-8">
+	<main class="relative flex flex-col divide-y divide-(--ui-border)">
+		<section id="hero" class="px-8 pt-12 pb-10 sm:px-12 sm:pt-16 sm:pb-12">
+			<div class="mx-auto w-full max-w-3xl space-y-8">
 				<div class="flex flex-col justify-between gap-2 gap-y-6 md:flex-row">
 					<div class="order-2 flex flex-col gap-2 md:order-1">
 						<MagicBlurFade :delay="BLUR_FADE_DELAY" :y-offset="8" blur="8px">
@@ -39,7 +39,7 @@
 			</div>
 		</section>
 
-		<section id="about">
+		<section id="about" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<div class="flex min-h-0 flex-col gap-y-4">
 				<MagicBlurFade :delay="BLUR_FADE_DELAY * 3">
 					<h2 class="text-xl font-bold text-highlighted">{{ ui.about }}</h2>
@@ -51,7 +51,7 @@
 			</div>
 		</section>
 
-		<section id="work">
+		<section id="work" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<div class="flex min-h-0 flex-col gap-y-6">
 				<MagicBlurFade :delay="BLUR_FADE_DELAY * 5">
 					<h2 class="text-xl font-bold text-highlighted">{{ ui.work }}</h2>
@@ -64,7 +64,7 @@
 			</div>
 		</section>
 
-		<section id="education">
+		<section id="education" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<div class="flex min-h-0 flex-col gap-y-6">
 				<MagicBlurFade :delay="BLUR_FADE_DELAY * 7" in-view>
 					<h2 class="text-xl font-bold text-highlighted">{{ ui.education }}</h2>
@@ -82,7 +82,7 @@
 			</div>
 		</section>
 
-		<section id="skills">
+		<section id="skills" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<div class="flex min-h-0 flex-col gap-y-4">
 				<MagicBlurFade :delay="BLUR_FADE_DELAY * 9" in-view>
 					<h2 class="text-xl font-bold text-highlighted">{{ ui.skills }}</h2>
@@ -105,7 +105,7 @@
 			</div>
 		</section>
 
-		<section id="languages">
+		<section id="languages" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<div class="flex min-h-0 flex-col gap-y-4">
 				<MagicBlurFade :delay="BLUR_FADE_DELAY * 11" in-view>
 					<h2 class="text-xl font-bold text-highlighted">{{ ui.languages }}</h2>
@@ -126,7 +126,8 @@
 			</div>
 		</section>
 
-		<section id="projects">
+		<section id="projects" class="relative scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
+			<MagicHatchGutters />
 			<MagicBlurFade :delay="BLUR_FADE_DELAY * 13" in-view>
 				<div class="flex min-h-0 flex-col gap-y-8">
 					<PortfolioSectionHeader :label="ui.projects.label" :title="ui.projects.title">
@@ -150,7 +151,8 @@
 			</MagicBlurFade>
 		</section>
 
-		<section id="events">
+		<section id="events" class="relative scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
+			<MagicHatchGutters />
 			<MagicBlurFade :delay="BLUR_FADE_DELAY * 15" in-view>
 				<div class="flex min-h-0 w-full flex-col gap-y-8">
 					<PortfolioSectionHeader :label="ui.events.label" :title="ui.events.title">
@@ -186,7 +188,7 @@
 			</MagicBlurFade>
 		</section>
 
-		<section id="contact">
+		<section id="contact" class="scroll-mt-4 px-8 py-10 sm:px-12 sm:py-12">
 			<MagicBlurFade :delay="BLUR_FADE_DELAY * 16" in-view>
 				<div class="relative rounded-xl border border-default p-10">
 					<div

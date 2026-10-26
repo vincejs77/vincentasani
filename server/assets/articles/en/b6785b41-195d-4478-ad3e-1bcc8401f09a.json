@@ -1,0 +1,1059 @@
+{
+	"title": "One of the secrets behind more consistent AI content? JSON Prompting.",
+	"blocks": {
+		"c04a3eeb26a8": [
+			{
+				"_key": "6065700940790",
+				"_type": "span",
+				"marks": [],
+				"text": "In my search for the best ways to communicate with generative AI, whether to create new content, write code quickly, automate my tasks or brainstorm, I kept running into more and more challenges. Every attempt pushed me to rework my prompts, sometimes to the point of exhaustion. "
+			}
+		],
+		"9fc525470e2f": [
+			{
+				"_key": "f006dee3e5d80",
+				"_type": "span",
+				"marks": [],
+				"text": "I realized that talking to GenAI in natural language is, of course, the most intuitive approach. After all, these tools are designed to understand and produce human language. But as I kept experimenting, after trying a thousand and one ways to phrase my requests, I understood that it was becoming crucial to be more consistent and structured in my interactions."
+			}
+		],
+		"411d66a4f967": [
+			{
+				"_key": "ead67a6e5bba0",
+				"_type": "span",
+				"marks": [],
+				"text": "And that’s when, during a late-night research session, I stumbled on a technique that changed everything: JSON Prompting."
+			}
+		],
+		"47650dcc86c7": [
+			{
+				"_key": "d9a0e1f9854e0",
+				"_type": "span",
+				"marks": [],
+				"text": "In this article, I’m sharing the tips I’ve picked up thanks to JSON Prompting"
+			}
+		],
+		"0c64ce78a285": [
+			{
+				"_key": "9670a073854e0",
+				"_type": "span",
+				"marks": [],
+				"text": "#1 First things first: what exactly is JSON?"
+			}
+		],
+		"f67a8f8e72af": [
+			{
+				"_key": "f0d944a9c9810",
+				"_type": "span",
+				"marks": [],
+				"text": "Don’t panic. We’re not going to dive into incomprehensible code."
+			}
+		],
+		"4575b09811cb": [
+			{
+				"_key": "61f97510f40f0",
+				"_type": "span",
+				"marks": [],
+				"text": "The "
+			},
+			{
+				"_key": "61f97510f40f1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "JSON"
+			},
+			{
+				"_key": "61f97510f40f2",
+				"_type": "span",
+				"marks": [],
+				"text": " format (JavaScript Object Notation) is just a way of organizing information into clear blocks, a bit like boxes to fill in:"
+			}
+		],
+		"cc4fbe8f858b": [
+			{
+				"_key": "23a7c6d12bee0",
+				"_type": "span",
+				"marks": [],
+				"text": "JSON is "
+			},
+			{
+				"_key": "23a7c6d12bee1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "commonly used for storing and transferring data in the software development world."
+			}
+		],
+		"492c18143a6f": [
+			{
+				"_key": "9c2903fec0c60",
+				"_type": "span",
+				"marks": [],
+				"text": "The good news is that AI loves it. It’s clear, it’s precise, and it avoids misunderstandings or vague answers.  "
+			}
+		],
+		"6ca2ff2c88c7": [
+			{
+				"_key": "784acd6b36290",
+				"_type": "span",
+				"marks": [],
+				"text": "#2 Why is it useful?"
+			}
+		],
+		"210069795073": [
+			{
+				"_key": "804ee4307ca90",
+				"_type": "span",
+				"marks": [],
+				"text": "At some point, simply asking "
+			},
+			{
+				"_key": "804ee4307ca91",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "“Make me a cool video to promote our app”"
+			},
+			{
+				"_key": "804ee4307ca92",
+				"_type": "span",
+				"marks": [],
+				"text": "… well, it’s just not enough anymore."
+			}
+		],
+		"b7a187004832": [
+			{
+				"_key": "fb816d53651d0",
+				"_type": "span",
+				"marks": [],
+				"text": "The AI will do what it can, but you need results that are "
+			},
+			{
+				"_key": "fb816d53651d1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "clear"
+			},
+			{
+				"_key": "fb816d53651d2",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "fb816d53651d3",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "consistent"
+			},
+			{
+				"_key": "fb816d53651d4",
+				"_type": "span",
+				"marks": [],
+				"text": " and "
+			},
+			{
+				"_key": "fb816d53651d5",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "reusable"
+			},
+			{
+				"_key": "fb816d53651d6",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"fb27beffb46f": [
+			{
+				"_key": "dc5dc07f8c120",
+				"_type": "span",
+				"marks": [],
+				"text": "That’s where "
+			},
+			{
+				"_key": "dc5dc07f8c121",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "JSON Prompting"
+			},
+			{
+				"_key": "dc5dc07f8c122",
+				"_type": "span",
+				"marks": [],
+				"text": " is a game changer: it’s not just a format, it’s a method."
+			}
+		],
+		"0b175be3587b": [
+			{
+				"_key": "8b0d9b57b1c10",
+				"_type": "span",
+				"marks": [],
+				"text": "1. It’s clear and structured"
+			}
+		],
+		"28f6ef529067": [
+			{
+				"_key": "f0ffa7acaa0b0",
+				"_type": "span",
+				"marks": [],
+				"text": "Instead of giving a vague instruction, you can write a complete brief, like this one:"
+			}
+		],
+		"0dc6cd7d9b16": [
+			{
+				"_key": "fbfadcd93ec10",
+				"_type": "span",
+				"marks": [],
+				"text": "2. It’s ready for automation"
+			}
+		],
+		"07f32f2a230f": [
+			{
+				"_key": "e7befd8dce130",
+				"_type": "span",
+				"marks": [],
+				"text": "If you use tools like "
+			},
+			{
+				"_key": "e7befd8dce131",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Zapier"
+			},
+			{
+				"_key": "e7befd8dce132",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "e7befd8dce133",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Make"
+			},
+			{
+				"_key": "e7befd8dce134",
+				"_type": "span",
+				"marks": [],
+				"text": " or even an "
+			},
+			{
+				"_key": "e7befd8dce135",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Airtable"
+			},
+			{
+				"_key": "e7befd8dce136",
+				"_type": "span",
+				"marks": [],
+				"text": " base, this JSON format is ready to use as is."
+			}
+		],
+		"ece84b3dd637": [
+			{
+				"_key": "78ec99c9e33a0",
+				"_type": "span",
+				"marks": [],
+				"text": "You can automate the creation of several videos from a database."
+			}
+		],
+		"ede61ec0a510": [
+			{
+				"_key": "27ae8299578a0",
+				"_type": "span",
+				"marks": [],
+				"text": "📌 For example, a table with 10 scripts = 10 different videos, generated with no manual intervention."
+			}
+		],
+		"35b12aab25dd": [
+			{
+				"_key": "48b0d8c855190",
+				"_type": "span",
+				"marks": [],
+				"text": "3. It can be duplicated endlessly"
+			}
+		],
+		"7d580350b4f4": [
+			{
+				"_key": "2b1d505b74330",
+				"_type": "span",
+				"marks": [],
+				"text": "A well-structured prompt becomes a "
+			},
+			{
+				"_key": "2b1d505b74331",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "recipe"
+			},
+			{
+				"_key": "2b1d505b74332",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"73a19df25306": [
+			{
+				"_key": "a11bf4a711be0",
+				"_type": "span",
+				"marks": [],
+				"text": "You can reuse it, adapt it, translate it… while keeping everything consistent."
+			}
+		],
+		"22bb3af9c70d": [
+			{
+				"_key": "1591c8581a6d0",
+				"_type": "span",
+				"marks": [],
+				"text": "A short version for TikTok"
+			}
+		],
+		"5ca20c8a27af": [
+			{
+				"_key": "8946785b61760",
+				"_type": "span",
+				"marks": [],
+				"text": "A long version for YouTube"
+			}
+		],
+		"da74427a92df": [
+			{
+				"_key": "a213777fa3420",
+				"_type": "span",
+				"marks": [],
+				"text": "A localized version for each French-speaking African country"
+			}
+		],
+		"e28dcc20af65": [
+			{
+				"_key": "38f37b7dde090",
+				"_type": "span",
+				"marks": [],
+				"text": "👉 You go from an “"
+			},
+			{
+				"_key": "20476006bbbc",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "assistant"
+			},
+			{
+				"_key": "58a3284edfbc",
+				"_type": "span",
+				"marks": [],
+				"text": "” AI to an AI that’s a "
+			},
+			{
+				"_key": "38f37b7dde091",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "production partner."
+			}
+		],
+		"17ccdde68092": [
+			{
+				"_key": "72265408d8d50",
+				"_type": "span",
+				"marks": [],
+				"text": "4. Better alignment with LLM DNA"
+			}
+		],
+		"efbd781c49de": [
+			{
+				"_key": "24c69c483f600",
+				"_type": "span",
+				"marks": [],
+				"text": "Models like GPT, Claude or Gemini were heavily trained on code, configuration files, API responses... in short, "
+			},
+			{
+				"_key": "24c69c483f601",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "structures that look like JSON"
+			},
+			{
+				"_key": "24c69c483f602",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"4d558839757a": [
+			{
+				"_key": "1f311b13dada",
+				"_type": "span",
+				"marks": [],
+				"text": "👉 "
+			},
+			{
+				"_key": "83a0f7cf9cab",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "The result?"
+			},
+			{
+				"_key": "c0cd1250396f",
+				"_type": "span",
+				"marks": [],
+				"text": " They naturally understand these formats and respond to them with far more precision than to free-form text."
+			}
+		],
+		"c616d287dc1e": [
+			{
+				"_key": "aa347f8af96a0",
+				"_type": "span",
+				"marks": [],
+				"text": "#3 Best practices (no need to be a dev)"
+			}
+		],
+		"71423cfdd2db": [
+			{
+				"_key": "5abd957f57f2",
+				"_type": "span",
+				"marks": [],
+				"text": "Here are a few simple pointers to get off to a good start:"
+			}
+		],
+		"f6d82b6197f4": [
+			{
+				"_key": "3304693087970",
+				"_type": "span",
+				"marks": [],
+				"text": "1. Think clearly"
+			}
+		],
+		"ef5a055aef0c": [
+			{
+				"_key": "51d40510a25d0",
+				"_type": "span",
+				"marks": [],
+				"text": "A few well-chosen fields are enough (or in French if you prefer):"
+			}
+		],
+		"35e6f181577e": [
+			{
+				"_key": "6124436534f00",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "5c7a7fc63087",
+				"_type": "span",
+				"marks": [
+					"code",
+					"strong"
+				],
+				"text": "task"
+			},
+			{
+				"_key": "fde8fd74ae17",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "6124436534f01",
+				"_type": "span",
+				"marks": [],
+				"text": ": "
+			},
+			{
+				"_key": "2e2183aaedaf",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "what you want"
+			},
+			{
+				"_key": "971c7571715f",
+				"_type": "span",
+				"marks": [],
+				"text": " (e.g. "
+			},
+			{
+				"_key": "6124436534f02",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "summarize"
+			},
+			{
+				"_key": "6124436534f03",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "6124436534f04",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "generate_image"
+			},
+			{
+				"_key": "6124436534f05",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "6124436534f06",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "write_title"
+			},
+			{
+				"_key": "6124436534f07",
+				"_type": "span",
+				"marks": [],
+				"text": ")"
+			}
+		],
+		"f064ee20bb3e": [
+			{
+				"_key": "0c6d9dc3c78f0",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "4cdf153a9d68",
+				"_type": "span",
+				"marks": [
+					"code",
+					"strong"
+				],
+				"text": "language"
+			},
+			{
+				"_key": "bb7351ef625b",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "0c6d9dc3c78f1",
+				"_type": "span",
+				"marks": [],
+				"text": ": "
+			},
+			{
+				"_key": "0c6d9dc3c78f2",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "fr"
+			},
+			{
+				"_key": "0c6d9dc3c78f3",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "0c6d9dc3c78f4",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "en"
+			},
+			{
+				"_key": "0c6d9dc3c78f5",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "0c6d9dc3c78f6",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "sw"
+			},
+			{
+				"_key": "0c6d9dc3c78f7",
+				"_type": "span",
+				"marks": [],
+				"text": "…"
+			}
+		],
+		"5b014df2231c": [
+			{
+				"_key": "83010474cc7a0",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "f302dfaab64f",
+				"_type": "span",
+				"marks": [
+					"code",
+					"strong"
+				],
+				"text": "output_format"
+			},
+			{
+				"_key": "7f32bb17c3cf",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "83010474cc7a1",
+				"_type": "span",
+				"marks": [],
+				"text": ": "
+			},
+			{
+				"_key": "83010474cc7a2",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "text"
+			},
+			{
+				"_key": "83010474cc7a3",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "83010474cc7a4",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "HTML"
+			},
+			{
+				"_key": "83010474cc7a5",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "83010474cc7a6",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "JSON"
+			},
+			{
+				"_key": "83010474cc7a7",
+				"_type": "span",
+				"marks": [],
+				"text": "…"
+			}
+		],
+		"c48d32b8ce1a": [
+			{
+				"_key": "dd7c7c4c7dd20",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "5be4fa5ecd33",
+				"_type": "span",
+				"marks": [
+					"code",
+					"strong"
+				],
+				"text": "input"
+			},
+			{
+				"_key": "04fa01d7e2f4",
+				"_type": "span",
+				"marks": [
+					"code"
+				],
+				"text": "\""
+			},
+			{
+				"_key": "dd7c7c4c7dd21",
+				"_type": "span",
+				"marks": [],
+				"text": ": "
+			},
+			{
+				"_key": "a30b1dca7b6d",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "the content to process"
+			}
+		],
+		"16e048573e6f": [
+			{
+				"_key": "87933a9c11360",
+				"_type": "span",
+				"marks": [],
+				"text": "2. Start simple"
+			}
+		],
+		"88bd17a2a78a": [
+			{
+				"_key": "a566f866cea80",
+				"_type": "span",
+				"marks": [],
+				"text": "No need to unpack a whole encyclopedia.\n3 to 4 well-thought-out fields are often enough to make a big difference:"
+			}
+		],
+		"f19297d1044b": [
+			{
+				"_key": "ad2e8c105d910",
+				"_type": "span",
+				"marks": [],
+				"text": "Simple, clean, effective. And the AI gives you an answer that actually makes sense."
+			}
+		],
+		"b7aeedc02be5": [
+			{
+				"_key": "7820f6c90a8b0",
+				"_type": "span",
+				"marks": [],
+				"text": "3. Check your JSON"
+			}
+		],
+		"6d7159306f46": [
+			{
+				"_key": "863edd9034c90",
+				"_type": "span",
+				"marks": [],
+				"text": "A badly closed JSON is like a sentence that stops mid-flight.\nRemember to test it on "
+			},
+			{
+				"_key": "863edd9034c91",
+				"_type": "span",
+				"marks": [
+					"6787b7f8a513"
+				],
+				"text": "jsonlint.com"
+			},
+			{
+				"_key": "863edd9034c92",
+				"_type": "span",
+				"marks": [],
+				"text": " to avoid silly mistakes."
+			}
+		],
+		"51f7c4e62e88": [
+			{
+				"_key": "c82df23b513f0",
+				"_type": "span",
+				"marks": [],
+				"text": "#4 Two concrete use cases: DALL·E and Veo 3"
+			}
+		],
+		"766c7909df70": [
+			{
+				"_key": "fef10ee166490",
+				"_type": "span",
+				"marks": [],
+				"text": "1. Generating visuals with DALL·E"
+			}
+		],
+		"3ee088264158": [
+			{
+				"_key": "6ccfc5325fbe0",
+				"_type": "span",
+				"marks": [],
+				"text": "Preparing a visual communication campaign? Here’s a structured prompt:"
+			}
+		],
+		"69bb6ecfb407": [
+			{
+				"_key": "f9d77b18044b0",
+				"_type": "span",
+				"marks": [],
+				"text": "You get an image that’s ready to use for your educational or social media content."
+			}
+		],
+		"8ad30adaaf69": [
+			{
+				"_key": "164b77a3f8cc0",
+				"_type": "span",
+				"marks": [],
+				"text": "2. Generating a video with Veo 3"
+			}
+		],
+		"5f81441b57c5": [
+			{
+				"_key": "4f0d6781b9180",
+				"_type": "span",
+				"marks": [],
+				"text": "You can adapt this prompt for each campaign by changing the script, the visuals or the language."
+			}
+		],
+		"b8a9d296d71a": [
+			{
+				"_key": "06f48498f8540",
+				"_type": "span",
+				"marks": [],
+				"text": "#5 For developers: integrating AI with JSON Prompting"
+			}
+		],
+		"d0b4ccafe81f": [
+			{
+				"_key": "52070e4a0e2c0",
+				"_type": "span",
+				"marks": [],
+				"text": "If you build apps or services, JSON Prompting is a natural ally."
+			}
+		],
+		"dbe09a86c85d": [
+			{
+				"_key": "23848c0b51510",
+				"_type": "span",
+				"marks": [],
+				"text": "Why?"
+			}
+		],
+		"63a223b2121c": [
+			{
+				"_key": "22cb1e1081b50",
+				"_type": "span",
+				"marks": [],
+				"text": "JSON is "
+			},
+			{
+				"_key": "22cb1e1081b51",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "natively compatible with REST APIs"
+			}
+		],
+		"090ef6dc9874": [
+			{
+				"_key": "81231dcd94d60",
+				"_type": "span",
+				"marks": [],
+				"text": "It’s "
+			},
+			{
+				"_key": "81231dcd94d61",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "more robust"
+			},
+			{
+				"_key": "81231dcd94d62",
+				"_type": "span",
+				"marks": [],
+				"text": " than free-form text for automated requests"
+			}
+		],
+		"934a1aca77c1": [
+			{
+				"_key": "25d38acbb0310",
+				"_type": "span",
+				"marks": [],
+				"text": "It "
+			},
+			{
+				"_key": "25d38acbb0311",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "plugs straight into"
+			},
+			{
+				"_key": "25d38acbb0312",
+				"_type": "span",
+				"marks": [],
+				"text": " your workflows in Node.js, Python, PHP, etc."
+			}
+		],
+		"1282621ab3c1": [
+			{
+				"_key": "c46b43332baf0",
+				"_type": "span",
+				"marks": [],
+				"text": "Here’s an example of an API call with OpenAI (Node.js)"
+			}
+		],
+		"6bcb09ee90dc": [
+			{
+				"_key": "896b990fb94c0",
+				"_type": "span",
+				"marks": [],
+				"text": "You get a structured response that you can inject directly into your interface, database or CMS."
+			}
+		],
+		"aeffe6b1c405": [
+			{
+				"_key": "0ccdba9eeb4b0",
+				"_type": "span",
+				"marks": [],
+				"text": "👉 To go further, "
+			},
+			{
+				"_key": "0ccdba9eeb4b1",
+				"_type": "span",
+				"marks": [
+					"d051cd521e41"
+				],
+				"text": "OpenAI’s official guide"
+			},
+			{
+				"_key": "0ccdba9eeb4b2",
+				"_type": "span",
+				"marks": [],
+				"text": " shows you how to integrate the API into your projects, step by step."
+			}
+		],
+		"fe7eb4dc36e3": [
+			{
+				"_key": "3555ed2787c50",
+				"_type": "span",
+				"marks": [],
+				"text": "In conclusion"
+			}
+		],
+		"023eb71d0bce": [
+			{
+				"_key": "c3af7f41fcbd0",
+				"_type": "span",
+				"marks": [],
+				"text": "JSON Prompting isn’t just for developers. It’s a "
+			},
+			{
+				"_key": "c3af7f41fcbd1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "smart, reliable way to talk to AI"
+			},
+			{
+				"_key": "c3af7f41fcbd2",
+				"_type": "span",
+				"marks": [],
+				"text": ", whether you’re a marketer, a content creator, an entrepreneur, or a coder doing your own thing."
+			}
+		],
+		"757cca05f1dc": [
+			{
+				"_key": "fb4b40e746b80",
+				"_type": "span",
+				"marks": [],
+				"text": "By structuring your requests, you gain "
+			},
+			{
+				"_key": "284fd08134781",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "clarity"
+			},
+			{
+				"_key": "284fd08134782",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "e72c772476491",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "consistency, "
+			},
+			{
+				"_key": "e72c772476492",
+				"_type": "span",
+				"marks": [],
+				"text": "and "
+			},
+			{
+				"_key": "9115c10e7baa1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "automation"
+			},
+			{
+				"_key": "9115c10e7baa2",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"def11f21698d": [
+			{
+				"_key": "2cab52a382bc",
+				"_type": "span",
+				"marks": [],
+				"text": "See you very soon for more discoveries..."
+			}
+		]
+	}
+}

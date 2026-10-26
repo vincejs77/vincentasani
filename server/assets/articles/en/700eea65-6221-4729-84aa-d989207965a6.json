@@ -1,0 +1,481 @@
+{
+	"title": "AI is an ally. Doubt is human. Creation remains divine.",
+	"blocks": {
+		"a967faad7003": [
+			{
+				"_key": "504a5c7267fa",
+				"_type": "span",
+				"marks": [],
+				"text": "🎯 AI will never replace human creative doubt"
+			}
+		],
+		"c0c02e345885": [
+			{
+				"_key": "0a8468d58f1e0",
+				"_type": "span",
+				"marks": [],
+				"text": "In this article, I share a reflection born from my personal and professional experience. Find out why, despite the power of ("
+			},
+			{
+				"_key": "f85618461330",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "generative"
+			},
+			{
+				"_key": "ab6ebe30cd66",
+				"_type": "span",
+				"marks": [],
+				"text": ") artificial intelligence tools, creative doubt remains a deeply human privilege."
+			}
+		],
+		"525c50135a0f": [
+			{
+				"_key": "e4765178a3b70",
+				"_type": "span",
+				"marks": [],
+				"text": "A screen glowing at 2 a.m."
+			}
+		],
+		"1b8a5fdd4c98": [
+			{
+				"_key": "e30939d821270",
+				"_type": "span",
+				"marks": [],
+				"text": "There are nights when everything seems ready: the ideas, the tools, the lines to write… and yet, something's stuck. The cursor blinks, relentless, but the words ring hollow. I went through that moment again recently, working on a project close to my heart. The technique was there, the structure was solid… but the soul was missing."
+			}
+		],
+		"1d2246708bd6": [
+			{
+				"_key": "af3760975b3d0",
+				"_type": "span",
+				"marks": [],
+				"text": "I close my eyes, and the little voice pops up: "
+			},
+			{
+				"_key": "88c7ca49d114",
+				"_type": "span",
+				"marks": [],
+				"text": "“"
+			},
+			{
+				"_key": "e4f12472e4fe",
+				"_type": "span",
+				"marks": [
+					"em",
+					"strong"
+				],
+				"text": "Is this really it? Can you go further?"
+			},
+			{
+				"_key": "4222983fe8c9",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "”"
+			}
+		],
+		"99c875fb200b": [
+			{
+				"_key": "b82746e5cbff",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 That kind of doubt, I've come to understand over the years, is the creator's most powerful tool. And that's precisely where artificial intelligence can't follow us."
+			}
+		],
+		"b069806ca5ae": [
+			{
+				"_key": "061d481b04930",
+				"_type": "span",
+				"marks": [],
+				"text": "# AI: an amazing companion, but with no inner breath"
+			}
+		],
+		"77c14253ede9": [
+			{
+				"_key": "90e5db993dd30",
+				"_type": "span",
+				"marks": [],
+				"text": "I won't lie to you: AI is impressive. Midjourney to generate breathtaking visuals, ChatGPT to structure an idea, RunwayML to prototype videos in the blink of an eye… These tools speed things up, multiply what we can do tenfold, and open up dizzying possibilities."
+			}
+		],
+		"052eafff5e3f": [
+			{
+				"_key": "d609cc5e66d80",
+				"_type": "span",
+				"marks": [],
+				"text": "But after a few hours of using them, I always feel the same emptiness: "
+			},
+			{
+				"_key": "dba1de1d263a",
+				"_type": "span",
+				"marks": [
+					"strong",
+					"em"
+				],
+				"text": "everything is “perfect”"
+			},
+			{
+				"_key": "e8fdd4d9fbdf",
+				"_type": "span",
+				"marks": [],
+				"text": ", but without that spark. Output with no tremor, no clumsiness, none of that little deviation that makes a creation deeply human."
+			}
+		],
+		"47282738c38f": [
+			{
+				"_key": "9c051ddd6043",
+				"_type": "span",
+				"marks": [],
+				"text": "🎯 Creating isn't about filling a frame. It's about risking discomfort. It's choosing the imperfection that touches you over the perfection that slides right off."
+			}
+		],
+		"ffad9fab2eb2": [
+			{
+				"_key": "9fa707c0a1820",
+				"_type": "span",
+				"marks": [],
+				"text": "# When design becomes a quest for truth"
+			}
+		],
+		"13bcb64ba0d8": [
+			{
+				"_key": "6e043222fe900",
+				"_type": "span",
+				"marks": [],
+				"text": "A few months ago, while I was coordinating the project to digitize national parks in the DRC at Wito XR Studio, I went through that creative doubt. We had polished 3D models, smooth sequences… but everything felt too controlled, almost cold."
+			}
+		],
+		"c32de6067d85": [
+			{
+				"_key": "4d10cc2d29cc0",
+				"_type": "span",
+				"marks": [],
+				"text": "I turned off the screen, stepped back, and remembered: what we design has to carry an emotion, not just an image. I spent an entire evening listening to raw sounds from Kahuzi-Biega park: the sudden cry of a bird, messy rustling in the vegetation, silences full of life."
+			}
+		],
+		"e2f73db1d8d9": [
+			{
+				"_key": "7484a9f935840",
+				"_type": "span",
+				"marks": [],
+				"text": "The next day, I worked those imperfect details into the project. I loosened the lines that were too straight."
+			}
+		],
+		"243b96eb9610": [
+			{
+				"_key": "5782a70befc50",
+				"_type": "span",
+				"marks": [],
+				"text": "The result? A more alive, more human experience."
+			}
+		],
+		"a2e024935d87": [
+			{
+				"_key": "e7d4cb91ebf1",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 No algorithm would have suggested that controlled imperfection to me. Because the flaw is our privilege."
+			}
+		],
+		"3177efc6e74d": [
+			{
+				"_key": "376ac6a636610",
+				"_type": "span",
+				"marks": [],
+				"text": "# AI tools are brushes, not the hand that paints"
+			}
+		],
+		"ef2bea1a50d9": [
+			{
+				"_key": "e611936aba6b0",
+				"_type": "span",
+				"marks": [],
+				"text": "Midjourney, ChatGPT, RunwayML, Adobe Firefly… these tools are technical marvels. But let's be clear: they don't replace instinct, sensitivity, the decision to tear it all down and start over better."
+			}
+		],
+		"469bd66213b1": [
+			{
+				"_key": "120a415d0c0d",
+				"_type": "span",
+				"marks": [],
+				"text": "👀 "
+			},
+			{
+				"_key": "d37e7f66d301",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Let me give you a few inspiring examples:"
+			}
+		],
+		"39f009d2bb3b": [
+			{
+				"_key": "a76c9aeb3d730",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Jackson Pollock"
+			},
+			{
+				"_key": "58d98fa73e89",
+				"_type": "span",
+				"marks": [],
+				"text": ", in 1945, accidentally let drops of paint fall onto a canvas. Instead of fixing it, he observed, accepted it, and made it his signature. What could have passed for a mistake became an artistic revolution. "
+			},
+			{
+				"_key": "ac17d1ddef4e",
+				"_type": "span",
+				"marks": [
+					"988bf9ebb2ec"
+				],
+				"text": "Learn more"
+			},
+			{
+				"_key": "7bf00b004b75",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"b0254e6578a4": [
+			{
+				"_key": "58758ce7ceaa0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Steve Jobs"
+			},
+			{
+				"_key": "0e6dd5b23f8c",
+				"_type": "span",
+				"marks": [],
+				"text": " relentlessly rejected iPhone prototypes that his teams considered perfect. Why? Because he knew that technical perfection only makes sense if it carries simplicity and elegance. He doubted, again and again, to get to the essential. "
+			},
+			{
+				"_key": "2f5e7d79432c",
+				"_type": "span",
+				"marks": [
+					"3bdccaf77be6"
+				],
+				"text": "Learn more"
+			},
+			{
+				"_key": "7cf4cd6a9a3a",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"73d5fdb76b1a": [
+			{
+				"_key": "2e091b6e82c10",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Leonard Cohen"
+			},
+			{
+				"_key": "bc2a00e8b268",
+				"_type": "span",
+				"marks": [],
+				"text": ", for his part, wrote nearly 80 versions of Hallelujah. Every word weighed, every line reconsidered. It was neither quick nor comfortable. But it's that doubt that gives the song its timeless soul today. "
+			},
+			{
+				"_key": "ac0583e89996",
+				"_type": "span",
+				"marks": [
+					"f4106996a495"
+				],
+				"text": "Learn more"
+			},
+			{
+				"_key": "39616ffdcb7c",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"3ec943b17612": [
+			{
+				"_key": "806472e87fbb",
+				"_type": "span",
+				"marks": [],
+				"text": "📝 This doubt, this dissatisfaction that pushes us to start over, to break what works "
+			},
+			{
+				"_key": "441dc952f745",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "“more or less”"
+			},
+			{
+				"_key": "c54427c33674",
+				"_type": "span",
+				"marks": [],
+				"text": ", AI knows nothing of it. It suggests. We choose. We refuse. We start over."
+			}
+		],
+		"1588091c42d5": [
+			{
+				"_key": "0a446b806730",
+				"_type": "span",
+				"marks": [],
+				"text": "AI can suggest. But only our human consciousness chooses, doubts, breaks and rebuilds."
+			}
+		],
+		"53fc9ec16b95": [
+			{
+				"_key": "c8dd3fc0e7770",
+				"_type": "span",
+				"marks": [],
+				"text": "# We are made to create in the image of God"
+			}
+		],
+		"90f1d30383ac": [
+			{
+				"_key": "45b623bb19e50",
+				"_type": "span",
+				"marks": [],
+				"text": "Creating isn't just producing. It's carrying a share of transcendence, that ability to hesitate, to question, to invent out of chaos. AI calculates, but it doesn't contemplate. It executes, but it doesn't feel."
+			}
+		],
+		"0644ed5e3b91": [
+			{
+				"_key": "e227119d2b3b0",
+				"_type": "span",
+				"marks": [],
+				"text": "We have received that breath that lets a simple, imperfect gesture become a work of art."
+			}
+		],
+		"3e2f54354a80": [
+			{
+				"_key": "e7a96d5d45b40",
+				"_type": "span",
+				"marks": [],
+				"text": "# Conclusion: doubt lifts us up"
+			}
+		],
+		"2a92ee09c914": [
+			{
+				"_key": "512d979613b90",
+				"_type": "span",
+				"marks": [],
+				"text": "So yes, let's use AI. It accompanies us, supports us, speeds us up. But let's stay vigilant: the last word belongs to us."
+			}
+		],
+		"c3a4c3c5b339": [
+			{
+				"_key": "df82c747789c0",
+				"_type": "span",
+				"marks": [],
+				"text": "It's in uncomfortable silence, in questioning ourselves, that true creation is born. Where AI produces… we create."
+			}
+		],
+		"39f827344cc3": [
+			{
+				"_key": "0a60ab2934100",
+				"_type": "span",
+				"marks": [],
+				"text": "And it's in that subtle difference that our humanity lies."
+			}
+		],
+		"3c4209aea6f6": [
+			{
+				"_key": "4a42ae82fc910",
+				"_type": "span",
+				"marks": [],
+				"text": "To go further:"
+			}
+		],
+		"5e7ccbc1c54d": [
+			{
+				"_key": "b6674bbeca560",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "“The impact of AI on creativity”"
+			},
+			{
+				"_key": "b6674bbeca561",
+				"_type": "span",
+				"marks": [],
+				"text": ", BigMedia BPI France – "
+			},
+			{
+				"_key": "b6674bbeca562",
+				"_type": "span",
+				"marks": [
+					"8787644ff9a5"
+				],
+				"text": "Read here"
+			}
+		],
+		"5d922be160c1": [
+			{
+				"_key": "b6674bbeca563",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "“AI and artists: collaboration or threat?”"
+			},
+			{
+				"_key": "b6674bbeca564",
+				"_type": "span",
+				"marks": [],
+				"text": ", Intelligence-Artificielle-School – "
+			},
+			{
+				"_key": "b6674bbeca565",
+				"_type": "span",
+				"marks": [
+					"38fcf1c01b8c"
+				],
+				"text": "Read here"
+			}
+		],
+		"d17645fa80ed": [
+			{
+				"_key": "b6674bbeca566",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "“How to use artificial intelligence wisely in art”"
+			},
+			{
+				"_key": "b6674bbeca567",
+				"_type": "span",
+				"marks": [],
+				"text": ", Artxterra – "
+			},
+			{
+				"_key": "b6674bbeca568",
+				"_type": "span",
+				"marks": [
+					"25ab4867ee76"
+				],
+				"text": "Read here"
+			}
+		],
+		"3aa2a6ef597f": [
+			{
+				"_key": "890e05e85bd70",
+				"_type": "span",
+				"marks": [],
+				"text": "Food for thought… and feel free to share if this piece resonates with you."
+			}
+		]
+	}
+}

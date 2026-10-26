@@ -1,0 +1,1479 @@
+{
+	"title": "Building a business website: 10 best practices",
+	"blocks": {
+		"241cb5c1d9f3": [
+			{
+				"_key": "d07ad594b6940",
+				"_type": "span",
+				"marks": [],
+				"text": "In 2025, a business website is no longer "
+			},
+			{
+				"_key": "3d73605cecd7",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "a luxury"
+			},
+			{
+				"_key": "8bd7068c8fb9",
+				"_type": "span",
+				"marks": [],
+				"text": ", but "
+			},
+			{
+				"_key": "82933e8b9efe",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "a strategic necessity"
+			},
+			{
+				"_key": "dfcab767f752",
+				"_type": "span",
+				"marks": [],
+				"text": ". A well-designed online presence has become a fundamental pillar for growing your business, whatever your industry."
+			}
+		],
+		"197616e9527a": [
+			{
+				"_key": "d5ade930cb3b",
+				"_type": "span",
+				"marks": [],
+				"text": "❓ "
+			},
+			{
+				"_key": "1da1a7baee4e",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Why invest in a professional website?"
+			}
+		],
+		"575ccc545b6e": [
+			{
+				"_key": "7be197c1a5d30",
+				"_type": "span",
+				"marks": [],
+				"text": "Build a strong, credible digital presence"
+			}
+		],
+		"79b57884a6ba": [
+			{
+				"_key": "29a015beed110",
+				"_type": "span",
+				"marks": [],
+				"text": "Strengthen your brand's professional image"
+			}
+		],
+		"a9c6d8667e02": [
+			{
+				"_key": "99d641cfd8440",
+				"_type": "span",
+				"marks": [],
+				"text": "Communicate effectively with your target audience"
+			}
+		],
+		"3e0397ad5a6a": [
+			{
+				"_key": "dca1e9aacb470",
+				"_type": "span",
+				"marks": [],
+				"text": "Generate business opportunities (84% of consumers look online before making any purchase)"
+			}
+		],
+		"a4613bec9660": [
+			{
+				"_key": "a7b4ba5f3cc50",
+				"_type": "span",
+				"marks": [],
+				"text": "In this complete guide, I'll walk you through 10 essential practices for building a website that will take your business to new heights."
+			}
+		],
+		"c5eb47860068": [
+			{
+				"_key": "b41282e58d5b",
+				"_type": "span",
+				"marks": [],
+				"text": "⚠️ "
+			},
+			{
+				"_key": "ace439a14288",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Note:"
+			},
+			{
+				"_key": "45844e0b2573",
+				"_type": "span",
+				"marks": [],
+				"text": " This article doesn't go into technical details. It's meant as a guide for entrepreneurs."
+			}
+		],
+		"677bf8bb659d": [
+			{
+				"_key": "3673dd9f3d080",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "#1. Get inspired"
+			}
+		],
+		"375add60d600": [
+			{
+				"_key": "b10071bd52850",
+				"_type": "span",
+				"marks": [],
+				"text": "As with any creative work, inspiration is key. Start by visiting the websites of companies in your industry, "
+			},
+			{
+				"_key": "3177d0f049dd",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "or your direct competitors"
+			},
+			{
+				"_key": "80fe2539cdda",
+				"_type": "span",
+				"marks": [],
+				"text": ": education, real estate, retail, leisure, communications, etc."
+			}
+		],
+		"fd4039ed9541": [
+			{
+				"_key": "3f5d81a19b610",
+				"_type": "span",
+				"marks": [],
+				"text": "With over "
+			},
+			{
+				"_key": "3f5d81a19b611",
+				"_type": "span",
+				"marks": [
+					"b3f97f4d90f2"
+				],
+				"text": "1.9 billion active websites"
+			},
+			{
+				"_key": "3f5d81a19b612",
+				"_type": "span",
+				"marks": [],
+				"text": " in 2025, there's no shortage of examples and styles. The goal is to get a clear picture of the look and the message you want your site to convey."
+			}
+		],
+		"3556cdf25391": [
+			{
+				"_key": "48fb69eafcde",
+				"_type": "span",
+				"marks": [],
+				"text": "🎯 This inspiration and analysis phase will help you develop a unique, impactful concept, making it easier to communicate with your web services provider to bring your vision to life."
+			}
+		],
+		"c1c126ff00cd": [
+			{
+				"_key": "89278f2d2b070",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "#2. A good domain name and a reliable web host"
+			}
+		],
+		"0643160627e6": [
+			{
+				"_key": "a3d6a5e2a3b40",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "##2.1 A good domain name"
+			}
+		],
+		"53baec71affe": [
+			{
+				"_key": "075f244d34890",
+				"_type": "span",
+				"marks": [],
+				"text": "Your domain name is the front door to your website. It should be memorable, easy to spell and, ideally, derived from your company name plus an extension."
+			}
+		],
+		"4509928db6e0": [
+			{
+				"_key": "63b7ac73fe9c0",
+				"_type": "span",
+				"marks": [],
+				"text": "The domain extension (TLD) indicates its category or country of origin:"
+			}
+		],
+		"d84326b18177": [
+			{
+				"_key": "fdd076756c970",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ".com"
+			},
+			{
+				"_key": "fdd076756c971",
+				"_type": "span",
+				"marks": [],
+				"text": ": commercial use,"
+			}
+		],
+		"f7e59482a526": [
+			{
+				"_key": "5d58253052a10",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ".org"
+			},
+			{
+				"_key": "5d58253052a11",
+				"_type": "span",
+				"marks": [],
+				"text": ": organizations,"
+			}
+		],
+		"884a108b9e60": [
+			{
+				"_key": "6d8e1bfcec810",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ".co"
+			},
+			{
+				"_key": "6d8e1bfcec811",
+				"_type": "span",
+				"marks": [],
+				"text": ": companies,"
+			}
+		],
+		"03a6ad7a770f": [
+			{
+				"_key": "fa97f50eddda0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ".cd"
+			},
+			{
+				"_key": "fa97f50eddda1",
+				"_type": "span",
+				"marks": [],
+				"text": ": Democratic Republic of the Congo,"
+			}
+		],
+		"035c786c5df5": [
+			{
+				"_key": "4c78c223de550",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ".fr"
+			},
+			{
+				"_key": "4c78c223de551",
+				"_type": "span",
+				"marks": [],
+				"text": ": France, etc."
+			}
+		],
+		"e74500e2b2f5": [
+			{
+				"_key": "832b4f702720",
+				"_type": "span",
+				"marks": [],
+				"text": "🎯 Check availability and buy your domain name (between $10 and $12 a year) through registrars like "
+			},
+			{
+				"_key": "8e05880487a8",
+				"_type": "span",
+				"marks": [
+					"624eef7fb631"
+				],
+				"text": "Domain.com"
+			},
+			{
+				"_key": "6507ee2b4851",
+				"_type": "span",
+				"marks": [],
+				"text": " or "
+			},
+			{
+				"_key": "c6be2c366246",
+				"_type": "span",
+				"marks": [
+					"249e8b4c1408"
+				],
+				"text": "Namecheap"
+			},
+			{
+				"_key": "c1b475497117",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"ff70838e77d6": [
+			{
+				"_key": "646e55dcf88f0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "##2.2 A reliable web host"
+			}
+		],
+		"51affe1d8881": [
+			{
+				"_key": "f909728d021c0",
+				"_type": "span",
+				"marks": [],
+				"text": "A web host is what makes your site accessible online."
+			}
+		],
+		"f7ae566dbd1f": [
+			{
+				"_key": "e2072a80b42a",
+				"_type": "span",
+				"marks": [],
+				"text": "Costs range from $0.99 to over $600 a month, depending on the technologies used and your technical needs."
+			}
+		],
+		"fb8f43149056": [
+			{
+				"_key": "cfb3ee10ce0e0",
+				"_type": "span",
+				"marks": [],
+				"text": "A good web host guarantees:"
+			}
+		],
+		"bf8f54b65caf": [
+			{
+				"_key": "e49863ab8ec70",
+				"_type": "span",
+				"marks": [],
+				"text": "Stable 24/7 uptime,"
+			}
+		],
+		"73970cfb8451": [
+			{
+				"_key": "4ea9c844176a0",
+				"_type": "span",
+				"marks": [],
+				"text": "Top-notch security,"
+			}
+		],
+		"868a766660d7": [
+			{
+				"_key": "adc84d8677530",
+				"_type": "span",
+				"marks": [],
+				"text": "Good, always-available technical support."
+			}
+		],
+		"4142c055b5e4": [
+			{
+				"_key": "46ff514dfb8c",
+				"_type": "span",
+				"marks": [],
+				"text": "👀 Take a look at this list of the "
+			},
+			{
+				"_key": "b565fb81735d",
+				"_type": "span",
+				"marks": [
+					"f9eceb393b20"
+				],
+				"text": "best web hosting providers"
+			},
+			{
+				"_key": "a32444d759e0",
+				"_type": "span",
+				"marks": [],
+				"text": " on the internet in 2025."
+			}
+		],
+		"4a2238cbf4bf": [
+			{
+				"_key": "f86408fb13b80",
+				"_type": "span",
+				"marks": [],
+				"text": "For more demanding projects, go for "
+			},
+			{
+				"_key": "f86408fb13b81",
+				"_type": "span",
+				"marks": [
+					"75d6287c99c0"
+				],
+				"text": "cloud solutions"
+			},
+			{
+				"_key": "f86408fb13b82",
+				"_type": "span",
+				"marks": [],
+				"text": " from the market leaders: "
+			},
+			{
+				"_key": "f86408fb13b83",
+				"_type": "span",
+				"marks": [
+					"cc47fdccbdfa"
+				],
+				"text": "Amazon AWS"
+			},
+			{
+				"_key": "f86408fb13b84",
+				"_type": "span",
+				"marks": [],
+				"text": ", "
+			},
+			{
+				"_key": "f86408fb13b85",
+				"_type": "span",
+				"marks": [
+					"45e617e41904"
+				],
+				"text": "Google Cloud"
+			},
+			{
+				"_key": "f86408fb13b86",
+				"_type": "span",
+				"marks": [],
+				"text": " or "
+			},
+			{
+				"_key": "f86408fb13b87",
+				"_type": "span",
+				"marks": [
+					"4aa9b076c422"
+				],
+				"text": "Microsoft Azure"
+			},
+			{
+				"_key": "f86408fb13b88",
+				"_type": "span",
+				"marks": [],
+				"text": ". Their \""
+			},
+			{
+				"_key": "f86408fb13b89",
+				"_type": "span",
+				"marks": [
+					"029421f482d1"
+				],
+				"text": "pay-as-you-go"
+			},
+			{
+				"_key": "f86408fb13b810",
+				"_type": "span",
+				"marks": [],
+				"text": "\" model means you only pay for the resources you actually use."
+			}
+		],
+		"e192fed0f50b": [
+			{
+				"_key": "3842c6b51c7e0",
+				"_type": "span",
+				"marks": [],
+				"text": "#3. Mobile first"
+			}
+		],
+		"dad856821120": [
+			{
+				"_key": "d748fab5b81a0",
+				"_type": "span",
+				"marks": [],
+				"text": "The \""
+			},
+			{
+				"_key": "5297c3af1d6f",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Mobile First"
+			},
+			{
+				"_key": "31f4dd199eb5",
+				"_type": "span",
+				"marks": [],
+				"text": "\" approach puts the mobile experience at the heart of web design. This strategy prioritizes development for smartphones before adapting the design to tablets and desktops."
+			}
+		],
+		"906ee5a8a622": [
+			{
+				"_key": "a319cfe443200",
+				"_type": "span",
+				"marks": [],
+				"text": "This approach is crucial today: "
+			},
+			{
+				"_key": "a319cfe443201",
+				"_type": "span",
+				"marks": [
+					"446526d41308"
+				],
+				"text": "over 92% of internet users access the web from their mobile devices"
+			},
+			{
+				"_key": "a319cfe443202",
+				"_type": "span",
+				"marks": [],
+				"text": ". So your site needs to be optimized for these users first and foremost."
+			}
+		],
+		"09cff1f7d83c": [
+			{
+				"_key": "74bc674909130",
+				"_type": "span",
+				"marks": [],
+				"text": "To guarantee an optimal experience on every device, adopt "
+			},
+			{
+				"_key": "d20cbe22d0fb",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Responsive Web Design (RWD)"
+			},
+			{
+				"_key": "691e7b070bf9",
+				"_type": "span",
+				"marks": [],
+				"text": ". This technique lets your site automatically adapt to any screen size, ensuring smooth browsing whatever device is being used."
+			}
+		],
+		"79aa299a5c81": [
+			{
+				"_key": "0ccea76d50cb0",
+				"_type": "span",
+				"marks": [],
+				"text": "#4. Pages with relevant content"
+			}
+		],
+		"598054b8615f": [
+			{
+				"_key": "a22dcecabe6b0",
+				"_type": "span",
+				"marks": [],
+				"text": "Make sure your pages serve the goals you set for your site from the start. An attractive design and a good user experience are essential, but the content has to be clear and easy to understand."
+			}
+		],
+		"9758e2ade802": [
+			{
+				"_key": "1ff9f02774290",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Here are a few essential pages:"
+			}
+		],
+		"a291f9fd3abe": [
+			{
+				"_key": "bf321a8d5e670",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Home"
+			},
+			{
+				"_key": "bf321a8d5e671",
+				"_type": "span",
+				"marks": [],
+				"text": ": first impression, simple and attractive navigation."
+			}
+		],
+		"4b782ab02ce4": [
+			{
+				"_key": "68727d5fb27b0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "About"
+			},
+			{
+				"_key": "68727d5fb27b1",
+				"_type": "span",
+				"marks": [],
+				"text": ": introduces your company, mission, team and values."
+			}
+		],
+		"930c4b7cf97a": [
+			{
+				"_key": "fbf8be33c7bc0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Contact"
+			},
+			{
+				"_key": "fbf8be33c7bc1",
+				"_type": "span",
+				"marks": [],
+				"text": ": contact information with a form."
+			}
+		],
+		"ed90e6934fd3": [
+			{
+				"_key": "f53efc18cf540",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Blog & news"
+			},
+			{
+				"_key": "f53efc18cf541",
+				"_type": "span",
+				"marks": [],
+				"text": ": keeps your visitors informed and boosts your SEO."
+			}
+		],
+		"9caf65f6b88d": [
+			{
+				"_key": "30a533fb13310",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Other specific pages"
+			},
+			{
+				"_key": "30a533fb13311",
+				"_type": "span",
+				"marks": [],
+				"text": ": e-commerce, portfolio, services, etc."
+			}
+		],
+		"a1ac3007c8a4": [
+			{
+				"_key": "19368eeff65a",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 A multilingual site can be a real asset, depending on your audience."
+			}
+		],
+		"6fcadecfecbb": [
+			{
+				"_key": "1560d4883d470",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "#5. A Content Management System ("
+			},
+			{
+				"_key": "b4fe134a2bc5",
+				"_type": "span",
+				"marks": [],
+				"text": "CMS"
+			},
+			{
+				"_key": "2c51307c6495",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": ")"
+			}
+		],
+		"3cbd492d9843": [
+			{
+				"_key": "87d5210e533d0",
+				"_type": "span",
+				"marks": [],
+				"text": "A "
+			},
+			{
+				"_key": "87d5210e533d1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "CMS"
+			},
+			{
+				"_key": "87d5210e533d2",
+				"_type": "span",
+				"marks": [],
+				"text": " (Content Management System) lets you manage your site's content without needing advanced technical skills."
+			}
+		],
+		"6ada75405ab9": [
+			{
+				"_key": "834d6afbd40a0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "There are two types of CMS: proprietary and open source."
+			}
+		],
+		"100d0d8548ef": [
+			{
+				"_key": "01169dd880b20",
+				"_type": "span",
+				"marks": [],
+				"text": "Proprietary CMSs are custom-built for your site. Although more expensive upfront, they offer full customization and better security."
+			}
+		],
+		"caaf9ee62d7c": [
+			{
+				"_key": "7d048051bfd20",
+				"_type": "span",
+				"marks": [],
+				"text": "Open source CMSs, on the other hand, are ready-to-use solutions. They're often free and backed by a large community, but they can be limited when it comes to customization."
+			}
+		],
+		"50600c3b0ee0": [
+			{
+				"_key": "1b7d89eb41200",
+				"_type": "span",
+				"marks": [],
+				"text": "Here are the most popular CMSs:"
+			}
+		],
+		"01828845d6f0": [
+			{
+				"_key": "837a6e4cd2740",
+				"_type": "span",
+				"marks": [
+					"7303e210b1ad"
+				],
+				"text": "W"
+			},
+			{
+				"_key": "cc4c501b5782",
+				"_type": "span",
+				"marks": [
+					"7303e210b1ad"
+				],
+				"text": "ordPress"
+			},
+			{
+				"_key": "837a6e4cd2741",
+				"_type": "span",
+				"marks": [],
+				"text": ": The undisputed leader, powering over 43% of websites, ideal for blogs and showcase sites. Easy to use and very flexible."
+			}
+		],
+		"040074ef832f": [
+			{
+				"_key": "ccfdf755c75a0",
+				"_type": "span",
+				"marks": [
+					"fbdac9de21b1"
+				],
+				"text": "Joomla"
+			},
+			{
+				"_key": "ccfdf755c75a1",
+				"_type": "span",
+				"marks": [],
+				"text": ": More technical than WordPress, particularly well suited to complex sites and corporate portals."
+			}
+		],
+		"8da870929408": [
+			{
+				"_key": "8a00aa94584d0",
+				"_type": "span",
+				"marks": [
+					"d2b3c7b18b77"
+				],
+				"text": "Webflow"
+			},
+			{
+				"_key": "8a00aa94584d1",
+				"_type": "span",
+				"marks": [],
+				"text": ": A modern solution combining visual design and technical power. Perfect for creative and professional sites."
+			}
+		],
+		"da95e02b57b8": [
+			{
+				"_key": "2e814cac68310",
+				"_type": "span",
+				"marks": [],
+				"text": "Other specialized options: "
+			},
+			{
+				"_key": "2e814cac68312",
+				"_type": "span",
+				"marks": [
+					"9dac37666531"
+				],
+				"text": "Drupal"
+			},
+			{
+				"_key": "2e814cac68313",
+				"_type": "span",
+				"marks": [],
+				"text": " (institutional sites), "
+			},
+			{
+				"_key": "2e814cac68314",
+				"_type": "span",
+				"marks": [
+					"5fb122ec037b"
+				],
+				"text": "Shopify"
+			},
+			{
+				"_key": "2e814cac68315",
+				"_type": "span",
+				"marks": [],
+				"text": " (e-commerce), "
+			},
+			{
+				"_key": "2e814cac68316",
+				"_type": "span",
+				"marks": [
+					"bf00bf4261ed"
+				],
+				"text": "Wix"
+			},
+			{
+				"_key": "2e814cac68317",
+				"_type": "span",
+				"marks": [],
+				"text": " (simple sites), "
+			},
+			{
+				"_key": "2e814cac68318",
+				"_type": "span",
+				"marks": [
+					"d2090da6cfd7"
+				],
+				"text": "Ghost"
+			},
+			{
+				"_key": "2e814cac68319",
+				"_type": "span",
+				"marks": [],
+				"text": " (professional blogs)"
+			}
+		],
+		"4dd31b5006c9": [
+			{
+				"_key": "84ddd0adb860",
+				"_type": "span",
+				"marks": [],
+				"text": "#6. Social media integration"
+			}
+		],
+		"08ad8e9d1b10": [
+			{
+				"_key": "db8114b880b9",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 Social media integration is a must today to maximize your website's visibility."
+			}
+		],
+		"a506ba564b3d": [
+			{
+				"_key": "444a0cf4d12c0",
+				"_type": "span",
+				"marks": [],
+				"text": "From my experience, here are the main ways to integrate it:"
+			}
+		],
+		"85ce9e95e72b": [
+			{
+				"_key": "fd311a1c91d50",
+				"_type": "span",
+				"marks": [],
+				"text": "Social sharing buttons for your content (articles, news) to Facebook, LinkedIn, Twitter and Instagram"
+			}
+		],
+		"e7409951426a": [
+			{
+				"_key": "1830a0ad9a4a0",
+				"_type": "span",
+				"marks": [],
+				"text": "Direct links to your social profiles in the header or footer"
+			}
+		],
+		"45a326643b4d": [
+			{
+				"_key": "ee2d0a1acc6d0",
+				"_type": "span",
+				"marks": [],
+				"text": "Widgets displaying your latest social posts"
+			}
+		],
+		"12907f408f9e": [
+			{
+				"_key": "ca24e21a01120",
+				"_type": "span",
+				"marks": [],
+				"text": "A "
+			},
+			{
+				"_key": "6ee93582537d",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "newsletter "
+			},
+			{
+				"_key": "eb4e9eae4470",
+				"_type": "span",
+				"marks": [],
+				"text": "sign-up module to build audience loyalty (using tools like "
+			},
+			{
+				"_key": "ca24e21a01121",
+				"_type": "span",
+				"marks": [
+					"3ef78fd82c0d"
+				],
+				"text": "MailChimp"
+			},
+			{
+				"_key": "ca24e21a01122",
+				"_type": "span",
+				"marks": [],
+				"text": ")"
+			}
+		],
+		"b449612f9ab4": [
+			{
+				"_key": "f8d71c2e75bd0",
+				"_type": "span",
+				"marks": [],
+				"text": "#7. SEO"
+			}
+		],
+		"03f7082e80c4": [
+			{
+				"_key": "1b383e32638b",
+				"_type": "span",
+				"marks": [],
+				"text": "🎯 "
+			},
+			{
+				"_key": "722355050d4a",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "SEO (Search Engine Optimization) "
+			},
+			{
+				"_key": "6e3c6dbb30fa",
+				"_type": "span",
+				"marks": [],
+				"text": "is an essential strategy for optimizing your website for search engines, boosting its visibility with your target audience."
+			}
+		],
+		"2e3c27325404": [
+			{
+				"_key": "a5207838adcb0",
+				"_type": "span",
+				"marks": [],
+				"text": "This organic optimization helps you show up among the top results on Google and other search engines when people look for information related to your business or expertise."
+			}
+		],
+		"1a46be39b718": [
+			{
+				"_key": "9edb64faf4910",
+				"_type": "span",
+				"marks": [],
+				"text": "SEO relies on three key elements to succeed:"
+			}
+		],
+		"1145155ab42d": [
+			{
+				"_key": "619cc21bd0040",
+				"_type": "span",
+				"marks": [],
+				"text": "Quality content that meets your visitors' needs"
+			}
+		],
+		"8d0ca50298d4": [
+			{
+				"_key": "c7e0ccb440430",
+				"_type": "span",
+				"marks": [],
+				"text": "Technical optimization for a high-performing site"
+			}
+		],
+		"b5d09ed1d753": [
+			{
+				"_key": "fd078d622e820",
+				"_type": "span",
+				"marks": [],
+				"text": "A relevant linking strategy to build your authority"
+			}
+		],
+		"3f979fba9e9e": [
+			{
+				"_key": "713ac23758770",
+				"_type": "span",
+				"marks": [],
+				"text": "For the best results, I recommend working with "
+			},
+			{
+				"_key": "713ac23758771",
+				"_type": "span",
+				"marks": [
+					"89738ad751e4"
+				],
+				"text": "an SEO expert"
+			},
+			{
+				"_key": "713ac23758772",
+				"_type": "span",
+				"marks": [],
+				"text": " or using "
+			},
+			{
+				"_key": "713ac23758773",
+				"_type": "span",
+				"marks": [
+					"93dc629eb92d"
+				],
+				"text": "a specialized platform"
+			},
+			{
+				"_key": "713ac23758774",
+				"_type": "span",
+				"marks": [],
+				"text": " to guide you through the process."
+			}
+		],
+		"39cb5d5a470e": [
+			{
+				"_key": "c89da6b31a9a0",
+				"_type": "span",
+				"marks": [],
+				"text": "#8 Web performance analysis"
+			}
+		],
+		"b7f3b59f2d7c": [
+			{
+				"_key": "efdd1dbb347d0",
+				"_type": "span",
+				"marks": [],
+				"text": "To make sure your website succeeds, it's essential to regularly measure and analyze its performance using specialized tools."
+			}
+		],
+		"725f54a6ca9c": [
+			{
+				"_key": "fb216d4eabb50",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "I recommend two solutions:"
+			}
+		],
+		"cf092703c9ff": [
+			{
+				"_key": "096413dc66ff0",
+				"_type": "span",
+				"marks": [
+					"26edfddc5cde"
+				],
+				"text": "Google Analytics"
+			},
+			{
+				"_key": "096413dc66ff1",
+				"_type": "span",
+				"marks": [],
+				"text": ": A free, comprehensive tool, ideal for tracking visitor behavior"
+			}
+		],
+		"b19e30c86e2a": [
+			{
+				"_key": "0952922453f00",
+				"_type": "span",
+				"marks": [
+					"372324342164"
+				],
+				"text": "Umami"
+			},
+			{
+				"_key": "0952922453f01",
+				"_type": "span",
+				"marks": [],
+				"text": ": A privacy-friendly open source alternative"
+			}
+		],
+		"aff770acb712": [
+			{
+				"_key": "9054a0ace69b0",
+				"_type": "span",
+				"marks": [],
+				"text": "For effective analysis, focus on these key performance indicators (KPIs):"
+			}
+		],
+		"43f755021619": [
+			{
+				"_key": "abb1cf327a880",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Engagement"
+			},
+			{
+				"_key": "abb1cf327a881",
+				"_type": "span",
+				"marks": [],
+				"text": ": Bounce rate, average session duration, pages per visit"
+			}
+		],
+		"627425a78240": [
+			{
+				"_key": "c8d1607141450",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Conversion"
+			},
+			{
+				"_key": "c8d1607141451",
+				"_type": "span",
+				"marks": [],
+				"text": ": Conversion rate, number of leads generated, newsletter sign-ups"
+			}
+		],
+		"4e5cfa136826": [
+			{
+				"_key": "f4ad4937a6090",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Acquisition"
+			},
+			{
+				"_key": "f4ad4937a6091",
+				"_type": "span",
+				"marks": [],
+				"text": ": Traffic sources, new vs. returning visitors, cost per acquisition"
+			}
+		],
+		"c28c05d15b60": [
+			{
+				"_key": "656d5f28926e0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Technical performance"
+			},
+			{
+				"_key": "656d5f28926e1",
+				"_type": "span",
+				"marks": [],
+				"text": ": Load time, uptime, Core Web Vitals score"
+			}
+		],
+		"6001145eaaad": [
+			{
+				"_key": "6cc63aea6940",
+				"_type": "span",
+				"marks": [],
+				"text": "📉 These metrics will help you continuously optimize your site and improve its return on investment."
+			}
+		],
+		"7e55c3379507": [
+			{
+				"_key": "90a79cdf771a0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "#9. Security and data protection"
+			}
+		],
+		"c506de74e6da": [
+			{
+				"_key": "b27bf5c369cb0",
+				"_type": "span",
+				"marks": [],
+				"text": "Your site's security is paramount to protect your users and your business."
+			}
+		],
+		"f3a6701d0df4": [
+			{
+				"_key": "9e536931cf300",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Here are the best practices:"
+			}
+		],
+		"560c4b8775eb": [
+			{
+				"_key": "d705459d39c30",
+				"_type": "span",
+				"marks": [],
+				"text": "Install an "
+			},
+			{
+				"_key": "d705459d39c31",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "SSL"
+			},
+			{
+				"_key": "d705459d39c32",
+				"_type": "span",
+				"marks": [],
+				"text": " certificate to secure data exchanges."
+			}
+		],
+		"0b593fb31a3a": [
+			{
+				"_key": "827a82c023fe0",
+				"_type": "span",
+				"marks": [],
+				"text": "Keep the CMS and plugins regularly updated."
+			}
+		],
+		"c5f40211a5e8": [
+			{
+				"_key": "9d027018872d0",
+				"_type": "span",
+				"marks": [],
+				"text": "Use strong passwords and two-factor authentication."
+			}
+		],
+		"b04522890edf": [
+			{
+				"_key": "82863da3a85a0",
+				"_type": "span",
+				"marks": [],
+				"text": "Make regular backups to avoid data loss."
+			}
+		],
+		"3b955953e210": [
+			{
+				"_key": "845a6c8248b20",
+				"_type": "span",
+				"marks": [],
+				"text": "Protect your site against DDoS attacks and SQL injections."
+			}
+		],
+		"15ccb166ce11": [
+			{
+				"_key": "dc05fb0763fb",
+				"_type": "span",
+				"marks": [],
+				"text": "⚠️ Security should be handled by your provider, who needs to have solid expertise in it."
+			}
+		],
+		"a4873d00bf50": [
+			{
+				"_key": "63dcb1465c670",
+				"_type": "span",
+				"marks": [],
+				"text": "#10 Maintenance plan"
+			}
+		],
+		"4e6e8c85fb23": [
+			{
+				"_key": "a75e6600f72c0",
+				"_type": "span",
+				"marks": [],
+				"text": "Once your site is live, regular maintenance is essential to keep it running smoothly and performing well."
+			}
+		],
+		"88099d1af9f2": [
+			{
+				"_key": "352aef42b1cd",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 A structured "
+			},
+			{
+				"_key": "8686134ee8a01",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "maintenance plan"
+			},
+			{
+				"_key": "8686134ee8a02",
+				"_type": "span",
+				"marks": [],
+				"text": " lets you schedule the necessary technical work and continuously optimize your website."
+			}
+		],
+		"4b15fcfc054e": [
+			{
+				"_key": "8b285c0b88a10",
+				"_type": "span",
+				"marks": [],
+				"text": "For CMS-based sites, run monthly updates of plugins and the core to strengthen security and get the latest features."
+			}
+		],
+		"4d04c90f2f2e": [
+			{
+				"_key": "0e421abcabdc0",
+				"_type": "span",
+				"marks": [],
+				"text": "Refresh your content regularly to keep it relevant and appealing to your target audience"
+			}
+		],
+		"87eb6133a018": [
+			{
+				"_key": "f46fb29f733e0",
+				"_type": "span",
+				"marks": [],
+				"text": "Use your analytics data to identify and fix your site's weak spots"
+			}
+		],
+		"2d400ca07236": [
+			{
+				"_key": "a6bfc0e8cc9e0",
+				"_type": "span",
+				"marks": [],
+				"text": "Set up a "
+			},
+			{
+				"_key": "a6bfc0e8cc9e1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "CRM"
+			},
+			{
+				"_key": "a6bfc0e8cc9e2",
+				"_type": "span",
+				"marks": [],
+				"text": " ("
+			},
+			{
+				"_key": "a6bfc0e8cc9e3",
+				"_type": "span",
+				"marks": [
+					"1e870fee0e79"
+				],
+				"text": "Customer Relationship Management"
+			},
+			{
+				"_key": "a6bfc0e8cc9e4",
+				"_type": "span",
+				"marks": [],
+				"text": ") to collect and analyze customer feedback, and improve the user experience along the way"
+			}
+		],
+		"43cbe6b60e1b": [
+			{
+				"_key": "84e7aa9e1bc20",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "# In conclusion"
+			}
+		],
+		"277a4c588ff1": [
+			{
+				"_key": "04c372807cc40",
+				"_type": "span",
+				"marks": [],
+				"text": "I hope these 10 best practices help you build an effective, high-performing website. They'll also help you choose a competent provider."
+			}
+		],
+		"692c245a83e8": [
+			{
+				"_key": "ede3f1d2d8da0",
+				"_type": "span",
+				"marks": [],
+				"text": "If you have a website project, feel free to reach out at "
+			},
+			{
+				"_key": "fc3ab94fe8ee",
+				"_type": "span",
+				"marks": [
+					"2e6f50d94fdf"
+				],
+				"text": "hello@vincentasani.me"
+			},
+			{
+				"_key": "f90f43b67b32",
+				"_type": "span",
+				"marks": [],
+				"text": " or "
+			},
+			{
+				"_key": "5c7ad718128c",
+				"_type": "span",
+				"marks": [
+					"0396e0f5ac1c"
+				],
+				"text": "hello@witoxr.studio"
+			},
+			{
+				"_key": "c8ad7a280f91",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"b0296ebcb61a": [
+			{
+				"_key": "db99498dc353",
+				"_type": "span",
+				"marks": [],
+				"text": "📣 "
+			},
+			{
+				"_key": "ab9baeb5875d",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Wito XR Studio"
+			},
+			{
+				"_key": "9287d9d9f026",
+				"_type": "span",
+				"marks": [],
+				"text": ", a pioneer of extended reality (XR) in the DRC, offers innovative solutions in software development, audiovisual production and cybersecurity. Learn more at: "
+			},
+			{
+				"_key": "73ad86173d74",
+				"_type": "span",
+				"marks": [
+					"0b0edcf0abe3"
+				],
+				"text": "www.witoxr.studio"
+			}
+		]
+	}
+}

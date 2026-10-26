@@ -22,17 +22,6 @@
 					</span>
 				</a>
 			</UTooltip>
-
-			<div role="none" class="m-auto h-2/3 w-px shrink-0 bg-border" />
-
-			<UTooltip :text="resume.ui.theme">
-				<button type="button" :aria-label="resume.ui.switchTheme" @click="$toggleTheme()">
-					<span :ref="setIcon" :style="iconStyle(iconIndex('theme'))" :class="itemClass">
-						<UIcon name="i-lucide-sun" class="size-5 dark:hidden" />
-						<UIcon name="i-lucide-moon" class="hidden size-5 dark:block" />
-					</span>
-				</button>
-			</UTooltip>
 		</nav>
 	</div>
 </template>
@@ -48,7 +37,7 @@ const DISTANCE = 140;
 const itemClass =
 	"flex items-center justify-center rounded-full border border-default bg-default text-muted transition-[width,height,color,background-color] duration-150 ease-out hover:bg-muted hover:text-highlighted";
 
-const keys = [...resume.value.navbar.map((i) => i.to), ...resume.value.contact.social.map((s) => s.url), "theme"];
+const keys = [...resume.value.navbar.map((i) => i.to), ...resume.value.contact.social.map((s) => s.url)];
 const iconIndex = (key: string) => keys.indexOf(key);
 
 const mouseX = ref<number | null>(null);
@@ -78,6 +67,4 @@ const iconStyle = (index: number) => {
 	}
 	return { width: `${size}px`, height: `${size}px` };
 };
-
-const { $toggleTheme } = useNuxtApp();
 </script>

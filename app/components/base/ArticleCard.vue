@@ -20,13 +20,10 @@
           <div class="flex flex-col justify-between h-full">
             <div class="flex-initial mb-8">
               <p class="mb-3 text-xs text-gray-500 dark:text-gray-300 font-semibold">
-                <span
-                  class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-400"
-                  >{{ categorie.title }}</span
-                >
+                <span>{{ ui.articles.categories[categorie.title] ?? categorie.title }}</span>
                 <span class="mx-2">•</span>
                 <span class="dark:text-gray-500">
-                  {{ readingTime(toHTML(content, { onMissingComponent: false })) }} min read</span
+                  {{ readingTime(toHTML(content, { onMissingComponent: false })) }} {{ ui.articles.minRead }}</span
                 >
               </p>
               <NuxtLink
@@ -34,7 +31,7 @@
                 class="--no-underline group inline-block mb-4"
               >
                 <h3
-                  class="font-heading text-lg text-highlighted font-semibold tracking-tight"
+                  class="text-lg text-highlighted font-semibold tracking-tight"
                 >
                   <span class="v-underline-animation">
                     {{ title }}
@@ -44,7 +41,7 @@
             </div>
             <div class="flex-initial">
               <p class="text-xs text-gray-500 font-bold">
-                {{ convertDate__index(date, "dmy", "en") }}
+                {{ convertDate__index(date, "dmy", locale) }}
               </p>
             </div>
           </div>
@@ -57,6 +54,8 @@
 <script setup>
 import { convertDate__index } from "~/utils/convertdate";
 import { toHTML } from "@portabletext/to-html";
+
+const { locale, ui } = useLang();
 
 defineProps({
   title: String,

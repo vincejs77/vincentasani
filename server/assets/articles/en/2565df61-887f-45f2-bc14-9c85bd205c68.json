@@ -1,0 +1,801 @@
+{
+	"title": "Building in the AI Industry, or with AI, in Africa",
+	"blocks": {
+		"c930ab38c592": [
+			{
+				"_key": "c15bd95a56440",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "“The future belongs to those who don’t wait for permission to create.”"
+			}
+		],
+		"535be7a944d9": [
+			{
+				"_key": "a0a0902959ef0",
+				"_type": "span",
+				"marks": [],
+				"text": "Dear readers,"
+			}
+		],
+		"719440bf54c0": [
+			{
+				"_key": "581ae79dd74b0",
+				"_type": "span",
+				"marks": [],
+				"text": "There’s a lot of talk about artificial intelligence — mostly about "
+			},
+			{
+				"_key": "581ae79dd74b1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "using"
+			},
+			{
+				"_key": "581ae79dd74b2",
+				"_type": "span",
+				"marks": [],
+				"text": " it. Me included, haha. But there’s still far too little talk about "
+			},
+			{
+				"_key": "581ae79dd74b3",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "creating"
+			},
+			{
+				"_key": "581ae79dd74b4",
+				"_type": "span",
+				"marks": [],
+				"text": ": building in the AI industry, or with AI as a tool, especially in Africa."
+			}
+		],
+		"fd4bc26480dc": [
+			{
+				"_key": "655ed05d2a4c0",
+				"_type": "span",
+				"marks": [],
+				"text": "In the DRC, as elsewhere on the continent, tech innovation is moving forward, but slowly. While others are designing the AIs, here we too often settle for using them rather than creating. According to the "
+			},
+			{
+				"_key": "655ed05d2a4c1",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "Stanford AI Index 2024"
+			},
+			{
+				"_key": "655ed05d2a4c2",
+				"_type": "span",
+				"marks": [],
+				"text": ", Africa accounts for "
+			},
+			{
+				"_key": "655ed05d2a4c3",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "less than 1%"
+			},
+			{
+				"_key": "655ed05d2a4c4",
+				"_type": "span",
+				"marks": [],
+				"text": " of scientific contributions in AI."
+			}
+		],
+		"5864a66c84a2": [
+			{
+				"_key": "c09ceb0d09300",
+				"_type": "span",
+				"marks": [],
+				"text": "And yet, "
+			},
+			{
+				"_key": "c09ceb0d09301",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "the tools are right there"
+			},
+			{
+				"_key": "c09ceb0d09302",
+				"_type": "span",
+				"marks": [],
+				"text": ", available to anyone bold enough to use them. And above all: "
+			},
+			{
+				"_key": "c09ceb0d09303",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "there’s still everything left to invent"
+			},
+			{
+				"_key": "c09ceb0d09304",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"5d42f4eb2258": [
+			{
+				"_key": "2ff46c51d2290",
+				"_type": "span",
+				"marks": [],
+				"text": "In this article, I’m sharing a little guide to creating with AI or in AI, from right here, with our own means, our own needs and our own vision."
+			}
+		],
+		"0ed6fb8410a7": [
+			{
+				"_key": "59e9ffc5537c0",
+				"_type": "span",
+				"marks": [],
+				"text": "NB: This article is simply an invitation to create, born from my observations, my experiments… and a few very stubborn lines of code."
+			}
+		],
+		"9b6377d2bbb9": [
+			{
+				"_key": "e3f80734d64c0",
+				"_type": "span",
+				"marks": [],
+				"text": "#1. Building in the AI industry — without being a machine learning researcher"
+			}
+		],
+		"8433e0e32744": [
+			{
+				"_key": "f65d4b0b2b7b0",
+				"_type": "span",
+				"marks": [],
+				"text": "One of the biggest misconceptions about AI is believing you have to be a math researcher, master deep learning or train your own model from scratch to \"be part of the industry\". That’s just not true."
+			}
+		],
+		"ca9604006c7e": [
+			{
+				"_key": "2f8a224b60c70",
+				"_type": "span",
+				"marks": [],
+				"text": "Today, "
+			},
+			{
+				"_key": "2f8a224b60c71",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "the AI ecosystem is broad, open and increasingly modular"
+			},
+			{
+				"_key": "2f8a224b60c72",
+				"_type": "span",
+				"marks": [],
+				"text": ". It’s entirely possible to "
+			},
+			{
+				"_key": "2f8a224b60c73",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "build in AI without building the AI itself"
+			},
+			{
+				"_key": "2f8a224b60c74",
+				"_type": "span",
+				"marks": [],
+				"text": ". Let me explain."
+			}
+		],
+		"df690d6b6224": [
+			{
+				"_key": "853e13cd89ba0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "For example, you can:"
+			}
+		],
+		"f3fb542b0cc1": [
+			{
+				"_key": "7e6d478f22a90",
+				"_type": "span",
+				"marks": [],
+				"text": "Develop a mobile app that integrates summarization, translation or content generation features through APIs (like OpenAI, Cohere or Mistral)."
+			}
+		],
+		"e73e4c5a4c22": [
+			{
+				"_key": "1ba2904e63920",
+				"_type": "span",
+				"marks": [],
+				"text": "Design a smart chatbot to guide museum visitors or a brand’s customers."
+			}
+		],
+		"69e8f47994fa": [
+			{
+				"_key": "0fb9b5af106d0",
+				"_type": "span",
+				"marks": [],
+				"text": "Offer an educational platform that personalizes learning using simple recommendation models."
+			}
+		],
+		"7dfa1c97a5ad": [
+			{
+				"_key": "f05bc6e3ea8e0",
+				"_type": "span",
+				"marks": [],
+				"text": "The people who will succeed in this industry are the ones who understand "
+			},
+			{
+				"_key": "f05bc6e3ea8e1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "how to piece together existing AI building blocks"
+			},
+			{
+				"_key": "f05bc6e3ea8e2",
+				"_type": "span",
+				"marks": [],
+				"text": " to solve real problems."
+			}
+		],
+		"9e3feebbc6b2": [
+			{
+				"_key": "2ab48d9419960",
+				"_type": "span",
+				"marks": [],
+				"text": "Accessible platforms to get started"
+			}
+		],
+		"e310f113ae28": [
+			{
+				"_key": "8c1f77347f920",
+				"_type": "span",
+				"marks": [],
+				"text": "Here are a few tools I recommend if you want to build around AI without diving into heavy code:"
+			}
+		],
+		"ab729b79d5e2": [
+			{
+				"_key": "8f2c5dcb82fc0",
+				"_type": "span",
+				"marks": [
+					"b0ae62ab6ff1"
+				],
+				"text": "OpenAI Platform"
+			},
+			{
+				"_key": "8f2c5dcb82fc1",
+				"_type": "span",
+				"marks": [],
+				"text": " to integrate GPT, DALL·E or Whisper into your apps via API. Simple and effective."
+			}
+		],
+		"a72d3f4c2fba": [
+			{
+				"_key": "a48d6546a45e0",
+				"_type": "span",
+				"marks": [
+					"0a875115eb14"
+				],
+				"text": "Hugging Face"
+			},
+			{
+				"_key": "fdc4b813ecc8",
+				"_type": "span",
+				"marks": [],
+				"text": ", a living library of open-source AI models. You can test, fork, fine-tune."
+			}
+		],
+		"66ea51b14fb0": [
+			{
+				"_key": "386907d12bfe0",
+				"_type": "span",
+				"marks": [
+					"bb31c342a9dd"
+				],
+				"text": "Replicate"
+			},
+			{
+				"_key": "a680c620a1a4",
+				"_type": "span",
+				"marks": [],
+				"text": " to run AI models (image, audio…) without worrying about servers."
+			}
+		],
+		"0895a2870b50": [
+			{
+				"_key": "0b59df953f060",
+				"_type": "span",
+				"marks": [
+					"273eea29bda1"
+				],
+				"text": "LangChain"
+			},
+			{
+				"_key": "f84b317a9dd8",
+				"_type": "span",
+				"marks": [],
+				"text": " to build AI apps that reason, call tools or interact with your data."
+			}
+		],
+		"4dc8bf9ee532": [
+			{
+				"_key": "421e38c14322",
+				"_type": "span",
+				"marks": [],
+				"text": "#2. Creating "
+			},
+			{
+				"_key": "94eae88f01f51",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "with"
+			},
+			{
+				"_key": "94eae88f01f52",
+				"_type": "span",
+				"marks": [],
+				"text": " AI: amplifying your creativity, not replacing it"
+			}
+		],
+		"568946117061": [
+			{
+				"_key": "1730e1916ec70",
+				"_type": "span",
+				"marks": [],
+				"text": "Creating with AI is like working with an assistant that never sleeps, always available, always fast… but that does nothing relevant without your vision."
+			}
+		],
+		"f2513a432d6f": [
+			{
+				"_key": "78b6341d836d0",
+				"_type": "span",
+				"marks": [],
+				"text": "Because deep down, "
+			},
+			{
+				"_key": "78b6341d836d1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "AI doesn’t create for you."
+			},
+			{
+				"_key": "78b6341d836d2",
+				"_type": "span",
+				"marks": [],
+				"text": " It speeds things up, it suggests, it organizes. But the direction, the style, the human touch: that’s you and me."
+			}
+		],
+		"ede1931b67c4": [
+			{
+				"_key": "d4b54dabc19f0",
+				"_type": "span",
+				"marks": [],
+				"text": "How I use AI day to day"
+			}
+		],
+		"ca957ff5e63b": [
+			{
+				"_key": "9952cfca6d9b0",
+				"_type": "span",
+				"marks": [],
+				"text": "No fuss, here are a few concrete uses I’ve tested — and that I recommend:"
+			}
+		],
+		"5e74afd77e9d": [
+			{
+				"_key": "4fa98a494bd20",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "GPT"
+			},
+			{
+				"_key": "4fa98a494bd21",
+				"_type": "span",
+				"marks": [],
+				"text": " to draft article outlines based on my own clear core ideas, rephrase, generate repetitive code, brainstorm."
+			}
+		],
+		"6dfbaf0483d6": [
+			{
+				"_key": "91f16d88a17b0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Sora and DALL·E"
+			},
+			{
+				"_key": "91f16d88a17b1",
+				"_type": "span",
+				"marks": [],
+				"text": " to create visuals (images and video) that illustrate ideas and contexts."
+			}
+		],
+		"3c8f2a4af168": [
+			{
+				"_key": "b4226c228c050",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Notion AI"
+			},
+			{
+				"_key": "b4226c228c051",
+				"_type": "span",
+				"marks": [],
+				"text": " to summarize, sort, plan, or even tidy up my personal notes."
+			}
+		],
+		"9fbe1e6f59c4": [
+			{
+				"_key": "97bd3e20aeee0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Whisper or AssemblyAI"
+			},
+			{
+				"_key": "97bd3e20aeee1",
+				"_type": "span",
+				"marks": [],
+				"text": " to automatically transcribe interviews or meetings."
+			}
+		],
+		"b2ef403546e2": [
+			{
+				"_key": "a524d96a9b870",
+				"_type": "span",
+				"marks": [],
+				"text": "And that’s just the beginning."
+			}
+		],
+		"681b0b68a9a6": [
+			{
+				"_key": "263c68adfe4d0",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 The real power of AI is the prompt. Whoever knows how to phrase a clear, targeted, nuanced request… is already a step ahead.\nLearn more in my article: "
+			},
+			{
+				"_key": "f96fce2458cc",
+				"_type": "span",
+				"marks": [
+					"5f431dbc291c"
+				],
+				"text": "The art of prompt engineering"
+			},
+			{
+				"_key": "6e635770cf14",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"180d759ac869": [
+			{
+				"_key": "8846043f8ac80",
+				"_type": "span",
+				"marks": [],
+				"text": "So creating with AI is above all about "
+			},
+			{
+				"_key": "8846043f8ac81",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "developing a new creative grammar"
+			},
+			{
+				"_key": "8846043f8ac82",
+				"_type": "span",
+				"marks": [],
+				"text": ", a hybrid language between human intuition and algorithmic power."
+			}
+		],
+		"139ad9514274": [
+			{
+				"_key": "0b33484de8ea0",
+				"_type": "span",
+				"marks": [],
+				"text": "#3. Spotting real opportunities around you"
+			}
+		],
+		"08fa340d5dc1": [
+			{
+				"_key": "55f43c785a720",
+				"_type": "span",
+				"marks": [],
+				"text": "Creating with AI doesn’t start with technology. It starts with "
+			},
+			{
+				"_key": "55f43c785a721",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "observation"
+			},
+			{
+				"_key": "55f43c785a722",
+				"_type": "span",
+				"marks": [],
+				"text": ". Looking around you, understanding real needs, spotting everyday friction points."
+			}
+		],
+		"a37f3e55001b": [
+			{
+				"_key": "976d02716ada0",
+				"_type": "span",
+				"marks": [],
+				"text": "In Africa, there’s no shortage of opportunities. What’s sometimes missing is the reflex to ask yourself: "
+			},
+			{
+				"_key": "976d02716ada1",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "\"what if I could solve this with a smart tool?\""
+			}
+		],
+		"c90aeb179774": [
+			{
+				"_key": "63ac3094be6d0",
+				"_type": "span",
+				"marks": [],
+				"text": "Here are three questions to frame an idea:"
+			}
+		],
+		"a8fa8fd3b415": [
+			{
+				"_key": "a31201bcf3780",
+				"_type": "span",
+				"marks": [],
+				"text": "What need or roadblock keeps coming up in my environment?"
+			}
+		],
+		"99553951cfe3": [
+			{
+				"_key": "74eec6d21e7a0",
+				"_type": "span",
+				"marks": [],
+				"text": "Can AI automate, speed up or personalize part of that process?"
+			}
+		],
+		"bec2e88e3a86": [
+			{
+				"_key": "e05f930ab4f50",
+				"_type": "span",
+				"marks": [],
+				"text": "Can I prototype it quickly with an API or a no-code platform?"
+			}
+		],
+		"a1e0f03c33e2": [
+			{
+				"_key": "5303ded5df2d0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Two concrete examples:"
+			}
+		],
+		"2c8f75a66239": [
+			{
+				"_key": "5050f270bfbd0",
+				"_type": "span",
+				"marks": [],
+				"text": "An app that automatically adapts educational content to the user’s level and cultural context."
+			}
+		],
+		"3728bc35e390": [
+			{
+				"_key": "1c45790f264a0",
+				"_type": "span",
+				"marks": [],
+				"text": "A decision-support AI for small businesses, or a specialized chatbot built for an institution and its audience"
+			}
+		],
+		"2654f3e2c1c9": [
+			{
+				"_key": "77f7eb6a10620",
+				"_type": "span",
+				"marks": [],
+				"text": "#4 Building your own AI model? Not always necessary"
+			}
+		],
+		"ad625612b266": [
+			{
+				"_key": "7742a2cab8190",
+				"_type": "span",
+				"marks": [],
+				"text": "The temptation to train your own model is understandable. But let’s stay clear-eyed: "
+			},
+			{
+				"_key": "7742a2cab8191",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "it’s not an essential step to innovate with AI"
+			},
+			{
+				"_key": "7742a2cab8192",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"ff844a62df41": [
+			{
+				"_key": "f39ca7abf0340",
+				"_type": "span",
+				"marks": [],
+				"text": "Training a model requires:"
+			}
+		],
+		"bc76f12a0b95": [
+			{
+				"_key": "fe8bdb745f800",
+				"_type": "span",
+				"marks": [],
+				"text": "quality datasets, often missing or scattered in our contexts,"
+			}
+		],
+		"36f5c1f41d33": [
+			{
+				"_key": "2cf3f887256e0",
+				"_type": "span",
+				"marks": [],
+				"text": "significant hardware resources (GPUs, cloud infrastructure),"
+			}
+		],
+		"19c510f08f16": [
+			{
+				"_key": "c395bca11d5c0",
+				"_type": "span",
+				"marks": [],
+				"text": "and above all, "
+			},
+			{
+				"_key": "c395bca11d5c1",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "a clear reason"
+			},
+			{
+				"_key": "c395bca11d5c2",
+				"_type": "span",
+				"marks": [],
+				"text": " not to use what already exists."
+			}
+		],
+		"1f5fed14b891": [
+			{
+				"_key": "82148d6d87df0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "In my opinion, building a custom AI model can make sense if:"
+			}
+		],
+		"49c219ed4c14": [
+			{
+				"_key": "b2e77d129dd50",
+				"_type": "span",
+				"marks": [],
+				"text": "the field relies on a very specific language or cultural context (African languages, local legal corpora, community health…)."
+			}
+		],
+		"c9325335aa05": [
+			{
+				"_key": "e17dc1da234c0",
+				"_type": "span",
+				"marks": [],
+				"text": "control over the data is strategic (public sector, education, security…)."
+			}
+		],
+		"2f597bb5e40e": [
+			{
+				"_key": "08355e276d670",
+				"_type": "span",
+				"marks": [],
+				"text": "it’s essential to shape an agent or a system with its own identity, with logic firmly rooted in the realities on the ground."
+			}
+		],
+		"f801941c2504": [
+			{
+				"_key": "b0681d6dcb570",
+				"_type": "span",
+				"marks": [],
+				"text": "In the vast majority of cases, "
+			},
+			{
+				"_key": "b0681d6dcb571",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "the available models (GPT, Claude, Mistral, etc.) are powerful enough"
+			},
+			{
+				"_key": "b0681d6dcb572",
+				"_type": "span",
+				"marks": [],
+				"text": " to prototype, test and ship relevant solutions."
+			}
+		],
+		"df58e5dfe443": [
+			{
+				"_key": "6978c8f5dcf80",
+				"_type": "span",
+				"marks": [],
+				"text": "It’s not about proving your technical chops, it’s about bringing value where it’s lacking."
+			}
+		],
+		"a0bd389e2359": [
+			{
+				"_key": "8ac10491a3130",
+				"_type": "span",
+				"marks": [],
+				"text": "# In conclusion"
+			}
+		],
+		"e0f8c85ec9d7": [
+			{
+				"_key": "c4b4c5f632ef0",
+				"_type": "span",
+				"marks": [],
+				"text": "Building in the AI industry or with AI isn’t a luxury. It’s a necessity, an opportunity and a responsibility. There’s still plenty left to create. "
+			},
+			{
+				"_key": "4ce4e6b6d205",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "And that’s exactly the good news"
+			},
+			{
+				"_key": "d3a2cf5d6aa9",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"75d54206d037": [
+			{
+				"_key": "427bc95100c40",
+				"_type": "span",
+				"marks": [],
+				"text": "What’s left to do? Learn, design, develop, deploy, try, and iterate again and again."
+			}
+		]
+	}
+}

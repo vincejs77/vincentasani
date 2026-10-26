@@ -5,8 +5,8 @@ export default defineAppConfig({
 			neutral: "neutral"
 		},
 		container: {
-			// Le layout fournit déjà la largeur (max-w-2xl) et les marges latérales
-			base: "max-w-2xl px-0 sm:px-0 lg:px-0"
+			// Contenu aligné à l'intérieur des gouttières hachurées du layout
+			base: "max-w-3xl px-8 sm:px-12 lg:px-12"
 		},
 		button: {
 			slots: {

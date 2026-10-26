@@ -84,7 +84,6 @@ export default {
   overflow-x: scroll;
 
   font-size: 15px;
-  font-family: arial;
   cursor: pointer;
 }
 </style>

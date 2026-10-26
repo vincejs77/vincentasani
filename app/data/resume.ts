@@ -8,13 +8,7 @@ export type Locale = (typeof LOCALES)[number];
 type L<T = string> = Record<Locale, T>;
 
 // Remplace récursivement chaque { fr, en } par la valeur de la langue choisie
-export type Localized<T> = T extends L<infer U>
-	? Localized<U>
-	: T extends readonly (infer A)[]
-		? Localized<A>[]
-		: T extends object
-			? { [K in keyof T]: Localized<T[K]> }
-			: T;
+export type Localized<T> = T extends L<infer U> ? Localized<U> : T extends readonly (infer A)[] ? Localized<A>[] : T extends object ? { [K in keyof T]: Localized<T[K]> } : T;
 
 const isLocalized = (value: object): value is L<unknown> => {
 	const keys = Object.keys(value);
@@ -51,7 +45,7 @@ export const RESUME = {
 
 	// Textes de l'interface (titres de sections, boutons…)
 	ui: {
-		greeting: { fr: "Salut, moi c'est", en: "Hi, I'm" },
+		greeting: { fr: "Bonjour, moi c'est", en: "Hi, I'm" },
 		role: { fr: "Ingénieur logiciel", en: "Software Engineer" },
 		available: { fr: "Disponible pour de nouveaux projets", en: "Available for new projects" },
 		about: { fr: "À propos", en: "About" },
@@ -63,8 +57,6 @@ export const RESUME = {
 		website: { fr: "Plateforme web", en: "Web platform" },
 		source: { fr: "Code", en: "Source" },
 		open: { fr: "Ouvrir", en: "Open" },
-		theme: { fr: "Thème", en: "Theme" },
-		switchTheme: { fr: "Changer de thème", en: "Toggle theme" },
 		language: { fr: "Langue", en: "Language" },
 		projects: {
 			label: { fr: "Mes projets", en: "My Projects" },
@@ -81,6 +73,32 @@ export const RESUME = {
 				fr: "Au-delà du code, je conçois et j'anime des programmes qui révèlent les talents tech et créatifs en RDC : hackathons, bootcamps et incubateurs.",
 				en: "Beyond code, I design and run programs that surface tech and creative talent in the DRC: hackathons, bootcamps and incubators."
 			}
+		},
+		articles: {
+			label: { fr: "📝 Articles", en: "📝 Articles" },
+			title: { fr: "Mes articles", en: "My articles" },
+			intro: {
+				fr: "Plongez dans des articles sur l'IA, la VR/AR et les concepts de développement Web de pointe !",
+				en: "Dive into articles on AI, VR/AR and cutting-edge web development!"
+			},
+			all: { fr: "Tous", en: "All" },
+			empty: { fr: "Aucun article dans cette catégorie.", en: "No articles in this category yet." },
+			minRead: { fr: "min de lecture", en: "min read" },
+			publishedOn: { fr: "Publié le :", en: "Published on:" },
+			by: { fr: "Par :", en: "By:" },
+			updatedOn: { fr: "Mise à jour le :", en: "Updated on:" },
+			readMore: { fr: "Lire plus d'articles !", en: "Read more articles!" },
+			readAlso: { fr: "Lire aussi", en: "Read next" },
+			translated: {
+				fr: "Cet article a été traduit de l'anglais.",
+				en: "This article was translated from French."
+			},
+			// Noms des catégories Sanity → libellé affiché
+			categories: {
+				AI: { fr: "IA", en: "AI" },
+				Créativité: { fr: "Créativité", en: "Creativity" },
+				Website: { fr: "Site web", en: "Website" }
+			} as Record<string, L>
 		},
 		contact: {
 			label: { fr: "Contact", en: "Contact" },
@@ -176,12 +194,7 @@ export const RESUME = {
 					"Gestion de projets clients et supervision d'équipes techniques pour garantir les délais",
 					"Conseil technique et support utilisateurs"
 				],
-				en: [
-					"Build and deploy business applications for enterprise clients, from requirements to production",
-					"Develop front-end and back-end features, integrate third-party APIs, design database schemas",
-					"Manage client projects and supervise technical teams to ensure on-time delivery",
-					"Provide technical advice and user support"
-				]
+				en: ["Build and deploy business applications for enterprise clients, from requirements to production", "Develop front-end and back-end features, integrate third-party APIs, design database schemas", "Manage client projects and supervise technical teams to ensure on-time delivery", "Provide technical advice and user support"]
 			}
 		},
 		{
@@ -214,23 +227,13 @@ export const RESUME = {
 			start: { fr: "Oct. 2022", en: "Oct 2022" },
 			end: { fr: "Déc. 2024", en: "Dec 2024" },
 			description: {
-				fr: [
-					"Direction du développement d'applications VR/AR : roadmap technique et priorisation des fonctionnalités",
-					"Intégration de solutions tierces (authentification, gestion de contenu, API externes)",
-					"Administration de serveurs Linux et déploiements cloud",
-					"Formation des équipes aux outils collaboratifs et d'IA"
-				],
-				en: [
-					"Led VR/AR application development: set the technical roadmap and prioritized features",
-					"Integrated third-party solutions (authentication, content management, external APIs)",
-					"Administered Linux servers and cloud deployments",
-					"Trained teams on collaborative and AI tools"
-				]
+				fr: ["Direction du développement d'applications VR/AR : roadmap technique et priorisation des fonctionnalités", "Intégration de solutions tierces (authentification, gestion de contenu, API externes)", "Administration de serveurs Linux et déploiements cloud", "Formation des équipes aux outils collaboratifs et d'IA"],
+				en: ["Led VR/AR application development: set the technical roadmap and prioritized features", "Integrated third-party solutions (authentication, content management, external APIs)", "Administered Linux servers and cloud deployments", "Trained teams on collaborative and AI tools"]
 			}
 		},
 		{
 			company: "AR/VR Africa Metathon 2022",
-			logoIcon: "i-logos-meta-icon",
+			logoUrl: "/img/logos/arvr-africa-metathon.png",
 			title: "Country Lead",
 			location: "Goma",
 			start: { fr: "Sept. 2022", en: "Sep 2022" },
@@ -242,12 +245,7 @@ export const RESUME = {
 					"Accompagnement des lauréats pendant un bootcamp de trois mois pour développer leur MVP",
 					"Développement de partenariats locaux et coordination des formations pré-hackathon"
 				],
-				en: [
-					"Program backed by Meta, Blackrhino VR and IMISI 3D to surface African talent in immersive technologies",
-					"Organized in-person and virtual hackathons across the DRC",
-					"Supported winners through a three-month MVP development bootcamp",
-					"Built local partnerships and coordinated pre-hackathon training"
-				]
+				en: ["Program backed by Meta, Blackrhino VR and IMISI 3D to surface African talent in immersive technologies", "Organized in-person and virtual hackathons across the DRC", "Supported winners through a three-month MVP development bootcamp", "Built local partnerships and coordinated pre-hackathon training"]
 			}
 		},
 		{
@@ -258,16 +256,8 @@ export const RESUME = {
 			start: { fr: "Mars 2017", en: "Mar 2017" },
 			end: { fr: "Août 2022", en: "Aug 2022" },
 			description: {
-				fr: [
-					"Développement d'applications web : sites institutionnels, ERP légers",
-					"Conception et déploiement de systèmes d'information complets",
-					"Administration réseau (TCP/IP, VLAN, VPN, PPPoE) et sécurité"
-				],
-				en: [
-					"Built web applications: institutional sites, lightweight ERPs",
-					"Designed and deployed complete information systems",
-					"Network administration (TCP/IP, VLAN, VPN, PPPoE) and security"
-				]
+				fr: ["Développement d'applications web : sites institutionnels, ERP légers", "Conception et déploiement de systèmes d'information complets", "Administration réseau (TCP/IP, VLAN, VPN, PPPoE) et sécurité"],
+				en: ["Built web applications: institutional sites, lightweight ERPs", "Designed and deployed complete information systems", "Network administration (TCP/IP, VLAN, VPN, PPPoE) and security"]
 			}
 		}
 	],

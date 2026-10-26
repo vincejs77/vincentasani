@@ -1,0 +1,579 @@
+{
+	"title": "The art of prompt engineering: making the most of AI at work",
+	"blocks": {
+		"7ff5109f6bff": [
+			{
+				"_key": "0681bc827ca4",
+				"_type": "span",
+				"marks": [],
+				"text": "📣 Note: This article is the introduction to a series I really want to share with you on a topic that's especially close to my heart: our relationship with AI in 2025"
+			}
+		],
+		"be894a5932b6": [
+			{
+				"_key": "378006b4269b0",
+				"_type": "span",
+				"marks": [],
+				"text": "In 2025, AI is part of our everyday working lives, like a virtual colleague right there beside us. (Generative) AI tools now create text, images and sounds... with disconcerting ease. It's handy and powerful, but it makes us wonder: how do we stay in charge of our own work?"
+			}
+		],
+		"13989c46b780": [
+			{
+				"_key": "f7f53c6fd93c0",
+				"_type": "span",
+				"marks": [],
+				"text": "I often see colleagues who lean on AI so much that they forget their own talents. It's a bit like letting a GPS guide you without ever learning to read a map - you lose something important along the way."
+			}
+		],
+		"8d5c6f44a785": [
+			{
+				"_key": "34f459bc3b4c0",
+				"_type": "span",
+				"marks": [],
+				"text": "The good news? There's a solution: learning how to \"talk\" to AI. That's what we call "
+			},
+			{
+				"_key": "0954f9b44ccd",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "prompt engineering"
+			},
+			{
+				"_key": "006469267284",
+				"_type": "span",
+				"marks": [],
+				"text": "."
+			}
+		],
+		"cd5f79cf6ed8": [
+			{
+				"_key": "3a85acc7928a",
+				"_type": "span",
+				"marks": [],
+				"text": "Imagine you're conducting an orchestra - AI is your ensemble of musicians, and you're the conductor setting the tempo. Even Sam Altman, the big boss of OpenAI, says so: knowing how to talk to AI is kind of the new foreign language to master!"
+			}
+		],
+		"f455e2dfeccd": [
+			{
+				"_key": "41878cc3bf560",
+				"_type": "span",
+				"marks": [],
+				"text": "#1 So what exactly is prompt engineering?"
+			}
+		],
+		"190bbe84e6f2": [
+			{
+				"_key": "63f69bcac862",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 Imagine you're learning a new language, but this time with a very smart assistant."
+			}
+		],
+		"8c0d206915ae": [
+			{
+				"_key": "98a3640e63ff",
+				"_type": "span",
+				"marks": [],
+				"text": "Prompt engineering is simply this: knowing how to communicate clearly with AI to get exactly what you need. It's like explaining something to a friend who really wants to help you!"
+			}
+		],
+		"ca1e1fc94b7d": [
+			{
+				"_key": "c621490ed5580",
+				"_type": "span",
+				"marks": [],
+				"text": "A "
+			},
+			{
+				"_key": "c621490ed5581",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "\"prompt\""
+			},
+			{
+				"_key": "c621490ed5582",
+				"_type": "span",
+				"marks": [],
+				"text": " is just the way you talk to it - a request or a question. The clearer and more precise you are in how you express yourself, the better the results."
+			}
+		],
+		"c32bf615b594": [
+			{
+				"_key": "8fe72d495ac30",
+				"_type": "span",
+				"marks": [],
+				"text": "#2 The basics you need to know"
+			}
+		],
+		"dc8e0ba701ed": [
+			{
+				"_key": "6e27eebf6a900",
+				"_type": "span",
+				"marks": [],
+				"text": "I'm going to share the fundamentals with you - no need to drown in technical details to get started."
+			}
+		],
+		"dd21ed8621de": [
+			{
+				"_key": "2ce185e3cc58",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Be specific in your requests"
+			},
+			{
+				"_key": "036592a2ea1b",
+				"_type": "span",
+				"marks": [],
+				"text": ", like when you're explaining something to a friend."
+			}
+		],
+		"282df855832f": [
+			{
+				"_key": "79ab286a5de4",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Organize your ideas"
+			},
+			{
+				"_key": "1be4f8422927",
+				"_type": "span",
+				"marks": [],
+				"text": " before presenting them."
+			}
+		],
+		"e96396c9dd0a": [
+			{
+				"_key": "b4fd43ba1acd",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Provide context"
+			},
+			{
+				"_key": "b47e8492ffb7",
+				"_type": "span",
+				"marks": [],
+				"text": ", like a little story."
+			}
+		],
+		"4c8d42ebac77": [
+			{
+				"_key": "60691eb42c63",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Set clear goals"
+			},
+			{
+				"_key": "5b28261aca89",
+				"_type": "span",
+				"marks": [],
+				"text": ", just like for a project."
+			}
+		],
+		"a854af0e890e": [
+			{
+				"_key": "d8b6fbca8610",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Express yourself"
+			},
+			{
+				"_key": "5c94f4ae8d62",
+				"_type": "span",
+				"marks": [],
+				"text": " simply and clearly."
+			}
+		],
+		"cd45f10a05a0": [
+			{
+				"_key": "9b9127376afb0",
+				"_type": "span",
+				"marks": [],
+				"text": "#3 AI: your copilot, not your replacement"
+			}
+		],
+		"28a573e8d88f": [
+			{
+				"_key": "172015329ed00",
+				"_type": "span",
+				"marks": [],
+				"text": "Think of AI as a super assistant that boosts your productivity. It's not taking your place, it's helping you shine!"
+			}
+		],
+		"7605d7bb1edb": [
+			{
+				"_key": "f956b65ba6ef0",
+				"_type": "span",
+				"marks": [],
+				"text": "#4 How do you get the most out of it?"
+			}
+		],
+		"9a50c6624c71": [
+			{
+				"_key": "64a647c49f2e0",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Pick your battles"
+			},
+			{
+				"_key": "64a647c49f2e1",
+				"_type": "span",
+				"marks": [],
+				"text": ": Spot the tasks that bore you or take up too much of your time. That's where AI can lend you a hand, like with repetitive reports or simple presentations."
+			}
+		],
+		"640ee064da34": [
+			{
+				"_key": "b79aad2b07610",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Speak the same language"
+			},
+			{
+				"_key": "b79aad2b07611",
+				"_type": "span",
+				"marks": [],
+				"text": ": The better you know your field, the easier it'll be to communicate with AI. It's like learning to talk with a new colleague - it takes a bit of practice!"
+			}
+		],
+		"cbb8b7148c1c": [
+			{
+				"_key": "384c29d634b60",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Stay sharp"
+			},
+			{
+				"_key": "384c29d634b61",
+				"_type": "span",
+				"marks": [],
+				"text": ": Trust, but verify! AI can get things wrong, so use your common sense and don't hesitate to ask questions if something seems off."
+			}
+		],
+		"c34942e5e602": [
+			{
+				"_key": "9ecc070565a10",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Find your balance"
+			},
+			{
+				"_key": "9ecc070565a11",
+				"_type": "span",
+				"marks": [],
+				"text": ": It's like a dance - you need to find the right rhythm between what you do and what AI can do for you. The goal isn't to hand everything over to it, but to work in harmony."
+			}
+		],
+		"ef1fa72f84b5": [
+			{
+				"_key": "ab6ee29d426a0",
+				"_type": "span",
+				"marks": [],
+				"text": "#5 Stay in the driver's seat"
+			}
+		],
+		"66fbb15cbd52": [
+			{
+				"_key": "6eb5017b4ff20",
+				"_type": "span",
+				"marks": [],
+				"text": "To stay in control:"
+			}
+		],
+		"04e77b0093e7": [
+			{
+				"_key": "f38ff87257210",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Keep learning"
+			},
+			{
+				"_key": "f38ff87257211",
+				"_type": "span",
+				"marks": [],
+				"text": ": Train yourself, swap notes with your colleagues, stay curious. That's how you stay one step ahead!"
+			}
+		],
+		"83c233cf2b6f": [
+			{
+				"_key": "26c9374db1c20",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "See AI as your personal assistant"
+			},
+			{
+				"_key": "26c9374db1c21",
+				"_type": "span",
+				"marks": [],
+				"text": ": It's there for the repetitive tasks, while you focus on what really matters."
+			}
+		],
+		"bd80927053a4": [
+			{
+				"_key": "47ff10c693b50",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Keep a critical eye"
+			},
+			{
+				"_key": "47ff10c693b51",
+				"_type": "span",
+				"marks": [],
+				"text": ": Always double-check what AI suggests, just as you would with a new colleague."
+			}
+		],
+		"9ee34761a2dc": [
+			{
+				"_key": "01891e5027690",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Make your own decisions"
+			},
+			{
+				"_key": "01891e5027691",
+				"_type": "span",
+				"marks": [],
+				"text": ": AI advises, but you're the one who decides!"
+			}
+		],
+		"ec813664fd67": [
+			{
+				"_key": "71c1b930defc0",
+				"_type": "span",
+				"marks": [],
+				"text": "#6 Concrete examples"
+			}
+		],
+		"d6558abc3404": [
+			{
+				"_key": "635f6eb9ca010",
+				"_type": "span",
+				"marks": [],
+				"text": "Here's how to talk to AI:"
+			}
+		],
+		"4b9dd1ef2d19": [
+			{
+				"_key": "b2fe3ac80c10",
+				"_type": "span",
+				"marks": [],
+				"text": "1️⃣ \"Can you analyze "
+			},
+			{
+				"_key": "0ef0e217e12d",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[this topic]"
+			},
+			{
+				"_key": "8877da6ea9ac",
+				"_type": "span",
+				"marks": [],
+				"text": ", looking specifically at "
+			},
+			{
+				"_key": "924263b106ca",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[these aspects]"
+			},
+			{
+				"_key": "faa8ee7b8e6c",
+				"_type": "span",
+				"marks": [],
+				"text": ", and tell me "
+			},
+			{
+				"_key": "edee338c6a4f",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[what you think]"
+			},
+			{
+				"_key": "b80a095436a1",
+				"_type": "span",
+				"marks": [],
+				"text": "?\"\n\n2️⃣ \"I'd like to compare "
+			},
+			{
+				"_key": "3db82ee3a8ef",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[this]"
+			},
+			{
+				"_key": "f34dc2a6f50e",
+				"_type": "span",
+				"marks": [],
+				"text": " and "
+			},
+			{
+				"_key": "2b578328f671",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[that]"
+			},
+			{
+				"_key": "bd729a336967",
+				"_type": "span",
+				"marks": [],
+				"text": " on "
+			},
+			{
+				"_key": "9216bd1b6a1d",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[these points]"
+			},
+			{
+				"_key": "f43dacf7f6a0",
+				"_type": "span",
+				"marks": [],
+				"text": " in a "
+			},
+			{
+				"_key": "25c92973444d",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[format I prefer]"
+			},
+			{
+				"_key": "397259cbee74",
+				"_type": "span",
+				"marks": [],
+				"text": "\" \n\n3️⃣ \"Suggest "
+			},
+			{
+				"_key": "af83acebb4a3",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[X]"
+			},
+			{
+				"_key": "d0b4330f1d01",
+				"_type": "span",
+				"marks": [],
+				"text": " ways to solve "
+			},
+			{
+				"_key": "e178382fce8e",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[this problem]"
+			},
+			{
+				"_key": "7de4c073b13f",
+				"_type": "span",
+				"marks": [],
+				"text": " while taking into account "
+			},
+			{
+				"_key": "92d38c9b399b",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "[these constraints]"
+			},
+			{
+				"_key": "8e436fdb86c9",
+				"_type": "span",
+				"marks": [],
+				"text": "\""
+			}
+		],
+		"7da0d08b5482": [
+			{
+				"_key": "0fbda9c3d5a00",
+				"_type": "span",
+				"marks": [],
+				"text": "#7 To wrap up"
+			}
+		],
+		"93f317795020": [
+			{
+				"_key": "1ff482bba3680",
+				"_type": "span",
+				"marks": [],
+				"text": "Prompt engineering is like learning a new language: the one that lets you work hand in hand with AI, while staying true to yourself!"
+			}
+		],
+		"54a98b018a10": [
+			{
+				"_key": "0bc375ceea6d0",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 Don't forget: AI is here to help you shine, not to shine in your place!"
+			}
+		],
+		"3cebdc346e9b": [
+			{
+				"_key": "553397fdc81b0",
+				"_type": "span",
+				"marks": [],
+				"text": "Feel free to reach out by email at "
+			},
+			{
+				"_key": "553397fdc81b1",
+				"_type": "span",
+				"marks": [
+					"51809451b2ac"
+				],
+				"text": "hello@vincentasani.me"
+			},
+			{
+				"_key": "553397fdc81b2",
+				"_type": "span",
+				"marks": [],
+				"text": " - I love talking about the concerns around AI, and I'm sure we have a lot to learn from one another."
+			}
+		]
+	}
+}

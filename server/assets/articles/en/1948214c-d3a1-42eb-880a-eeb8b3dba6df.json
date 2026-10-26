@@ -1,0 +1,219 @@
+{
+	"title": "AI-assisted software development, but at what cost?",
+	"blocks": {
+		"0ad95bfacb98": [
+			{
+				"_key": "bbfc7627e21e0",
+				"_type": "span",
+				"marks": [],
+				"text": "Everyone has an opinion on AI in software development. The enthusiasts who see a revolution, the skeptics who refuse to touch it."
+			}
+		],
+		"fb4b13bc00e3": [
+			{
+				"_key": "89e5d4d86ca2",
+				"_type": "span",
+				"marks": [],
+				"text": "Me, I'm somewhere in the middle — I use these tools, I get real value out of them, and I've also let go of a few illusions along the way."
+			}
+		],
+		"3c5f28d894b4": [
+			{
+				"_key": "b4e29ae25b320",
+				"_type": "span",
+				"marks": [],
+				"text": "The day I almost shipped broken code"
+			}
+		],
+		"bd249e21ae23": [
+			{
+				"_key": "734cbf995a200",
+				"_type": "span",
+				"marks": [],
+				"text": "A few days ago, I was working on a pretty standard feature — auth token management with automatic refresh. I'd asked Claude (Sonnet 4.6) to generate the rotation logic. The code it gave me was clean. Really clean. Consistent naming, error cases seemingly handled, clear structure."
+			}
+		],
+		"478e5c63a0b5": [
+			{
+				"_key": "569ce300f5940",
+				"_type": "span",
+				"marks": [],
+				"text": "I skimmed through it. It "
+			},
+			{
+				"_key": "569ce300f5941",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "looked"
+			},
+			{
+				"_key": "569ce300f5942",
+				"_type": "span",
+				"marks": [],
+				"text": " right."
+			}
+		],
+		"8505a0e9461d": [
+			{
+				"_key": "4e8e09b4583d0",
+				"_type": "span",
+				"marks": [],
+				"text": "It was while writing the integration tests that I saw the problem: with concurrent requests, the refresh logic could fire twice at the same time, invalidating the first token while the second was still in flight. Classic race condition. The kind of bug that never shows up in dev, never in staging, and blows up in prod on a Friday night."
+			}
+		],
+		"e2a6633859b2": [
+			{
+				"_key": "51a974ff238b0",
+				"_type": "span",
+				"marks": [],
+				"text": "The AI hadn't hallucinated a nonexistent API. It hadn't made a syntax error. It had produced code that worked 95% of the time, and was silently wrong the other 5%. That's the real trap."
+			}
+		],
+		"64d62aed5325": [
+			{
+				"_key": "aaf54313a6c20",
+				"_type": "span",
+				"marks": [],
+				"text": "What AI does well — and why it's still useful"
+			}
+		],
+		"63ed81f90636": [
+			{
+				"_key": "3ea65ed7eeac0",
+				"_type": "span",
+				"marks": [],
+				"text": "I don't want to swing to the other extreme either. On precise, well-scoped tasks, the gain is real."
+			}
+		],
+		"a9164a282864": [
+			{
+				"_key": "569a3bceddd30",
+				"_type": "span",
+				"marks": [],
+				"text": "Boilerplate generation, type conversions, unit tests for pure functions, documentation — all of that comes out fast and correct. When I know exactly what I want and it's \"well-known\" code (well represented in the training data), AI saves me time without exposing me to much risk."
+			}
+		],
+		"c497d4767c55": [
+			{
+				"_key": "22c931bd72180",
+				"_type": "span",
+				"marks": [],
+				"text": "The problem is that this positive experience builds trust gradually. And that trust spills over. You start using it on more complex, more critical cases, with the same level of review. That's where things go off the rails."
+			}
+		],
+		"693f2e4205e0": [
+			{
+				"_key": "baace8b2d3560",
+				"_type": "span",
+				"marks": [],
+				"text": "The debt you don't see coming"
+			}
+		],
+		"e3b68f3bbdc9": [
+			{
+				"_key": "1728bfb12d620",
+				"_type": "span",
+				"marks": [],
+				"text": "There's something I've noticed with colleagues who use it a lot more than I do: the codebase starts looking like a patchwork. Each module was generated with a different context, slightly different conventions, implementation choices that don't really talk to each other. It works. But nobody truly understands it end to end."
+			}
+		],
+		"9019078befe4": [
+			{
+				"_key": "480acb8fcecd0",
+				"_type": "span",
+				"marks": [],
+				"text": "The LLM works within its context window. It doesn't know your overall architecture, your past decisions, the constraints specific to your project. Every generation is locally coherent and globally orphaned. On a small solo project, that's manageable. On a long-running team project, it's a ticking time bomb."
+			}
+		],
+		"963c0c138829": [
+			{
+				"_key": "8ff22eaf03580",
+				"_type": "span",
+				"marks": [],
+				"text": "And the sneaky part is that the debt piles up without any alarm going off. The code runs, the tests pass, the PRs get approved. It's only six months later, when you need to evolve a module, that you realize nobody really knows why it's structured that way."
+			}
+		],
+		"0588ec7eb387": [
+			{
+				"_key": "aa2f1df19f930",
+				"_type": "span",
+				"marks": [],
+				"text": "What it really costs"
+			}
+		],
+		"092f3c1eae35": [
+			{
+				"_key": "a9f3d68a35860",
+				"_type": "span",
+				"marks": [],
+				"text": "Financially, tool subscriptions are in the €15-40 per month per developer range. That's negligible. That's not where the real cost is."
+			}
+		],
+		"43bd97bd7875": [
+			{
+				"_key": "6057b15c6cbc0",
+				"_type": "span",
+				"marks": [],
+				"text": "The cognitive cost, on the other hand, is underestimated. Every time you hand a hard problem to the AI without wrestling with it first, you miss out on a learning opportunity. In the short term, it's invisible. Over two years, some developers I know struggle to write non-trivial algorithms without assistance. The muscle atrophies from lack of use. It's not dramatic, it's just real."
+			}
+		],
+		"ca5cddd1a780": [
+			{
+				"_key": "4fff1ffbf29d0",
+				"_type": "span",
+				"marks": [],
+				"text": "And then there's the question of accountability. When a bug makes it to prod in AI-generated code that was reviewed too quickly — who's responsible? The legal and ethical answer is clear: the developer who approved it. But in practice, within a team, things get blurry. In a lot of companies, review processes haven't yet caught up with this reality."
+			}
+		],
+		"ca7d026122ae": [
+			{
+				"_key": "01a6063cc3230",
+				"_type": "span",
+				"marks": [],
+				"text": "How I try to use it without getting burned"
+			}
+		],
+		"9e646fab3e7d": [
+			{
+				"_key": "7e55c987fc910",
+				"_type": "span",
+				"marks": [],
+				"text": "My personal rule: AI speeds up what I already understand, it doesn't replace understanding."
+			}
+		],
+		"d09c9c403278": [
+			{
+				"_key": "924aa1bcd5d70",
+				"_type": "span",
+				"marks": [],
+				"text": "In practice — I never generate an entire module without first defining the interface, the invariants, and the edge cases in my head. I treat every output like a PR from an external dev who's competent but doesn't know my project. I review it. Really."
+			}
+		],
+		"c0aaa44d25d9": [
+			{
+				"_key": "ebcf74f7c23e0",
+				"_type": "span",
+				"marks": [],
+				"text": "And for anything touching security, concurrency, or critical business logic — I write it myself, or at the very least I put the output through a very tight review with the tests to go with it."
+			}
+		],
+		"7c22b7356a82": [
+			{
+				"_key": "d04dd7334b4c0",
+				"_type": "span",
+				"marks": [],
+				"text": "It's slower than blind trust. That's exactly why it works."
+			}
+		],
+		"beed6e0e21b9": [
+			{
+				"_key": "5ef1ceec67e50",
+				"_type": "span",
+				"marks": [],
+				"text": "AI in software development is a powerful tool with a fundamental design flaw: it's too comfortable to be used with the vigilance it demands. The price to pay is that very vigilance — kept up precisely because everything feels easy."
+			}
+		]
+	}
+}

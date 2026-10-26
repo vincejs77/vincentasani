@@ -1,0 +1,232 @@
+<!doctype html>
+<!-- Source de l'image Open Graph (1200×630). Régénérer avec : npm run og -->
+<html lang="fr">
+<head>
+	<meta charset="utf-8" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=block" rel="stylesheet" />
+	<style>
+		:root {
+			--bg: #0a0a0a;
+			--border: #262626;
+			--text: #fafafa;
+			--muted: #a3a3a3;
+			--dimmed: #737373;
+			--gutter: 28px;
+		}
+
+		* {
+			box-sizing: border-box;
+			margin: 0;
+		}
+
+		html,
+		body {
+			width: 1200px;
+			height: 630px;
+			overflow: hidden;
+			background: var(--bg);
+			color: var(--text);
+			font-family: "Geist", system-ui, sans-serif;
+			-webkit-font-smoothing: antialiased;
+		}
+
+		/* Cadre vertical du layout, comme sur le site */
+		.frame {
+			position: relative;
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+			border-inline: 1px solid var(--border);
+			display: flex;
+			flex-direction: column;
+		}
+
+		.gutter {
+			position: absolute;
+			inset-block: 0;
+			width: var(--gutter);
+			z-index: 2;
+			color: color-mix(in oklab, #fff 7%, transparent);
+			background-image: repeating-linear-gradient(315deg, currentColor 0 1px, transparent 0 50%);
+			background-size: 10px 10px;
+		}
+
+		.gutter--left {
+			left: 0;
+			border-right: 1px solid var(--border);
+		}
+
+		.gutter--right {
+			right: 0;
+			border-left: 1px solid var(--border);
+		}
+
+		.row {
+			position: relative;
+			padding-inline: calc(var(--gutter) + 48px);
+		}
+
+		/* Lignes horizontales qui débordent du cadre, comme les séparateurs de sections */
+		.row + .row::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: -100px;
+			right: -100px;
+			border-top: 1px solid var(--border);
+		}
+
+		header {
+			height: 84px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			overflow: hidden;
+		}
+
+		header canvas {
+			position: absolute;
+			inset: 0;
+			mask-image: linear-gradient(to bottom, black, transparent);
+		}
+
+		header span {
+			position: relative;
+			font-size: 22px;
+			font-weight: 600;
+			letter-spacing: -0.02em;
+		}
+
+		header .lang {
+			font-size: 18px;
+			font-weight: 500;
+			color: var(--muted);
+		}
+
+		main {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 48px;
+		}
+
+		h1 {
+			font-size: 76px;
+			font-weight: 600;
+			line-height: 1;
+			letter-spacing: -0.05em;
+		}
+
+		.description {
+			max-width: 560px;
+			margin-top: 22px;
+			font-size: 27px;
+			line-height: 1.35;
+			color: var(--muted);
+		}
+
+		.meta {
+			display: flex;
+			gap: 28px;
+			margin-top: 30px;
+			font-size: 19px;
+			color: var(--muted);
+		}
+
+		.meta span {
+			display: inline-flex;
+			align-items: center;
+			gap: 9px;
+		}
+
+		.dot {
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background: #10b981;
+			box-shadow: 0 0 0 4px rgb(16 185 129 / 0.2);
+		}
+
+		.avatar {
+			flex-shrink: 0;
+			width: 220px;
+			height: 220px;
+			border-radius: 50%;
+			overflow: hidden;
+			border: 1px solid var(--border);
+			box-shadow: 0 0 0 8px #262626, 0 10px 30px rgb(0 0 0 / 0.5);
+		}
+
+		.avatar img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		footer {
+			height: 84px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 20px;
+			color: var(--dimmed);
+		}
+
+		footer strong {
+			font-weight: 500;
+			color: var(--text);
+		}
+	</style>
+</head>
+<body>
+	<div class="frame">
+		<div class="gutter gutter--left"></div>
+		<div class="gutter gutter--right"></div>
+
+		<header class="row">
+			<canvas id="grid" width="1000" height="84"></canvas>
+			<span>Vincent Asani</span>
+			<span class="lang">FR · EN</span>
+		</header>
+
+		<main class="row">
+			<div>
+				<h1>Vincent Asani</h1>
+				<p class="description">Ingénieur logiciel. Je conçois des produits numériques utiles et j'accompagne les équipes dans leur transformation digitale.</p>
+				<div class="meta">
+					<span>
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+						Kinshasa, RDC
+					</span>
+					<span><i class="dot"></i>Disponible pour de nouveaux projets</span>
+				</div>
+			</div>
+			<div class="avatar"><img src="../public/img/me/avatar.jpg" alt="" /></div>
+		</main>
+
+		<footer class="row">
+			<span>Ingénieur logiciel &amp; chef de projet</span>
+			<strong>vincentasani.me</strong>
+		</footer>
+	</div>
+
+	<script>
+		// Version figée du MagicFlickeringGrid du header (graine fixe → rendu reproductible)
+		const canvas = document.getElementById("grid");
+		const ctx = canvas.getContext("2d");
+		let seed = 7;
+		const random = () => ((seed = (seed * 16807) % 2147483647) - 1) / 2147483646;
+		const size = 4;
+		const gap = 6;
+		for (let x = 0; x < canvas.width; x += size + gap) {
+			for (let y = 0; y < canvas.height; y += size + gap) {
+				ctx.fillStyle = `rgba(255, 255, 255, ${random() * 0.3})`;
+				ctx.fillRect(x, y, size, size);
+			}
+		}
+	</script>
+</body>
+</html>

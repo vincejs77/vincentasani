@@ -1,0 +1,636 @@
+{
+	"title": "L’avenir de l’intelligence artificielle : les perspectives.",
+	"blocks": {
+		"92b25cd18625": [
+			{
+				"_key": "be0eaea5272a0",
+				"_type": "span",
+				"marks": [],
+				"text": "Juin 2023 : en tant qu’ingénieur logiciel, je suis bien conscient des inquiétudes autour de l’avenir de l’IA (intelligence artificielle). Un sujet aussi fascinant qu’incertain, qui attire les médias, surtout avec l’arrivée des IA génératives comme ChatGPT, MidJourney et DALL-E."
+			}
+		],
+		"7e641e424681": [
+			{
+				"_key": "b29203982008",
+				"_type": "span",
+				"marks": [],
+				"text": "😇 Pas d’inquiétude, il n’existe aujourd’hui aucune intelligence artificielle capable d’approcher la nôtre."
+			}
+		],
+		"c9fd7621efc4": [
+			{
+				"_key": "9103824317210",
+				"_type": "span",
+				"marks": [],
+				"text": "La vraie question, c’est : quelles sont les "
+			},
+			{
+				"_key": "c5205b40a3bc",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "perspectives"
+			},
+			{
+				"_key": "4a5a9679917e",
+				"_type": "span",
+				"marks": [],
+				"text": " ? Autrement dit, à quoi ressemblera notre vie avec une IA à son apogée ? Dans cet article, je vous donne mon avis."
+			}
+		],
+		"c6f4d1e18f94": [
+			{
+				"_key": "f95379acba070",
+				"_type": "span",
+				"marks": [],
+				"text": "#1 Petit historique et définition simple"
+			}
+		],
+		"8fbb7ddf7964": [
+			{
+				"_key": "debbe53bb3e90",
+				"_type": "span",
+				"marks": [],
+				"text": "L’IA n’est pas un concept nouveau. Ses grandes avancées remontent aux années 1950, avec les travaux pionniers de scientifiques comme "
+			},
+			{
+				"_key": "f3da507658b9",
+				"_type": "span",
+				"marks": [
+					"766f5279f372"
+				],
+				"text": "Alan Turing et le test de Turing"
+			},
+			{
+				"_key": "f2fb3c9fe519",
+				"_type": "span",
+				"marks": [],
+				"text": ", qui ont été les premiers à explorer la possibilité de simuler l’intelligence humaine avec des machines."
+			}
+		],
+		"02d797593df9": [
+			{
+				"_key": "cf24476c5d14",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 L’idéal était très simple : utiliser les machines pour aider l’humain dans son évolution. "
+			},
+			{
+				"_key": "8e3523b36079",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Créer une machine qui pense."
+			}
+		],
+		"24f43b7c2e20": [
+			{
+				"_key": "299a72031cc40",
+				"_type": "span",
+				"marks": [],
+				"text": "Des années 1950 à 2020, l’IA a connu des progrès fulgurants. On est passé de simples programmes d’apprentissage automatique aux actions itératives et aux données limitées ("
+			},
+			{
+				"_key": "a41fa5e51cff",
+				"_type": "span",
+				"marks": [
+					"19746315c485"
+				],
+				"text": "apprentissage supervisé"
+			},
+			{
+				"_key": "8a883c43bbdb",
+				"_type": "span",
+				"marks": [],
+				"text": "), à des concepts avancés et sophistiqués de "
+			},
+			{
+				"_key": "fa8bfe35034e",
+				"_type": "span",
+				"marks": [
+					"864c990bf9a5"
+				],
+				"text": "deep learning"
+			},
+			{
+				"_key": "60e8d3b70311",
+				"_type": "span",
+				"marks": [],
+				"text": " exploitant des quantités massives de données ("
+			},
+			{
+				"_key": "d7a0079836ea",
+				"_type": "span",
+				"marks": [
+					"c39702ab3008"
+				],
+				"text": "Big Data"
+			},
+			{
+				"_key": "3855bec1dac2",
+				"_type": "span",
+				"marks": [],
+				"text": ")."
+			}
+		],
+		"423d268f2ff6": [
+			{
+				"_key": "ad6ad8806d140",
+				"_type": "span",
+				"marks": [],
+				"text": "Depuis 2010, avec l’"
+			},
+			{
+				"_key": "822bdb19f3e7",
+				"_type": "span",
+				"marks": [
+					"58ec1520bb31"
+				],
+				"text": "émergence du Big Data"
+			},
+			{
+				"_key": "5a59281d7938",
+				"_type": "span",
+				"marks": [],
+				"text": ", les systèmes d’IA sont devenus encore plus performants pour accomplir des tâches spécifiques à partir d’énormes volumes de données. Cela inclut des domaines comme la reconnaissance d’images, l’analyse prédictive (algorithmes de prédiction), le traitement du langage naturel, les véhicules autonomes, et bien d’autres."
+			}
+		],
+		"46471a99581a": [
+			{
+				"_key": "91fd48c375550",
+				"_type": "span",
+				"marks": [],
+				"text": "Il n’existe "
+			},
+			{
+				"_key": "91fd48c375551",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "pas de définition unique"
+			},
+			{
+				"_key": "91fd48c375552",
+				"_type": "span",
+				"marks": [],
+				"text": " de l’IA. Pour ma part, je la définis comme une "
+			},
+			{
+				"_key": "91fd48c375553",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "intelligence construite"
+			},
+			{
+				"_key": "91fd48c375554",
+				"_type": "span",
+				"marks": [],
+				"text": ", où l’"
+			},
+			{
+				"_key": "da68e5a24452",
+				"_type": "span",
+				"marks": [
+					"47459f11e870"
+				],
+				"text": "intelligence"
+			},
+			{
+				"_key": "4f7c90c2d441",
+				"_type": "span",
+				"marks": [],
+				"text": " désigne la capacité à discerner, à tirer des conclusions, à accomplir des tâches ou à créer."
+			}
+		],
+		"3f3b0046fefb": [
+			{
+				"_key": "63d6a537854b",
+				"_type": "span",
+				"marks": [],
+				"text": "✅ L’IA est donc elle aussi une véritable intelligence, à la seule (mais grande) différence qu’elle n’a pas de conscience de soi. C’est pour ça que je vous disais plus haut qu’elle est encore loin de rivaliser avec la nôtre."
+			}
+		],
+		"b1246511bd18": [
+			{
+				"_key": "fc11ebce7a7b0",
+				"_type": "span",
+				"marks": [],
+				"text": "#2 La révolution de l’IA est en marche"
+			}
+		],
+		"8bcf4a2c5698": [
+			{
+				"_key": "81ef9ea30ca30",
+				"_type": "span",
+				"marks": [],
+				"text": "On l’a bien compris : le paysage de l’IA évolue très vite, et la pluie d’innovations actuelles le confirme. Les idées autour de l’IA ne cessent d’être financées, par des investisseurs qui s’en frottent les mains."
+			}
+		],
+		"ad3b6d3fbfaf": [
+			{
+				"_key": "229a5a85f07d",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 À mon avis, les 100 prochaines années compteront davantage dans l’évolution de la civilisation humaine que tout ce que nous avons connu jusqu’ici."
+			}
+		],
+		"2b6678e5d900": [
+			{
+				"_key": "5bcc185080e40",
+				"_type": "span",
+				"marks": [],
+				"text": "D’Alexa/Siri aux chatbots, l’IA est devenue omniprésente dans notre quotidien : dans nos appareils électroniques, nos services en ligne et nos objets connectés. Les "
+			},
+			{
+				"_key": "71a677bd101b",
+				"_type": "span",
+				"marks": [
+					"484937a5640c"
+				],
+				"text": "algorithmes utilisés par les réseaux sociaux"
+			},
+			{
+				"_key": "be7403dff95c",
+				"_type": "span",
+				"marks": [],
+				"text": " pour proposer du contenu personnalisé à leurs utilisateurs en sont des exemples parfaits."
+			}
+		],
+		"e357a24b199a": [
+			{
+				"_key": "ccde2fb91b64",
+				"_type": "span",
+				"marks": [],
+				"text": "✅ En effet, l’IA n’a cessé de gagner en capacité et en compétence, et elle ne montre aucun signe de ralentissement. Elle va transformer de nombreux domaines de notre société."
+			}
+		],
+		"8818c83d9f9b": [
+			{
+				"_key": "98370afd5f220",
+				"_type": "span",
+				"marks": [],
+				"text": "Les capacités de traitement des données et la puissance de calcul ont considérablement augmenté, ce qui permet aux systèmes d’IA d’analyser de grandes quantités de données en temps réel."
+			}
+		],
+		"b9fd95c199bb": [
+			{
+				"_key": "fe7199b95cc60",
+				"_type": "span",
+				"marks": [],
+				"text": "Cela a ouvert la voie à des applications innovantes comme la reconnaissance vocale, la vision par ordinateur, les véhicules autonomes et les assistants virtuels."
+			}
+		],
+		"79cdc0c39df5": [
+			{
+				"_key": "0a494920f6af0",
+				"_type": "span",
+				"marks": [],
+				"text": "En 2023, l’émergence de l’"
+			},
+			{
+				"_key": "afa5dfdc372e",
+				"_type": "span",
+				"marks": [
+					"19d1e7faca94"
+				],
+				"text": "IA générative"
+			},
+			{
+				"_key": "debfffc61150",
+				"_type": "span",
+				"marks": [],
+				"text": ", comme "
+			},
+			{
+				"_key": "045d8fef7add",
+				"_type": "span",
+				"marks": [
+					"41801a8a0751"
+				],
+				"text": "ChatGPT"
+			},
+			{
+				"_key": "5dc22edaa348",
+				"_type": "span",
+				"marks": [],
+				"text": " d’OpenAI, a éveillé la curiosité du grand public, des chercheurs, des ingénieurs, des artistes, des philosophes et des professionnels de tous horizons."
+			}
+		],
+		"d096346df089": [
+			{
+				"_key": "a5624c865118",
+				"_type": "span",
+				"marks": [],
+				"text": "🔥 L’IA a fait preuve de créativité en générant du contenu original : du texte (ChatGPT), des images (MidJourney), de la musique (Boomy, Amper Music) et même des œuvres d’art (DALL-E). "
+			},
+			{
+				"_key": "fd361f53798e",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": "Les innovations dans ce domaine sont nombreuses, bien trop pour toutes les citer."
+			}
+		],
+		"53e711eb47c0": [
+			{
+				"_key": "512559100c090",
+				"_type": "span",
+				"marks": [],
+				"text": "#3 Mythes et réalité sur l’IA"
+			}
+		],
+		"227e87ee2a6a": [
+			{
+				"_key": "4997f504d4a90",
+				"_type": "span",
+				"marks": [],
+				"text": "\nJ’ai volontairement choisi de lister trois mythes sur l’IA que vous croiserez peut-être sur les réseaux sociaux ou dans la presse. Croyez-moi, ces affirmations sont loin d’être vérifiées, du moins pour l’instant :"
+			}
+		],
+		"6aaaab094bf6": [
+			{
+				"_key": "dc39f50891a00",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Non, l’IA n’est pas capable de raisonner comme un humain"
+			},
+			{
+				"_key": "dc39f50891a01",
+				"_type": "span",
+				"marks": [],
+				"text": " : les systèmes d’IA se limitent à des tâches spécifiques et fonctionnent à partir de modèles prédéfinis. Ils n’ont ni émotions, ni conscience de soi, ni intuition."
+			}
+		],
+		"cb96074c5686": [
+			{
+				"_key": "f67f5a000c32",
+				"_type": "span",
+				"marks": [],
+				"text": "🧠 Le cerveau humain reste de loin supérieur aux réseaux de neurones des systèmes d’IA."
+			}
+		],
+		"8e2d3c282f39": [
+			{
+				"_key": "433b8aad24020",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Non, l’IA ne peut pas remplacer les emplois humains"
+			},
+			{
+				"_key": "433b8aad24021",
+				"_type": "span",
+				"marks": [],
+				"text": " : même si l’IA est capable d’automatiser certaines tâches, il est peu probable qu’elle remplace complètement les emplois humains. Elle a plutôt le potentiel de les transformer, d’améliorer l’efficacité et de créer de nouvelles opportunités."
+			}
+		],
+		"d76f3fd5baa9": [
+			{
+				"_key": "cf7785fe129a",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 L’évolution de l’IA devrait entraîner une transformation du monde du travail plutôt qu’un remplacement pur et simple des emplois humains. "
+			},
+			{
+				"_key": "f8b989ef4d29",
+				"_type": "span",
+				"marks": [
+					"em",
+					"176f79b55310"
+				],
+				"text": "Les experts affirment"
+			},
+			{
+				"_key": "f1727223911d",
+				"_type": "span",
+				"marks": [
+					"em"
+				],
+				"text": " que l’IA rendra certains professionnels plus productifs que jamais, notamment les médecins, les avocats et les programmeurs."
+			}
+		],
+		"3e8b487ec943": [
+			{
+				"_key": "08173da759c10",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Non, l’IA n’est pas une menace existentielle pour l’humanité"
+			},
+			{
+				"_key": "08173da759c11",
+				"_type": "span",
+				"marks": [],
+				"text": " : en effet, l’IA étant une création humaine, elle ne peut pas constituer une menace si des réglementations et des mesures de sécurité appropriées sont mises en place pour en garantir un usage responsable."
+			}
+		],
+		"b449ea4ce633": [
+			{
+				"_key": "85d62b9d0ddd0",
+				"_type": "span",
+				"marks": [],
+				"text": "En réalité, l’avenir de l’IA est prometteur et elle aura sans doute un impact important sur de nombreux secteurs comme l’éducation, l’industrie, l’e-commerce, la santé, les transports, la cybersécurité et bien d’autres, car son potentiel est immense et en constante évolution."
+			}
+		],
+		"9bd529fd00d7": [
+			{
+				"_key": "67095263644e",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 Cependant, tout dépendra de la manière dont l’humain jugera et encadrera la portée de cet impact."
+			}
+		],
+		"94ed4395cdee": [
+			{
+				"_key": "f975b8bbe4dd0",
+				"_type": "span",
+				"marks": [],
+				"text": "#4 Quelles sont les perspectives ?"
+			}
+		],
+		"6557e9f4414a": [
+			{
+				"_key": "8363afc66680",
+				"_type": "span",
+				"marks": [],
+				"text": "📌 "
+			},
+			{
+				"_key": "7cc3f080e6590",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": "Perspective 1 :"
+			}
+		],
+		"430315b7208f": [
+			{
+				"_key": "4ea9956291ec0",
+				"_type": "span",
+				"marks": [],
+				"text": "Les IA génératives, comme ChatGPT, prennent de plus en plus de place. Des multinationales comme "
+			},
+			{
+				"_key": "adfea8a4c610",
+				"_type": "span",
+				"marks": [
+					"1dab4b6ecee9"
+				],
+				"text": "Microsoft et Google"
+			},
+			{
+				"_key": "c08b447183f5",
+				"_type": "span",
+				"marks": [],
+				"text": " prévoient d’intégrer ces technologies d’IA générative dans leurs produits, pour permettre aux utilisateurs de rédiger des e-mails, de résumer des réunions et de profiter de bien d’autres fonctionnalités intéressantes."
+			}
+		],
+		"eefc939dc7c1": [
+			{
+				"_key": "89b95c555b380",
+				"_type": "span",
+				"marks": [],
+				"text": "OpenAI propose une API qui permet aux entreprises tech de connecter GPT-4 à leurs propres applications et produits. Elle a aussi développé des plugins en partenariat avec des entreprises comme Instacart, Expedia et Wolfram Alpha pour étendre les capacités de ChatGPT."
+			}
+		],
+		"f0c6e83f3dc4": [
+			{
+				"_key": "3d5121eafefa",
+				"_type": "span",
+				"marks": [],
+				"text": "📌"
+			},
+			{
+				"_key": "1a9f4ddf89990",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": " Perspective 2 :"
+			}
+		],
+		"15d058329f7e": [
+			{
+				"_key": "5d0beb71db580",
+				"_type": "span",
+				"marks": [],
+				"text": "L’IA rendra certains travailleurs plus productifs, mais certains emplois seront remplacés. Les tâches répétitives seront les plus touchées. Des chatbots propulsés par l’IA comme ChatGPT, Bing, Bard et Ernie ont été développés pour répondre à des questions complexes et accomplir diverses tâches. L’IA progresse rapidement, ce qui soulève des inquiétudes quant à son impact futur."
+			}
+		],
+		"0f8bf2f57642": [
+			{
+				"_key": "b74418792e13",
+				"_type": "span",
+				"marks": [],
+				"text": "📌"
+			},
+			{
+				"_key": "258b24f8e3a70",
+				"_type": "span",
+				"marks": [
+					"strong"
+				],
+				"text": " Perspective 3 :"
+			}
+		],
+		"1aa2465520f4": [
+			{
+				"_key": "06adce8aa4ca0",
+				"_type": "span",
+				"marks": [],
+				"text": "Des entreprises comme OpenAI et DeepMind visent à développer une intelligence artificielle générale (AGI), une machine capable d’égaler les capacités humaines. Mais atteindre cet objectif exigera une compréhension approfondie du monde physique et des avancées technologiques majeures."
+			}
+		],
+		"87cb19004426": [
+			{
+				"_key": "e3de306095de",
+				"_type": "span",
+				"marks": [],
+				"text": "❓ Il est essentiel de se demander si nous voulons vraiment d’une IA aussi puissante, et si elle peut être contrôlée."
+			}
+		],
+		"93e73ff9d010": [
+			{
+				"_key": "9b0e94645f7c0",
+				"_type": "span",
+				"marks": [],
+				"text": "#5 Quels sont les risques ?"
+			}
+		],
+		"1e068caa5e90": [
+			{
+				"_key": "b97ee8bee47e0",
+				"_type": "span",
+				"marks": [],
+				"text": "De nombreux experts en intelligence artificielle pensent que leurs créations peuvent améliorer nos vies, mais ils mettent aussi en garde contre les risques potentiels."
+			}
+		],
+		"f14ee6fc219d": [
+			{
+				"_key": "00eafb62f4b90",
+				"_type": "span",
+				"marks": [],
+				"text": "Ils insistent sur l’importance d’aligner les systèmes d’IA sur les valeurs et les objectifs humains."
+			}
+		],
+		"050cec7f4424": [
+			{
+				"_key": "091b16b29bd90",
+				"_type": "span",
+				"marks": [],
+				"text": "Une étude menée par OpenAI avant la sortie de GPT-4 a révélé de possibles usages dangereux du chatbot, comme suggérer l’achat d’armes illégales ou la fabrication de substances dangereuses."
+			}
+		],
+		"297ac6bd6232": [
+			{
+				"_key": "322aa2160fa60",
+				"_type": "span",
+				"marks": [],
+				"text": "Même si des mesures ont été prises pour régler ces problèmes, il est difficile d’éliminer tous les abus potentiels. De plus, comme ces systèmes apprennent à partir de données, ils peuvent acquérir des compétences inattendues et présenter des failles de sécurité imprévues."
+			}
+		],
+		"ac4fbf0ba281": [
+			{
+				"_key": "387b9d14025a",
+				"_type": "span",
+				"marks": [],
+				"text": "💡 Il est aussi préoccupant que d’autres acteurs, qu’il s’agisse d’entreprises, de pays ou d’acteurs malveillants, explorent cette technologie sans prendre les mêmes précautions."
+			}
+		],
+		"9365f2170454": [
+			{
+				"_key": "6de59f3d91450",
+				"_type": "span",
+				"marks": [],
+				"text": "En conclusion"
+			}
+		],
+		"6455b3005df2": [
+			{
+				"_key": "d2bc52c2d2680",
+				"_type": "span",
+				"marks": [],
+				"text": "Prédire l’avenir de l’IA, c’est prédire notre propre avenir. Même si nous ne pouvons pas le faire avec une certitude absolue, les faits nous permettent de nous faire une idée de la manière dont les choses pourraient évoluer."
+			}
+		],
+		"5b03cedabd08": [
+			{
+				"_key": "5904fcc26ca00",
+				"_type": "span",
+				"marks": [],
+				"text": "Soit nous gouvernerons l’IA, soit c’est elle qui nous gouvernera. L’avenir auquel nous tenons tant dépendra des choix que nous jugerons nécessaires à notre survie."
+			}
+		]
+	}
+}

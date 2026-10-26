@@ -1,26 +1,32 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: "2025-06-07",
-	css: ["~/assets/css/main.css", "~/assets/styles/utils/fonts.scss", "~/assets/styles/main.scss"],
+	css: ["~/assets/css/main.css", "~/assets/styles/main.scss"],
 	app: {
 		pageTransition: { name: "slide-down", mode: "out-in" },
 		head: {
+			htmlAttrs: { class: "dark" },
 			title: "Vincent Asani — Ingénieur logiciel",
 			meta: [
 				{ charset: "utf-16" },
 				{ name: "viewport", content: "width=device-width, initial-scale=1" },
 				{ name: "description", content: "Ingénieur logiciel et chef de projet basé à Kinshasa, RDC. Je conçois des produits numériques utiles et j'accompagne la transformation digitale des organisations." },
 				{ name: "format-detection", content: "telephone=no" },
+				{ name: "color-scheme", content: "dark" },
+				{ name: "theme-color", content: "#0a0a0a" },
 				{ property: "og:title", content: "Hello ! it's Vincent Asani" },
 				{
 					property: "og:description",
 					content: "Ingénieur logiciel et chef de projet basé à Kinshasa, RDC. Je conçois des produits numériques utiles et j'accompagne la transformation digitale des organisations."
 				},
-				{ property: "og:url", content: "https://vincentasani.vercel.app/img/cover.png" },
+				{ property: "og:url", content: "https://www.vincentasani.me" },
+				// Généré depuis scripts/og-image.html (npm run og)
 				{
 					property: "og:image",
-					content: "https://vincentasani.vercel.app/img/cover.png"
+					content: "https://www.vincentasani.me/img/og.png"
 				},
+				{ property: "og:image:width", content: "1200" },
+				{ property: "og:image:height", content: "630" },
 				{ name: "twitter:title", content: "Hello ! it's Vincent Asani" },
 				{
 					name: "twitter:description",
@@ -28,7 +34,7 @@ export default defineNuxtConfig({
 				},
 				{
 					name: "twitter:image",
-					content: "https://vincentasani.vercel.app/img/cover.png"
+					content: "https://www.vincentasani.me/img/og.png"
 				},
 				{ name: "twitter:card", content: "summary_large_image" }
 			],
@@ -65,11 +71,9 @@ export default defineNuxtConfig({
 		}
 	},
 	modules: ["@nuxt/ui", "@nuxtjs/sanity", "@nuxt/content", "@pinia/nuxt", "@vercel/analytics/nuxt"],
-	colorMode: {
-		// Dark par défaut pour tout visiteur ; la clé a été renommée pour ignorer les anciens choix « light »/« system » enregistrés
-		preference: "dark",
-		fallback: "dark",
-		storageKey: "v-theme"
+	ui: {
+		// Site en dark uniquement : pas de module color-mode, la classe `dark` est posée en dur sur <html>
+		colorMode: false
 	},
 	runtimeConfig: {
 		sanity: {
@@ -91,8 +95,6 @@ export default defineNuxtConfig({
 	},
 	fonts: {
 		families: [
-			// Satoshi est déjà chargée via fonts.scss — évite la double résolution
-			{ name: "Satoshi", provider: "none" },
 			{ name: "Geist", provider: "google", weights: [400, 500, 600, 700] }
 		],
 		experimental: {
