@@ -66,7 +66,7 @@ export const RESUME = {
 			restore: { fr: "Restaurer", en: "Restore" },
 			openOn: { fr: "Ouvrir sur", en: "Open on" },
 			preview: { fr: "Aperçu", en: "Preview" },
-			repositories: { fr: "dépôts", en: "repositories" },
+			repositories: { fr: "dépôts publics", en: "public repositories" },
 			stars: { fr: "étoiles", en: "stars" },
 			achievements: { fr: "Achievements", en: "Achievements" },
 			contributionsYear: { fr: "contributions au cours de l'année écoulée", en: "contributions in the last year" },
