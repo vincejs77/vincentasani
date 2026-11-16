@@ -16,7 +16,7 @@
 			<div role="none" class="m-auto h-2/3 w-px shrink-0 bg-border" />
 
 			<UTooltip v-for="social in resume.contact.social" :key="social.name" :text="social.name">
-				<a :href="social.url" :aria-label="social.name" target="_blank" rel="noopener noreferrer" @click="openSocial($event, social)">
+				<a :href="social.url" :aria-label="social.name" target="_blank" rel="noopener noreferrer" data-browser-window @click="openSocial($event, social)">
 					<span :ref="setIcon" :style="iconStyle(iconIndex(social.url))" :class="itemClass">
 						<UIcon :name="social.icon" class="size-5" />
 					</span>
@@ -37,6 +37,28 @@ const openSocial = (e: MouseEvent, social: BrowserTarget) => {
 	e.preventDefault();
 	browser.open(social);
 };
+
+// Avant l'hydratation, le @click ci-dessus n'existe pas encore : un clic suivrait le lien (nouvel onglet).
+// Ce script, exécuté dès le <head>, retient le clic ; la fenêtre s'ouvre dès que la page est interactive.
+useHead({
+	script: [
+		{
+			key: "v-browser-window-early-click",
+			tagPosition: "head",
+			innerHTML: `document.addEventListener("click",function(e){if(window.__vBrowserReady||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||e.altKey)return;var a=e.target.closest&&e.target.closest("a[data-browser-window]");if(!a)return;e.preventDefault();window.__vBrowserQueue=a.getAttribute("href")},true);`
+		}
+	]
+});
+
+type EarlyClickWindow = Window & { __vBrowserReady?: boolean; __vBrowserQueue?: string };
+
+onMounted(() => {
+	const w = window as EarlyClickWindow;
+	w.__vBrowserReady = true;
+	const queued = resume.value.contact.social.find((s) => s.url === w.__vBrowserQueue);
+	delete w.__vBrowserQueue;
+	if (queued) browser.open(queued);
+});
 
 // Effet de grossissement du Dock Magic UI : chaque icône grandit selon sa distance au curseur.
 const BASE_SIZE = 40;
