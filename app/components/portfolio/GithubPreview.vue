@@ -39,14 +39,39 @@
 							<UIcon name="i-lucide-book-marked" class="size-4" />
 							<strong class="text-highlighted">{{ data.publicRepos }}</strong> {{ ui.browser.repositories }}
 						</span>
-						<span class="inline-flex items-center gap-1.5">
-							<UIcon name="i-lucide-users" class="size-4" />
-							<strong class="text-highlighted">{{ data.followers }}</strong> {{ ui.browser.followers }} ·
-							<strong class="text-highlighted">{{ data.following }}</strong> {{ ui.browser.following }}
+						<span v-if="data.starred !== null" class="inline-flex items-center gap-1.5">
+							<UIcon name="i-lucide-star" class="size-4" />
+							<strong class="text-highlighted">{{ data.starred }}</strong> {{ ui.browser.stars }}
 						</span>
 					</div>
 				</div>
 			</header>
+
+			<!-- Achievements (badges GitHub) -->
+			<section v-if="data.achievements?.length" class="space-y-3">
+				<h3 class="text-sm font-semibold text-highlighted">{{ ui.browser.achievements }}</h3>
+				<div class="flex flex-wrap gap-3">
+					<a
+						v-for="badge in data.achievements"
+						:key="badge.slug"
+						:href="`${url}?achievement=${badge.slug}&tab=achievements`"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group flex w-28 flex-col items-center gap-2 rounded-xl border border-default p-3 text-center transition-colors hover:bg-elevated"
+					>
+						<span class="relative">
+							<img :src="badge.image" :alt="badge.name" width="64" height="64" loading="lazy" class="size-16 transition-transform group-hover:scale-105" />
+							<span
+								v-if="badge.count"
+								class="absolute right-0 -bottom-1 rounded-full px-1.5 text-[11px] font-bold shadow"
+								:class="TIERS[badge.tier ?? ''] ?? TIERS.default"
+								>x{{ badge.count }}</span
+							>
+						</span>
+						<span class="text-xs font-medium text-highlighted">{{ badge.name }}</span>
+					</a>
+				</div>
+			</section>
 
 			<!-- Graphe de contributions (12 derniers mois) -->
 			<section v-if="graph" class="space-y-3">
@@ -120,7 +145,7 @@ const emit = defineEmits<{ loaded: [] }>();
 const { locale, ui } = useLang();
 
 // Clé fixe : la réponse reste en mémoire, la fenêtre se rouvre instantanément.
-const { data, status, error } = useLazyFetch("/api/github", { key: "github-activity", server: false });
+const { data, status, error } = useLazyFetch("/api/github", { key: "github-profile-v3", server: false });
 
 type Profile = NonNullable<typeof data.value>;
 type ContributionDay = NonNullable<Profile["contributions"]>["days"][number];
@@ -129,6 +154,14 @@ type ActivityItem = Profile["activity"][number];
 watch(status, (s) => (s === "success" || s === "error") && emit("loaded"), { immediate: true });
 
 const ctaClass = "inline-flex items-center gap-2 rounded-xl border border-default bg-default px-4 py-2 text-sm font-medium text-highlighted transition-colors hover:bg-muted";
+
+// Paliers des achievements (couleurs de GitHub)
+const TIERS: Record<string, string> = {
+	bronze: "bg-[#f9bfa7] text-[#7c2d12]",
+	silver: "bg-[#e1e4e8] text-[#24292f]",
+	gold: "bg-[#f9e9a7] text-[#6c4400]",
+	default: "bg-muted text-highlighted"
+};
 
 // Graphe : une colonne par semaine (dimanche → samedi), comme sur GitHub.
 // Les cases s'étirent pour remplir la largeur ; en dessous de MIN_STEP px par semaine, le graphe défile.

@@ -1,7 +1,8 @@
 // Profil GitHub affiché dans la fenêtre « navigateur » du Dock.
 // GitHub interdit l'affichage de ses pages en iframe (X-Frame-Options: deny) : on reconstruit l'aperçu côté serveur.
-// - profil et activité récente : API publique
+// - profil, étoiles et activité récente : API publique
 // - graphe de contributions : page publique github.com/users/<login>/contributions (pas d'API sans jeton)
+// - achievements : page publique du profil (pas d'API du tout)
 // Réponse mise en cache 1 h pour rester loin de la limite de 60 requêtes/heure de l'API sans jeton.
 
 const USERNAME = "vincejs77";
@@ -15,8 +16,6 @@ type GithubUser = {
 	bio: string | null;
 	location: string | null;
 	public_repos: number;
-	followers: number;
-	following: number;
 };
 
 type GithubEvent = {
@@ -27,6 +26,7 @@ type GithubEvent = {
 };
 
 type ContributionDay = { date: string; count: number; level: number };
+type Achievement = { slug: string; name: string; image: string; tier: string | null; count: number | null };
 type ActivityItem = { type: string; action: string | null; refType: string | null; repo: string; count: number; date: string };
 
 // Les cases du calendrier portent la date et le niveau ; le nombre exact est dans l'infobulle associée (for="<id>").
@@ -55,6 +55,32 @@ async function fetchContributions() {
 	return { total: total ? Number(total.replace(/,/g, "")) : days.reduce((s, d) => s + d.count, 0), days };
 }
 
+// Nombre de dépôts mis en favori (onglet « Stars » du profil) : 1 par page, le numéro de la dernière page donne le total.
+async function fetchStarred() {
+	const res = await $fetch.raw(`https://api.github.com/users/${USERNAME}/starred`, { headers: HEADERS, query: { per_page: 1 } });
+	const last = res.headers.get("link")?.match(/[?&]page=(\d+)>;\s*rel="last"/)?.[1];
+	return last ? Number(last) : Array.isArray(res._data) ? res._data.length : 0;
+}
+
+// Badges de la barre latérale du profil : <a href="…?achievement=<slug>…"><img alt="Achievement: <nom>"> [<span …--<palier>>x2</span>]</a>
+async function fetchAchievements() {
+	const html = await $fetch<string>(`https://github.com/${USERNAME}`, {
+		headers: { "User-Agent": "Mozilla/5.0 (compatible; vincentasani.me)" },
+		responseType: "text"
+	});
+	const seen = new Map<string, Achievement>();
+	for (const [block, slug] of html.matchAll(/<a[^>]*\?achievement=([\w-]+)[^>]*>[\s\S]*?<\/a>/g)) {
+		if (seen.has(slug!)) continue;
+		const image = block.match(/<img[^>]*src="([^"]+)"/)?.[1];
+		const name = block.match(/alt="Achievement: ([^"]+)"/)?.[1];
+		if (!image || !name) continue;
+		const tier = block.match(/achievement-tier-label--(\w+)/)?.[1] ?? null;
+		const count = block.match(/>x(\d+)</)?.[1];
+		seen.set(slug!, { slug: slug!, name, image, tier, count: count ? Number(count) : null });
+	}
+	return [...seen.values()];
+}
+
 // Regroupe les événements consécutifs identiques (ex. 4 pushs d'affilée sur le même dépôt).
 async function fetchActivity() {
 	const events = await $fetch<GithubEvent[]>(`https://api.github.com/users/${USERNAME}/events/public`, { headers: HEADERS, query: { per_page: 50 } });
@@ -70,8 +96,10 @@ async function fetchActivity() {
 
 export default defineCachedEventHandler(
 	async () => {
-		const [user, contributions, activity] = await Promise.all([
+		const [user, starred, achievements, contributions, activity] = await Promise.all([
 			$fetch<GithubUser>(`https://api.github.com/users/${USERNAME}`, { headers: HEADERS }),
+			fetchStarred().catch(() => null),
+			fetchAchievements().catch(() => [] as Achievement[]),
 			fetchContributions().catch(() => null),
 			fetchActivity().catch(() => [] as ActivityItem[])
 		]);
@@ -84,11 +112,11 @@ export default defineCachedEventHandler(
 			bio: user.bio,
 			location: user.location,
 			publicRepos: user.public_repos,
-			followers: user.followers,
-			following: user.following,
+			starred,
+			achievements,
 			contributions,
 			activity
 		};
 	},
-	{ name: "github-activity", maxAge: 60 * 60, swr: true }
+	{ name: "github-profile-v3", maxAge: 60 * 60, swr: true }
 );
