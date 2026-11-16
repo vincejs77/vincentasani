@@ -39,8 +39,8 @@ export const RESUME = {
 		en: "I build useful digital products and help teams through their digital transformation."
 	},
 	summary: {
-		fr: `Ingénieur logiciel polyvalent et chef de projet, avec une expertise en technologie, innovation et développement d'entreprise. Je suis aujourd'hui <a href="#work">Responsable informatique à l'Institut français de RDC</a>, où je pilote la transformation numérique de l'institution. Avant cela, j'ai <a href="#work">dirigé la technologie chez Wito XR Studio</a>, <a href="#events">coordonné EclosionHack 2024</a> et porté l'<a href="#events">AR/VR Africa Metathon</a> en RDC. Je suis diplômé en <a href="#education">informatique de l'Université Catholique de Bukavu</a>.`,
-		en: `Versatile software engineer and project manager with deep expertise in technology, innovation and business development. I'm currently <a href="#work">Head of IT at the Institut français de RDC</a>, where I lead the institution's digital transformation. Before that, I <a href="#work">led technology at Wito XR Studio</a>, <a href="#events">coordinated EclosionHack 2024</a> and ran the <a href="#events">AR/VR Africa Metathon</a> in the DRC. I hold a <a href="#education">degree in Computer Science from the Université Catholique de Bukavu</a>.`
+		fr: `Ingénieur logiciel polyvalent et chef de projet, avec une expertise en technologie, innovation et développement d'entreprise. Je suis aujourd'hui <a href="#work">Responsable informatique à l'Institut français de RDC – Kinshasa</a>, où je pilote la transformation numérique de l'institution. Avant cela, j'ai <a href="#work">dirigé la technologie chez Wito XR Studio</a>, <a href="#events">coordonné EclosionHack 2024</a> et porté l'<a href="#events">AR/VR Africa Metathon</a> en RDC. Je suis diplômé en <a href="#education">informatique de l'Université Catholique de Bukavu</a>.`,
+		en: `Versatile software engineer and project manager with deep expertise in technology, innovation and business development. I'm currently <a href="#work">Head of IT at the Institut français de RDC – Kinshasa</a>, where I lead the institution's digital transformation. Before that, I <a href="#work">led technology at Wito XR Studio</a>, <a href="#events">coordinated EclosionHack 2024</a> and ran the <a href="#events">AR/VR Africa Metathon</a> in the DRC. I hold a <a href="#education">degree in Computer Science from the Université Catholique de Bukavu</a>.`
 	},
 
 	// Textes de l'interface (titres de sections, boutons…)
@@ -156,10 +156,9 @@ export const RESUME = {
 
 	work: [
 		{
-			company: { fr: "Institut français de RDC", en: "Institut français de RDC" },
+			company: { fr: "Institut français de RDC – Kinshasa", en: "Institut français de RDC – Kinshasa" },
 			logoUrl: "/img/logos/ifrdc.webp",
 			title: { fr: "Responsable informatique", en: "Head of IT" },
-			location: "Kinshasa",
 			href: "https://www.ifrdc.org",
 			start: { fr: "Avr. 2025", en: "Apr 2025" },
 			end: PRESENT,
