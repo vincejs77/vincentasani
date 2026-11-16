@@ -58,6 +58,22 @@ export const RESUME = {
 		source: { fr: "Code", en: "Source" },
 		open: { fr: "Ouvrir", en: "Open" },
 		language: { fr: "Langue", en: "Language" },
+		// Fenêtre « navigateur » ouverte depuis le Dock (GitHub, LinkedIn)
+		browser: {
+			close: { fr: "Fermer", en: "Close" },
+			minimize: { fr: "Réduire", en: "Minimize" },
+			expand: { fr: "Agrandir", en: "Expand" },
+			restore: { fr: "Restaurer", en: "Restore" },
+			openOn: { fr: "Ouvrir sur", en: "Open on" },
+			preview: { fr: "Aperçu", en: "Preview" },
+			repositories: { fr: "dépôts", en: "repositories" },
+			followers: { fr: "abonnés", en: "followers" },
+			following: { fr: "abonnements", en: "following" },
+			recentRepos: { fr: "Dépôts récents", en: "Recent repositories" },
+			updated: { fr: "Mis à jour", en: "Updated" },
+			error: { fr: "Impossible de charger le profil pour le moment.", en: "Couldn't load the profile right now." },
+			fullProfile: { fr: "Voir le profil complet", en: "View full profile" }
+		},
 		projects: {
 			label: { fr: "Mes projets", en: "My Projects" },
 			title: { fr: "Découvrez mes réalisations", en: "Check out my latest work" },

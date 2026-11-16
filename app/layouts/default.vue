@@ -18,6 +18,7 @@
 			</div>
 		</div>
 		<MagicDock />
+		<MagicBrowserWindow />
 	</div>
 </template>
 

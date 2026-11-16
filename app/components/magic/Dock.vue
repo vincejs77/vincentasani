@@ -16,7 +16,7 @@
 			<div role="none" class="m-auto h-2/3 w-px shrink-0 bg-border" />
 
 			<UTooltip v-for="social in resume.contact.social" :key="social.name" :text="social.name">
-				<a :href="social.url" :aria-label="social.name" target="_blank" rel="noopener noreferrer">
+				<a :href="social.url" :aria-label="social.name" target="_blank" rel="noopener noreferrer" @click="openSocial($event, social)">
 					<span :ref="setIcon" :style="iconStyle(iconIndex(social.url))" :class="itemClass">
 						<UIcon :name="social.icon" class="size-5" />
 					</span>
@@ -28,6 +28,15 @@
 
 <script setup lang="ts">
 const { resume } = useLang();
+const browser = useBrowserWindow();
+
+// GitHub / LinkedIn s'ouvrent dans la fenêtre « navigateur » du site.
+// Ctrl/Cmd/Maj + clic ou clic molette gardent le comportement natif (nouvel onglet).
+const openSocial = (e: MouseEvent, social: BrowserTarget) => {
+	if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+	e.preventDefault();
+	browser.open(social);
+};
 
 // Effet de grossissement du Dock Magic UI : chaque icône grandit selon sa distance au curseur.
 const BASE_SIZE = 40;
