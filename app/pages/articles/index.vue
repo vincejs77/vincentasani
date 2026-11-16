@@ -88,7 +88,7 @@ const query = groq`*[_type == "article"] | order(date desc) {
   _updatedAt,
   date,
   slug,
-  "imageUrl": image.asset->,
+  "imageUrl": image.asset->${SANITY_ASSET_FIELDS},
   categorie->,
   content
 }`;

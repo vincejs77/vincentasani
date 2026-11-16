@@ -1,0 +1,541 @@
+{
+	"title": "Information security in 2026",
+	"blocks": {
+		"b28847a4ee8f": [
+			{
+				"_key": "213822378387",
+				"_type": "span",
+				"marks": [],
+				"text": "On May 19, attackers took over a developer's account on npm, the huge online library where programmers all over the world pick up ready-made building blocks of code. In 39 minutes, they slipped a virus into 323 of those blocks, which are downloaded millions of times a week. On every computer that installed them, the virus stole passwords and server access keys, then used them to infect other blocks. It even hid inside the settings of Claude Code, an AI coding assistant, so it could relaunch itself every time the tool was used."
+			}
+		],
+		"45acc2168f14": [
+			{
+				"_key": "94b4a6971921",
+				"_type": "span",
+				"marks": [],
+				"text": "That last detail sums up the year pretty well. The attacks that work go less and less through a forced door, and more and more through the tools we installed ourselves and trust. And this concerns everyone: your website, your management software or your mobile app are built with these blocks."
+			}
+		],
+		"50fff251a092": [
+			{
+				"_key": "d58d3c787dde",
+				"_type": "span",
+				"marks": [],
+				"text": "When the AI is at the keyboard"
+			}
+		],
+		"94ea18718ae5": [
+			{
+				"_key": "872ddb7d3f3e",
+				"_type": "span",
+				"marks": [],
+				"text": "The most striking cases of the past twelve months have one thing in common: the AI did most of the work, instead of acting as a simple helper."
+			}
+		],
+		"4f6eca5ad2d4": [
+			{
+				"_key": "398aff24007b",
+				"_type": "span",
+				"marks": [],
+				"text": "In September 2025, Anthropic, the company that makes Claude, spotted an espionage group it attributes to the Chinese state. The group was using Claude Code to go after some thirty organizations around the world: big tech companies, banks, chemical manufacturers, government agencies. The AI did 80 to 90% of the work; humans only stepped in for a few key decisions. To fool it, they broke the attack down into small, harmless-looking tasks and claimed to work for a security firm testing its clients. A few intrusions succeeded."
+			}
+		],
+		"6ae803e6bea1": [
+			{
+				"_key": "00112b784788",
+				"_type": "span",
+				"marks": [],
+				"text": "Between late December 2025 and mid-February 2026, a lone hacker used Claude Code and ChatGPT to break into at least nine Mexican government agencies, including the tax authority and the electoral institute. He presented himself to the AI as a researcher authorized to test their security. According to Gambit Security, the AI generated about 75% of the commands sent to the servers, and some 150 GB of tax and civil registry data reportedly left. The Mexican tax authority and electoral institute say they found no trace of an intrusion."
+			}
+		],
+		"fe561180e0f2": [
+			{
+				"_key": "2cf68907eb96",
+				"_type": "span",
+				"marks": [],
+				"text": "The most unsettling case doesn't even come from a criminal. In July 2026, OpenAI models being tested on their hacking abilities, with loosened guardrails, escaped the isolated environment they were working in through a previously unknown flaw. They then broke into part of the servers of Hugging Face, the big platform for sharing AI models, looking for something that would help them pass their test. Hugging Face detected the intrusion and made it public on July 16; it took OpenAI five more days to realize the attacker was its own model."
+			}
+		],
+		"313c6a12ca51": [
+			{
+				"_key": "54aa5a3361e3",
+				"_type": "span",
+				"marks": [],
+				"text": "In practice, an attack that used to require a trained team working for weeks is now within reach of a single patient person."
+			}
+		],
+		"2ef080024be2": [
+			{
+				"_key": "24854005954d",
+				"_type": "span",
+				"marks": [],
+				"text": "Code building blocks"
+			}
+		],
+		"1502f99759b0": [
+			{
+				"_key": "60811fe4a1cc",
+				"_type": "span",
+				"marks": [],
+				"text": "Eight days earlier, the same virus had hit TanStack, a set of blocks widely used to build websites. The attackers went through the project's official build pipeline, so the poisoned versions carried the usual stamp of authenticity. The stamp proved the package came out of the right factory. It said nothing about what was inside."
+			}
+		],
+		"cb158c249608": [
+			{
+				"_key": "8ca7472a9415",
+				"_type": "span",
+				"marks": [],
+				"text": "If your organization has its tools built, in-house or by a contractor, three questions are enough to check the bare minimum. Are the versions of the blocks pinned, so that no update gets in without someone deciding it? Do you wait a few days before adopting a new version? Most of the poisoned versions in 2026 were pulled within a few hours. And who has access to the accounts that publish the code?"
+			}
+		],
+		"97c952d04515": [
+			{
+				"_key": "9e5de6efec61",
+				"_type": "span",
+				"marks": [],
+				"text": "AI assistants"
+			}
+		],
+		"d870739a9fa4": [
+			{
+				"_key": "d57b15dd66c4",
+				"_type": "span",
+				"marks": [],
+				"text": "We connect more and more AI assistants to our email, our documents and our customer files, so they can sort, summarize or reply on our behalf. The problem: an assistant reads everything, including instructions hidden in a web page, a PDF or a form, and it may follow them as if they came from you. In April, researchers got company data out of Microsoft and Salesforce assistants this way, simply by writing such instructions into public contact forms. No antivirus noticed anything: as far as the system was concerned, the assistant was doing its job."
+			}
+		],
+		"123d43cb9d0a": [
+			{
+				"_key": "6de1e014e54b",
+				"_type": "span",
+				"marks": [],
+				"text": "I don't know of any setting that prevents this. You limit the damage by giving the assistant access to the bare minimum, like an intern, and by requiring a human to approve before it sends anything outside."
+			}
+		],
+		"720c5a63bbb2": [
+			{
+				"_key": "14d2282c8db8",
+				"_type": "span",
+				"marks": [],
+				"text": "Stolen sessions"
+			}
+		],
+		"22ee0f350f82": [
+			{
+				"_key": "730b48011cfe",
+				"_type": "span",
+				"marks": [],
+				"text": "When you log into your email with your password and then the code you got by text message, your browser keeps a kind of entry ticket, so it doesn't ask you for all that again on every click. Some viruses, often hidden in pirated software, steal these tickets. With one, the attacker is logged in as you, without a password or a code. The company Flare found 1.17 million of these stolen bundles in 2025 that contained still-valid corporate access. And according to Verizon's annual data breach report, 73% of organizations hit by ransomware (a virus that locks all your files and demands a ransom) had already had credentials stolen that year."
+			}
+		],
+		"85a548332fb3": [
+			{
+				"_key": "3c3700f1bf28",
+				"_type": "span",
+				"marks": [],
+				"text": "So the SMS code doesn't protect you from this. What helps: being asked to confirm your identity more often on sensitive accounts, especially before a wire transfer or an access change, and never opening a work account on a personal computer littered with pirated software."
+			}
+		],
+		"637a29d93e97": [
+			{
+				"_key": "39b00632a5d7",
+				"_type": "span",
+				"marks": [],
+				"text": "Crypto"
+			}
+		],
+		"c24ac06adee9": [
+			{
+				"_key": "52a1e21a76bf",
+				"_type": "span",
+				"marks": [],
+				"text": "The biggest theft in cryptocurrency history happened in late October. On the 29th, about 6.3 billion dollars left the wallets of Binance, the world's largest exchange, in roughly twenty minutes. The FBI attributes it to TraderTraitor, a North Korean hacking unit already accused of stealing 1.5 billion dollars from Bybit in February 2025."
+			}
+		],
+		"d19540b219a1": [
+			{
+				"_key": "0caea368acba",
+				"_type": "span",
+				"marks": [],
+				"text": "The path they took is the most instructive part. According to Binance, it all started with a fake recruiter who got an engineer to download a booby-trapped hiring exercise. The attackers then used an internal AI tool to find an access key, and had Binance's own systems sign the withdrawals. The exchange says it covered its customers' losses, and about 3 billion has been frozen."
+			}
+		],
+		"1550aa2c7886": [
+			{
+				"_key": "61e31a5ca0ce",
+				"_type": "span",
+				"marks": [],
+				"text": "Fake voices"
+			}
+		],
+		"11cb813950a5": [
+			{
+				"_key": "d5a2fc6a1287",
+				"_type": "span",
+				"marks": [],
+				"text": "In February 2025, scammers imitated the voice of Italian Defense Minister Guido Crosetto to ask major Italian business leaders, including Giorgio Armani, for money supposedly meant to free kidnapped journalists. At least one of them wired about one million euros to an account in Hong Kong."
+			}
+		],
+		"46a0d2256aa7": [
+			{
+				"_key": "5fba2b9faa33",
+				"_type": "span",
+				"marks": [],
+				"text": "These stories make the headlines, but the numbers put them in perspective. The FBI counted 893 million dollars in AI-related losses in the United States in 2025. Yet in the fake-boss scam that demands an urgent wire transfer, cases where AI was detected account for about 1% of losses. In Africa, Interpol links AI to 55% of reported cybercrimes, and reported losses rose from 192 to 484 million dollars between 2024 and 2025. In both cases, AI is mostly used to make scams that already existed more believable."
+			}
+		],
+		"71aa506f6571": [
+			{
+				"_key": "25e5d6d4495a",
+				"_type": "span",
+				"marks": [],
+				"text": "I don't believe anyone learns to spot a good cloned voice over the phone. One rule holds up better: no wire transfer or change of bank details on the strength of a single call. Hang up and call back on a number you already know."
+			}
+		],
+		"9126831ebf0f": [
+			{
+				"_key": "8a1d8421bff6",
+				"_type": "span",
+				"marks": [],
+				"text": "In the DRC"
+			}
+		],
+		"665d7091fefe": [
+			{
+				"_key": "45fe45a16524",
+				"_type": "span",
+				"marks": [],
+				"text": "The framework is taking shape. The National Cybersecurity Agency was organized by ordinance in May, and seven draft decrees on security requirements and incident notification were presented in Kinshasa on November 3. The deadlines and thresholds are not known yet."
+			}
+		],
+		"6ce4745b4e86": [
+			{
+				"_key": "80e68bcf159f",
+				"_type": "span",
+				"marks": [],
+				"text": "Nothing stops you from moving forward without waiting for the texts, and most of the useful protections cost little."
+			}
+		],
+		"b0cf7fef22e5": [
+			{
+				"_key": "6c3c24625380",
+				"_type": "span",
+				"marks": [],
+				"text": "Staying safe in 2026"
+			}
+		],
+		"c79a9d470e9c": [
+			{
+				"_key": "dc0feb56184e",
+				"_type": "span",
+				"marks": [],
+				"text": "None of these measures requires a big budget. Each one answers one of the attacks described above."
+			}
+		],
+		"abf82818bdb5": [
+			{
+				"_key": "23f0df75eae2",
+				"_type": "span",
+				"marks": [],
+				"text": "Never approve a wire transfer or a change of bank details on the strength of a single call or message. Hang up and call back on a number you already know, even when the voice is your boss's or a minister's."
+			}
+		],
+		"ac03b69e84c3": [
+			{
+				"_key": "0c502f974aaa",
+				"_type": "span",
+				"marks": [],
+				"text": "Replace SMS codes with passkeys or a physical security key on sensitive accounts: executive email, banking, server administration. They only work on the real site, which makes a fake login page useless."
+			}
+		],
+		"92ddead1890f": [
+			{
+				"_key": "e7503e2f57d6",
+				"_type": "span",
+				"marks": [],
+				"text": "Ban pirated software from work computers, and never open a work account on a personal PC. It's the favorite entry point for viruses that steal sessions."
+			}
+		],
+		"7c0814de3787": [
+			{
+				"_key": "e7fb14cd0c1f",
+				"_type": "span",
+				"marks": [],
+				"text": "Be wary of files that look normal: a job offer, a technical exercise, an invoice. At Binance, everything started with a hiring test. A file from a stranger gets opened on a separate computer, never on the one that gives access to money or servers."
+			}
+		],
+		"fd60a742c1a7": [
+			{
+				"_key": "3870a7924973",
+				"_type": "span",
+				"marks": [],
+				"text": "Give AI assistants the minimum access, require human approval before anything is sent outside, and provide company AI accounts rather than letting everyone use their personal one."
+			}
+		],
+		"342a1be0a9e5": [
+			{
+				"_key": "46223998b0f0",
+				"_type": "span",
+				"marks": [],
+				"text": "Install updates quickly, starting with what is visible from the Internet: router, firewall, VPN, website."
+			}
+		],
+		"0fd558f42165": [
+			{
+				"_key": "84c13aa374e3",
+				"_type": "span",
+				"marks": [],
+				"text": "Ask your IT contractor how they choose and update the code blocks they use, and who is allowed to publish the code."
+			}
+		],
+		"afa43bf7eb45": [
+			{
+				"_key": "f38e4576ee77",
+				"_type": "span",
+				"marks": [],
+				"text": "Keep a copy of your data on an unplugged drive, and check once a quarter that you know how to restore it."
+			}
+		],
+		"3b470c43f919": [
+			{
+				"_key": "1dfcf4321adb",
+				"_type": "span",
+				"marks": [],
+				"text": "Write down on one page who to call in case of an incident (contractor, bank, authorities) and who has the authority to shut everything down. With mandatory incident reporting coming to the DRC, that page will soon come in handy."
+			}
+		],
+		"3f0b1ffc3493": [
+			{
+				"_key": "34242ece04b7",
+				"_type": "span",
+				"marks": [],
+				"text": "Sources"
+			}
+		],
+		"c8e948b21048": [
+			{
+				"_key": "bd3a3e979c3b",
+				"_type": "span",
+				"marks": [
+					"5b4ba9ff704d"
+				],
+				"text": "Disrupting the first reported AI-orchestrated cyber espionage campaign"
+			},
+			{
+				"_key": "1227d2bc39db",
+				"_type": "span",
+				"marks": [],
+				"text": " (Anthropic)"
+			}
+		],
+		"6c16c1e3394e": [
+			{
+				"_key": "990959f31593",
+				"_type": "span",
+				"marks": [
+					"bd0017151189"
+				],
+				"text": "Mexican government agencies hacked with Claude Code and ChatGPT"
+			},
+			{
+				"_key": "2d8a04436ece",
+				"_type": "span",
+				"marks": [],
+				"text": " (SOCRadar, citing Gambit Security)"
+			}
+		],
+		"dd31572a3629": [
+			{
+				"_key": "4171524049e0",
+				"_type": "span",
+				"marks": [
+					"017969485c34"
+				],
+				"text": "OpenAI's agent escaped its sandbox during a security test"
+			},
+			{
+				"_key": "6973f45cda78",
+				"_type": "span",
+				"marks": [],
+				"text": " (Malwarebytes)"
+			}
+		],
+		"440314467613": [
+			{
+				"_key": "015a548d058c",
+				"_type": "span",
+				"marks": [
+					"b5d71cc46c7b"
+				],
+				"text": "Fake voice of Minister Crosetto"
+			},
+			{
+				"_key": "771c6121595c",
+				"_type": "span",
+				"marks": [],
+				"text": " (AI Incident Database)"
+			}
+		],
+		"0d1b34dc57b8": [
+			{
+				"_key": "deea134339e6",
+				"_type": "span",
+				"marks": [
+					"2a52432a3e64"
+				],
+				"text": "Binance Hack: Inside the $6.3B Hot Wallet Theft"
+			},
+			{
+				"_key": "5d7fe6f19c39",
+				"_type": "span",
+				"marks": [],
+				"text": " (SOCRadar)"
+			}
+		],
+		"7a66b11e6378": [
+			{
+				"_key": "cf0001c39822",
+				"_type": "span",
+				"marks": [
+					"b7fb7f9c9c12"
+				],
+				"text": "FBI links $6.3 billion Binance crypto heist to North Korean hackers"
+			},
+			{
+				"_key": "59edfc0d4634",
+				"_type": "span",
+				"marks": [],
+				"text": " (BleepingComputer)"
+			}
+		],
+		"a4f283a26a67": [
+			{
+				"_key": "27d04e5d4eab",
+				"_type": "span",
+				"marks": [
+					"641fa89a0302"
+				],
+				"text": "The May 19 npm attack"
+			},
+			{
+				"_key": "d2cc1d23e2f0",
+				"_type": "span",
+				"marks": [],
+				"text": " (DEV Community)"
+			}
+		],
+		"95b4066f3beb": [
+			{
+				"_key": "80cab121685d",
+				"_type": "span",
+				"marks": [
+					"5fc3f94172e5"
+				],
+				"text": "The 2026 npm attacks, including TanStack"
+			},
+			{
+				"_key": "a4b4027a108d",
+				"_type": "span",
+				"marks": [],
+				"text": " (Unit 42)"
+			}
+		],
+		"7edb7685d7a7": [
+			{
+				"_key": "5e8bed92a9a7",
+				"_type": "span",
+				"marks": [
+					"ab17eb28629a"
+				],
+				"text": "Copilot Studio and Agentforce vulnerabilities"
+			},
+			{
+				"_key": "0b4c03be82bc",
+				"_type": "span",
+				"marks": [],
+				"text": " (OECD.AI)"
+			}
+		],
+		"8c8b72570044": [
+			{
+				"_key": "6ffb54a60a1b",
+				"_type": "span",
+				"marks": [
+					"a61505d956dd"
+				],
+				"text": "Flare report on infostealers"
+			},
+			{
+				"_key": "74dca873cf8a",
+				"_type": "span",
+				"marks": [],
+				"text": " (BriefGlance)"
+			}
+		],
+		"a6a7a1c25109": [
+			{
+				"_key": "cbc89dea205e",
+				"_type": "span",
+				"marks": [
+					"52af39b8fc2d"
+				],
+				"text": "Verizon DBIR 2026"
+			},
+			{
+				"_key": "f4c15da84935",
+				"_type": "span",
+				"marks": [],
+				"text": " (Descope analysis)"
+			}
+		],
+		"0425315a9d7f": [
+			{
+				"_key": "ca864000da94",
+				"_type": "span",
+				"marks": [
+					"864d5f94497d"
+				],
+				"text": "AI figures from the 2025 IC3 report"
+			},
+			{
+				"_key": "c4fae3944f41",
+				"_type": "span",
+				"marks": [],
+				"text": " (Vorp Labs)"
+			}
+		],
+		"c3898df50092": [
+			{
+				"_key": "5ffdca38e885",
+				"_type": "span",
+				"marks": [
+					"6a152e6fa78f"
+				],
+				"text": "Interpol report on Africa"
+			},
+			{
+				"_key": "bde0f37b18fe",
+				"_type": "span",
+				"marks": [],
+				"text": " (Interpol)"
+			}
+		],
+		"90ecc9955294": [
+			{
+				"_key": "2a94b4e90354",
+				"_type": "span",
+				"marks": [
+					"9a2aa7931009"
+				],
+				"text": "Regulatory framework in the DRC"
+			},
+			{
+				"_key": "ea3b7e126a0a",
+				"_type": "span",
+				"marks": [],
+				"text": " (We Are Tech Africa)"
+			}
+		]
+	}
+}

@@ -30,7 +30,7 @@ export const RESUME = {
 	name: "Vincent Asani",
 	firstName: "Vincent",
 	initials: "VA",
-	avatarUrl: "/img/me/avatar.jpg",
+	avatarUrl: "/img/me/avatar.webp",
 	location: { fr: "Kinshasa, RDC", en: "Kinshasa, DRC" },
 	url: "https://www.vincentasani.me",
 	cvUrl: "/docs/CV - Vincent ASANI - Aug 2026.pdf",
@@ -157,7 +157,7 @@ export const RESUME = {
 	work: [
 		{
 			company: { fr: "Institut français de RDC", en: "Institut français de RDC" },
-			logoUrl: "/img/logos/ifrdc.png",
+			logoUrl: "/img/logos/ifrdc.webp",
 			title: { fr: "Responsable informatique", en: "Head of IT" },
 			location: "Kinshasa",
 			href: "https://www.ifrdc.org",
@@ -182,7 +182,7 @@ export const RESUME = {
 		},
 		{
 			company: "Find Solution Technology",
-			logoUrl: "/img/logos/find-solution-technology.png",
+			logoUrl: "/img/logos/find-solution-technology.webp",
 			title: { fr: "Développeur Full-stack", en: "Full-stack Developer" },
 			location: "Goma",
 			start: { fr: "Juin 2023", en: "Jun 2023" },
@@ -199,7 +199,7 @@ export const RESUME = {
 		},
 		{
 			company: { fr: "Ambassade de France en RDC", en: "Embassy of France in the DRC" },
-			logoUrl: "/img/logos/ambassade-france.png",
+			logoUrl: "/img/logos/ambassade-france.webp",
 			title: { fr: "Coordinateur de programme — FEF Création", en: "Program Coordinator — FEF Création" },
 			location: "Goma",
 			start: { fr: "Oct. 2023", en: "Oct 2023" },
@@ -221,7 +221,7 @@ export const RESUME = {
 		},
 		{
 			company: "Wito XR Studio",
-			logoUrl: "/img/logos/wito-xr-studio.png",
+			logoUrl: "/img/logos/wito-xr-studio.webp",
 			title: { fr: "Directeur technique", en: "Director of Technology" },
 			location: "Goma",
 			start: { fr: "Oct. 2022", en: "Oct 2022" },
@@ -233,7 +233,7 @@ export const RESUME = {
 		},
 		{
 			company: "AR/VR Africa Metathon 2022",
-			logoUrl: "/img/logos/arvr-africa-metathon.png",
+			logoUrl: "/img/logos/arvr-africa-metathon.webp",
 			title: "Country Lead",
 			location: "Goma",
 			start: { fr: "Sept. 2022", en: "Sep 2022" },
@@ -265,7 +265,7 @@ export const RESUME = {
 	education: [
 		{
 			company: "Université Catholique de Bukavu",
-			logoUrl: "/img/logos/ucbukavu.png",
+			logoUrl: "/img/logos/ucbukavu.webp",
 			title: {
 				fr: "Licence en informatique (cursus de 5 ans)",
 				en: "Bachelor's degree in Computer Science (5-year program)"
@@ -282,7 +282,7 @@ export const RESUME = {
 			title: { fr: "Portail web IF RDC", en: "IF DRC web portal" },
 			dates: { fr: "Avr. 2025 — Présent", en: "Apr 2025 — Present" },
 			href: "https://www.ifrdc.org",
-			image: "/img/projects/ifrdc.png",
+			image: "/img/projects/ifrdc.webp",
 			description: {
 				fr: "Portail web unifié de l'Institut français de RDC, regroupant ses quatre antennes. Architecture, développement front-end et back-end, puis mise en production.",
 				en: "Unified web portal for the Institut français de RDC, covering its four branches. Architecture, front-end and back-end development, then production rollout."

@@ -10,7 +10,7 @@
 					class="flex size-8 flex-none items-center justify-center overflow-hidden rounded-full border border-default text-xs font-semibold text-muted shadow ring-2 ring-default md:size-10"
 					:class="logoUrl ? 'bg-white' : 'bg-muted'"
 				>
-					<img v-if="logoUrl" :src="logoUrl" :alt="company" class="size-full object-contain" />
+					<img v-if="logoUrl" :src="logoUrl" :alt="company" width="40" height="40" loading="lazy" decoding="async" class="size-full object-contain" />
 					<UIcon v-else-if="logoIcon" :name="logoIcon" class="size-4 md:size-5" />
 					<span v-else>{{ initials }}</span>
 				</span>

@@ -4,7 +4,7 @@
 	>
 		<div class="relative shrink-0">
 			<component :is="href ? 'a' : 'div'" v-bind="href ? linkAttrs(href) : {}" class="block">
-				<img v-if="image" :src="image" :alt="title" class="h-48 w-full object-cover object-top" />
+				<img v-if="image" :src="image" :alt="title" loading="lazy" decoding="async" class="h-48 w-full object-cover object-top" />
 				<div v-else class="relative h-48 w-full overflow-hidden bg-muted text-highlighted">
 					<MagicFlickeringGrid
 						class="absolute inset-0 [mask-image:radial-gradient(circle_at_center,black,transparent_75%)]"

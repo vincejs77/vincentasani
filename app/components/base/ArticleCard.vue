@@ -8,8 +8,10 @@
             :to="'/articles/' + slug.current"
           >
             <img
-              :src="imageUrl.url"
+              v-bind="sanityImageAttrs(imageUrl, { sizes: IMAGE_SIZES.card })"
               alt=""
+              loading="lazy"
+              decoding="async"
               class="w-full h-[200px] object-cover rounded-xl transition-opacity duration-200 group-hover:opacity-80"
             />
           </NuxtLink>

@@ -5,7 +5,7 @@
 			<div aria-hidden="true" class="pointer-events-none absolute inset-y-0 left-0 z-10 w-4 border-r border-default sm:w-6" />
 			<div aria-hidden="true" class="pointer-events-none absolute inset-y-0 right-0 z-10 w-4 border-l border-default sm:w-6" />
 
-			<header class="relative flex h-14 items-center justify-between border-b border-default px-8 sm:px-12">
+			<header class="relative flex h-14 items-center justify-between border-b border-default px-6 sm:px-12">
 				<div aria-hidden="true" class="absolute inset-0 overflow-hidden text-highlighted">
 					<MagicFlickeringGrid class="[mask-image:linear-gradient(to_bottom,black,transparent)]" />
 				</div>

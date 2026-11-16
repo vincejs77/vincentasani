@@ -6,24 +6,32 @@
           class="scrolling-wrapper justify-sart flex h-[300px] w-full cursor-grab space-x-4 overflow-y-hidden overflow-x-scroll sm:space-x-6"
         >
           <img
-            src="/img/me/7.jpeg"
+            src="/img/me/7.webp"
             class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/img/me/3.jpg"
+            src="/img/me/3.webp"
             class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/img/me/6.jpeg"
+            src="/img/me/6.webp"
             class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
+            loading="lazy"
+            decoding="async"
           />
           <img
-            src="/img/me/5.jpeg"
+            src="/img/me/5.webp"
             class="min-w-[220px] rounded-xl object-cover sm:min-w-[280px]"
             alt=""
+            loading="lazy"
+            decoding="async"
           />
         </div>
       </div>

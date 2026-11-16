@@ -6,7 +6,7 @@ export default defineAppConfig({
 		},
 		container: {
 			// Contenu aligné à l'intérieur des gouttières hachurées du layout
-			base: "max-w-3xl px-8 sm:px-12 lg:px-12"
+			base: "max-w-3xl px-6 sm:px-12 lg:px-12"
 		},
 		button: {
 			slots: {

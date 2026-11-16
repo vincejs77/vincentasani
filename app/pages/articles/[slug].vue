@@ -36,8 +36,10 @@
         </div>
         <div class="mt-16">
           <img
-            :src="article.imageUrl.url"
+            v-bind="sanityImageAttrs(article.imageUrl, { sizes: IMAGE_SIZES.container })"
             alt=""
+            fetchpriority="high"
+            decoding="async"
             class="h-[250px] w-full rounded-xl object-cover sm:h-[300px]"
           />
         </div>
@@ -94,15 +96,15 @@
 import { convertDate__index } from "~/utils/convertdate";
 import htm from "htm";
 import vhtml from "vhtml";
-import { toHTML, uriLooksSafe } from "@portabletext/to-html";
+import { escapeHTML, toHTML, uriLooksSafe } from "@portabletext/to-html";
 
 const route = useRoute();
 
-const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->,categorie->,content[]{
+const query = groq`*[_type == "article" && slug.current=="${route.params.slug}"]{_id,title,_updatedAt,date,slug,"imageUrl":image.asset->${SANITY_ASSET_FIELDS},categorie->,content[]{
     ...,
     _type == "image" => {
       ...,
-      "imageUrl":asset->
+      "imageUrl":asset->${SANITY_ASSET_FIELDS}
     }
   }}`;
 
@@ -112,7 +114,7 @@ const otherArticlesQuery = groq`*[_type == "article" && slug.current != "${route
   _updatedAt,
   date,
   slug,
-  "imageUrl": image.asset->,
+  "imageUrl": image.asset->${SANITY_ASSET_FIELDS},
   categorie->,
   content
 }`;
@@ -144,15 +146,21 @@ const html = htm.bind(vhtml);
 
 const myPortableTextComponents = {
   types: {
-    image: ({ value }) => html`<img src="${value.imageUrl.url}" />`,
+    // Images du corps : srcset responsive, chargement différé, dimensions pour éviter les sauts de mise en page
+    image: ({ value }) => {
+      const attrs = sanityImageAttrs(value.imageUrl, { sizes: IMAGE_SIZES.prose });
+      return html`<img ...${attrs} alt="${value.alt ?? ""}" loading="lazy" decoding="async" />`;
+    },
     callToAction: ({ value, isInline }) =>
       isInline
         ? html`<a href="${value.url}">${value.text}</a>`
         : html`<div class="callToAction">${value.text}</div>`,
   },
 
+  // `children` est du HTML déjà échappé par toHTML : ne pas le repasser dans vhtml (qui l'échapperait
+  // une seconde fois, ex. « l'Afrique » affiché « l&#x27;Afrique »). Seuls les attributs sont échappés ici.
   block: {
-    blockComment: ({ children }) => html`<p>${children}</p>`,
+    blockComment: ({ children }) => `<p>${children}</p>`,
   },
 
   marks: {
@@ -160,8 +168,8 @@ const myPortableTextComponents = {
       const href = value.href || "";
 
       if (uriLooksSafe(href)) {
-        const rel = href.startsWith("/") ? undefined : "noreferrer noopener";
-        return html`<a href="${href}" rel="${rel}">${children}</a>`;
+        const rel = href.startsWith("/") ? "" : ' rel="noreferrer noopener"';
+        return `<a href="${escapeHTML(href)}"${rel}>${children}</a>`;
       }
 
       return children;
@@ -175,6 +183,10 @@ const content = computed(() =>
 );
 
 const title = computed(() => `${article.value.title} | Vincent ASANI`);
+// Aperçu réseaux sociaux : 1200x630 recadré, en JPEG (WebP/AVIF mal supportés par certains robots)
+const ogImage = computed(() =>
+  sanityImageUrl(article.value.imageUrl, { width: 1200, height: 630, fit: "crop", format: "jpg", quality: 80 }),
+);
 useHead({
   title,
   meta: [
@@ -193,7 +205,7 @@ useHead({
     },
     {
       property: "og:image",
-      content: () => article.value.imageUrl.url,
+      content: ogImage,
     },
     { name: "twitter:title", content: title },
     { name: "twitter:site", content: "@vincejs77" },
@@ -205,7 +217,7 @@ useHead({
     },
     {
       name: "twitter:image",
-      content: () => article.value.imageUrl.url,
+      content: ogImage,
     },
     { name: "twitter:card", content: "summary_large_image" },
   ],
